@@ -1,4 +1,4 @@
-//Solution 1 Binary Search
+//Solution 1 Binary Search 
 class Solution {
     boolean check(int[] nums,int k,double x) //Check whether we can find a subarray whose average is bigger than x
     {
