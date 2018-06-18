@@ -1,4 +1,4 @@
-//Solution 1
+//Solution 1 consider from one from the lastone
 class Solution {
     public boolean isOneBitCharacter(int[] bits) {
         int ones = 0;
