@@ -1,4 +1,4 @@
-//Solution 1 path is a batch of edges preorder traversal solution
+//Solution 1 path is a batch of edges postorder traversal solution
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
