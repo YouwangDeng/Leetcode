@@ -13,4 +13,8 @@ Note about data structure, problem solutions and mistakes during coding
 * Do not spell wrong variable name
 * Combine same code to a code block make code be more concise
 * use carry to do digit manipulation
+
+### Longest Substring Without Repeating Characters
+* Character is a class, not Char
+* left = map.get(c) > left ? map.get(c) : left; avoid "abba" bug
  
