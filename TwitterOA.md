@@ -35,6 +35,43 @@ class Solution {
 }
 ```
 
+### HackLand Election
+```
+public String electionWinner(String[] votes) {
+    if(votes.length == 0) {
+        return null;
+    }
+    Map<String, Integer> map = new HashMap<>();
+    for(String candidate : votes) {
+        map.put(candidate, map.getOrDefault(candidate,0) + 1)
+    }
+    Map<Integer, List<String>> res = new HashMap<>();
+    int max = 0;
+    for(Map.Entry<String, Integer> entry : map.entrySet()) {
+        String key = entry.getKey();
+        int value = entry.getValue();
+        if(res.get(value) == null) {
+            res.put(value, new ArrayList());
+        }
+        res.get(value).add(key);
+        if(value > max) {
+            max = value;
+        }
+    }
+    ArrayList<String> candidate = res.get(max);
+    String ret = candidate.get(0);
+    if(candidate.size() == 1) {
+        return ret;
+    }
+    for(int i = 1; i < candidate.size(); i++) {
+        if (candidate.get(i).compareTo(ret) < 0) {
+            ret = candidate.get(i);
+        }
+    }
+    return ret;
+    }
+```
+
 感谢楼主分享~刚做完OA，section 2是prime tree，题目描述好像不太一样了，lz的代码要改一下哈。给的输入里first和second数组组成的pair不一定是first[i]为parent，second[i]为child，只有1是root是确定的。给的一个例子：. From 1point 3acres bbs
 node数为10
 first:[6, 8, 3, 6, 4, 1, 8, 5, 1]
