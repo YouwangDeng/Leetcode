@@ -72,6 +72,29 @@ public String electionWinner(String[] votes) {
     }
 ```
 
+### Missing Words
+
+```
+public String[] missingWord(String s, String t) {
+    String[] sArray = s.split(" ");
+    String[] tArray = t.split(" ");
+    String[] missing = new String[sArray.length - tArray.length];
+    int tIndex = 0;
+    int mIndex = 0;
+    for(String word : sArray) {
+        if(tIndex < tArray.length && tArray[tIndex].equals(word)) {
+            tIndex++;
+        } else {
+            missing[mIndex] = word;
+            mIndex++;
+        }
+    }
+    return missing;
+}
+```
+
+### Rover Control
+
 感谢楼主分享~刚做完OA，section 2是prime tree，题目描述好像不太一样了，lz的代码要改一下哈。给的输入里first和second数组组成的pair不一定是first[i]为parent，second[i]为child，只有1是root是确定的。给的一个例子：. From 1point 3acres bbs
 node数为10
 first:[6, 8, 3, 6, 4, 1, 8, 5, 1]
