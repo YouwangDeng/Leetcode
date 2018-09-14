@@ -1,6 +1,40 @@
 # Twitter OA
 OA questions and solutions about Twitter SDE OA 2018
 
+### The Huffman Decoder
+```
+class Solution {
+    public static String Decoder(String[] code, String encode) {
+        if(code.length == 0 || encode.length() == 0) {
+            return "";
+        }
+        Map<String, String> map = new HashMap<>();
+        for(String s : code) {
+            String[] pair = s.split(" ");
+            if(pair[0].equals("[newline]"){
+                map.put(pair[1],"\n");
+            } else {
+                map.put(pair[1],pair[0]);
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        int left = 0;
+        int right = 0;
+        while(right < encode.length()) {
+            while(!map.containsKey(encode.substring(left, right) && right < encode.length()) {
+                right++;
+            } 
+            sb.append(map.get(encode.substring(left, right));
+            left = right;
+        }
+        return sb.toString();
+    } 
+    public static void main(String[] args) {
+                
+    }
+}
+```
+
 感谢楼主分享~刚做完OA，section 2是prime tree，题目描述好像不太一样了，lz的代码要改一下哈。给的输入里first和second数组组成的pair不一定是first[i]为parent，second[i]为child，只有1是root是确定的。给的一个例子：. From 1point 3acres bbs
 node数为10
 first:[6, 8, 3, 6, 4, 1, 8, 5, 1]
