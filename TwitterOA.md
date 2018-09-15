@@ -375,6 +375,30 @@ public class ImageMatching {
 }
 
 ```
+### No Pairs Allowed
+```
+public int[] minimalOperation(String[] words) {
+    int index = 0;
+    int[] res = new int[words.length];
+    for(String word : words) {
+        int operations = 0;
+        int left = 0;
+        char cur = word.charAt(0);
+        for(int i = 1; i < word.length(); i++) {
+            char next = word.charAt(i);
+            if(next != cur) {
+                operations += (i - left) / 2;
+                left = i;
+            }
+        }
+        operations += (i - left) / 2;
+        res[index++] = operations;
+    }
+    return res;
+}
+```
+
+
 
 感谢楼主分享~刚做完OA，section 2是prime tree，题目描述好像不太一样了，lz的代码要改一下哈。给的输入里first和second数组组成的pair不一定是first[i]为parent，second[i]为child，只有1是root是确定的。给的一个例子：. From 1point 3acres bbs
 node数为10
