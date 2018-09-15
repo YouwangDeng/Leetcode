@@ -139,6 +139,79 @@ public static void main(String[] args) {
     }
 }
 ```
+
+### Simple Text Queries
+```
+Scanner in = new Scanner(System.in);
+int sNum = in.nextInt();
+Map<String, HashMap<Integer,Integer>> sMap = new HashMap<>();
+for(int i = 0; i < sNum; i++) {
+    String s = in.next();
+    String[] sArray = s.split(" ");
+    for(String word : sArray) {
+        if(!sMap.containsKey(word)) {
+            sMap.put(word, new HashMap<Integer, Integer>());
+        }
+        match = sMap.get(word);
+        match.put(i, match.getOrDefault(i, 0) + 1);
+    }
+}
+int qNum = in.nextInt();
+List<List<Integer>> res = new ArrayList<>();
+for(int j = 0; j < qNum; q++) {
+    String q = in.next();
+    String[] qArray = q.split(" ");
+    Map<String, Integer> query = new HashMap<>();
+    for(String word : qArray) {
+        query.put(word, query.getOrDefault(word, 0) + 1);
+    }
+    List<Integer> tempRes = new ArrayList<>();
+    Map<Integer, Integer> matchTimes = new HashMap<>();
+    int q = 0;
+    for(Map.Entry<String, Integer> entry : query.entrySet()) {
+        String key = entry.getKey();
+        int value = entry.getValue();
+        if(sMap.containsKey(key)) {
+            if(q == 0) {
+                for(Map.Entry<Integer, Integer> innerEntry : sMap.get(key).entrySet()) {
+                    int sIndex = innerEntry.getKey();
+                    int indexNum = innerEntry.getValue();
+                    matchTimes.put(sIndex, indexNum/value);  
+                }
+            } else {
+                for(Map.Entry<Integer, Integer> times : matchTimes.entrySet()) {
+                    if(!sMap.get(key).containsKey(times.getKey())) {
+                        matchTimes.remove(times.getKey());
+                    } else {
+                        matchTimes.put(times.getKey(), Math.min(times.getValue(), sMap.get(key).get(times.getKey())/value));
+                    }
+                }
+            }
+        } else {
+            tempRes.add(-1);
+            break;
+        }
+        q++;
+    }
+    if(tempRes.size() != 1) {
+        for(Map.Entry<Integer, Integer> times : matchTimes.entrySet()) {
+            int senIndex = times.getKey();
+            int repTimes = times.getValue();
+            if(repTimes == 0) continue;
+            for(int i = 0; i < repTimes; i++) {
+                tempRes.add(senIndex);
+            }   
+        }
+        if(tempRes.size() == 0) {
+            tempRes.add(-1);
+        }
+    }
+    res.add(tempRes);    
+}
+return res;
+```
+
+
 感谢楼主分享~刚做完OA，section 2是prime tree，题目描述好像不太一样了，lz的代码要改一下哈。给的输入里first和second数组组成的pair不一定是first[i]为parent，second[i]为child，只有1是root是确定的。给的一个例子：. From 1point 3acres bbs
 node数为10
 first:[6, 8, 3, 6, 4, 1, 8, 5, 1]
