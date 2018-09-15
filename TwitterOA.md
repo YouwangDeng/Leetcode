@@ -398,7 +398,41 @@ public int[] minimalOperation(String[] words) {
 }
 ```
 
-
+### Parenthesis 
+```
+public static String[] braces(String[] values) {
+    String[] res = new String[values.length];
+    int index = 0;
+    for(String value : values) {
+        Stack<Character> stack = new LinkedList<>();
+        for(int i = 0; i < value.length(); i++) {
+            char c = value.charAt(i);
+            if(c == ")") {
+                if(stack.isEmpty() || stack.pop() != "(") {
+                    break;
+                }
+            } else if(c == "}") {
+                if(stack.isEmpty() || stack.pop() != "{") {
+                    break;
+                }
+            } else if(c == "]") {
+                if(stack.isEmpty() || stack.pop() != "[") {
+                    
+                    break;
+                }
+            } else {
+                stack.push(c);
+            }
+        }
+        if(stack.isEmpty() && i == value.length) {
+            res[index++] = "YES";
+        } else {
+            res[index++] = "NO";
+        }
+    }
+    return res;
+}
+```
 
 感谢楼主分享~刚做完OA，section 2是prime tree，题目描述好像不太一样了，lz的代码要改一下哈。给的输入里first和second数组组成的pair不一定是first[i]为parent，second[i]为child，只有1是root是确定的。给的一个例子：. From 1point 3acres bbs
 node数为10
