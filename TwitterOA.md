@@ -211,7 +211,37 @@ for(int j = 0; j < qNum; q++) {
 return res;
 ```
 
-
+### who's the closest
+```
+public int[] closest(int[] queries, String s) {
+    int[] res = new int[queries.length];
+    for(int i = 0; i < queries.length; i++) {
+        int q = queries[i];
+        int left = q;
+        int right = q;
+        while(left > 0 || right < s.length() - 1) {
+            if(left > 0) {
+                left--;
+                if(s.charAt(left) == s.charAt(q)) {
+                     res[i] = left;
+                     break; 
+                } 
+            }
+            if(right < s.length() - 1) {
+                right++;
+                if(s.charAt(left) == s.charAt(q)) {
+                    res[i] = right; 
+                    break;
+                } 
+            }
+        }
+        if(res[i] != -1) {
+            res[i] = -1;
+        } 
+    }
+    return res;
+}
+```
 感谢楼主分享~刚做完OA，section 2是prime tree，题目描述好像不太一样了，lz的代码要改一下哈。给的输入里first和second数组组成的pair不一定是first[i]为parent，second[i]为child，只有1是root是确定的。给的一个例子：. From 1point 3acres bbs
 node数为10
 first:[6, 8, 3, 6, 4, 1, 8, 5, 1]
