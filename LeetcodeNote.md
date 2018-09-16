@@ -19,7 +19,7 @@ Note about data structure, problem solutions and mistakes during coding
 * left = map.get(c) > left ? map.get(c) : left; avoid "abba" bug
 
 ### Twitter OA 
-*  Stack<type> stack = new Stack<>();
+* Stack<type> stack = new Stack<>();
 * Queue<type> queue = new LinkedList<>();
 * compare char equal use " c == '1' "
 * queue.isEmpty() stack.isEmpty stack.empty()
@@ -35,4 +35,6 @@ Note about data structure, problem solutions and mistakes during coding
 * No direction tree or graph use Parent array or child number to indicate the relationship 
 * isPrime function i < 2 and from 2 to i * i < num
 * convert char[] to String: new String(charArray);
+
+### Median of Two Sorted Arrays
  
