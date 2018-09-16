@@ -1,6 +1,9 @@
 # Twitter OA
 OA questions and solutions about Twitter SDE OA 2018
 
+## Note
+1. 
+
 ### The Huffman Decoder
 ```
 class Solution {
@@ -424,7 +427,7 @@ public static String[] braces(String[] values) {
                 stack.push(c);
             }
         }
-        if(stack.isEmpty() && i == value.length) {
+        if(stack.isEmpty() && i == value.length()) {
             res[index++] = "YES";
         } else {
             res[index++] = "NO";
@@ -629,6 +632,157 @@ hhh,刚做完,primes in subtree的题我也是质数判断写错了，没加对�
 预处理完以后，可以直接连续访问到目标字母，map1.get(input[query])[map2.get(query))].本文原创自1point3acres论坛
 再查那个list前后就可以得到答案了。
 每个query处理是o(1)的。
+
+# OA
+
+### Simple Text Queries
+```
+    // Complete the textQueries function below.
+    static void textQueries(List<String> sentences, List<String> queries) {
+        //store each sentence mapping into a list
+        List<Map<String, Integer>> listOfMap = new ArrayList<>();
+        for(String sentence : sentences) {
+            String[] words = sentence.split(" ");
+            //mapping the sentence words frequency
+            Map<String, Integer> wordsMap = new HashMap<>();
+            for(String word : words) {
+                wordsMap.put(word, wordsMap.getOrDefault(word, 0) + 1);
+            }
+            listOfMap.add(wordsMap);
+        }
+        
+        List<String> res = new ArrayList<>();
+        //do the query
+        for(String query : queries) {
+            String[] queryWords = query.split(" ");
+            StringBuilder ans = new StringBuilder();
+            int index = 0;
+            //traverse the sentence list
+            for(Map<String, Integer> map : listOfMap) {
+                int times = Integer.MAX_VALUE;
+                //match each word in the query
+                for(String queryWord : queryWords) {
+                    if(!map.containsKey(queryWord)) {
+                        times = Integer.MAX_VALUE;
+                        break;
+                    } else {
+                        int num = map.get(queryWord);
+                        //update the times to the minimum
+                        times = times > num ? num : times;
+                    }
+                }
+                //add the index to ans
+                while(times != Integer.MAX_VALUE && times > 0) {
+                    ans.append(index).append(" ");
+                    times--;
+                }
+                index++;
+            }
+            //no match found
+            if(ans.length() == 0) {
+                ans.append("-1");
+            }
+            res.add(ans.toString());
+        }
+        //output the result
+        for(String s : res){
+            System.out.println(s);
+        }
+    }
+```
+
+### Braces
+```
+    static String[] braces(String[] values) {
+        String[] res = new String[values.length];
+        int index = 0;
+        for(String value : values) {
+            Stack stack = new Stack();
+            int i = 0;
+            for(; i < value.length(); i++) {
+                char c = value.charAt(i);
+                //check if braces match
+                if(c == ')') {
+                    if(stack.empty() || (char) stack.pop() != '(') {
+                        break;
+                    }
+                } else if(c == '}') {
+                    if(stack.empty() || (char) stack.pop() != '{') {
+                        break;
+                    }
+                } else if(c == ']') {
+                    if(stack.isEmpty() || (char) stack.pop() != '[') {
+                        break;
+                    }
+                } else {
+                    stack.push(c);
+                }
+            }
+            //check if all braces match
+            if(stack.empty() && i == value.length()) {
+                res[index++] = "YES";
+            } else {
+                res[index++] = "NO";
+            }   
+        }
+        return res;
+    }
+```
+
+### Who's the closest?
+```
+    // Complete the closest function below.
+    static List<Integer> closest(String s, List<Integer> queries) {
+        //store each char present positions into a list and map to that char
+        Map<Character, List<Integer>> map = new HashMap<>();
+        //store the order of closest char position in the list into an array
+        int[] closestOrder = new int[s.length()];
+        //traverse the string to get the closest information of each char
+        for(int i = 0; i < s.length(); i++) {
+            char c = s.charAt(i);
+            //put a new list to map
+            if(!map.containsKey(c)) {
+                List<Integer> index = new ArrayList<>();
+                index.add(i);
+                map.put(c, index);
+                //the default closest position is itself
+                closestOrder[i] = 0;
+            } else {
+                List<Integer> index = map.get(c);
+                index.add(i);
+                map.put(c, index);
+                int lastOrder = index.size() - 1;
+                //only two same chars occur
+                if(lastOrder == 1) {
+                    closestOrder[index.get(0)] = 1;
+                } else {
+                    //more than two chars occur
+                    //calculate the gaps of the last three chars
+                    int backSpace = index.get(lastOrder) - index.get(lastOrder - 1);
+                    int frontSpace = index.get(lastOrder - 1) - index.get(lastOrder - 2);
+                    if(backSpace < frontSpace) {
+                        //update the closest position to the back one
+                        closestOrder[index.get(lastOrder - 1)] = lastOrder;
+                    }
+                }
+                //the default closest position is the front char position
+                closestOrder[i] = lastOrder - 1;
+            }
+        }
+        List<Integer> res = new LinkedList<>();
+        //do the query
+        for(int q : queries) {
+            char c = s.charAt(q);
+            int cloest = map.get(c).get(closestOrder[q]);
+            if(cloest == q) {
+                res.add(-1);
+            } else {
+                res.add(cloest);
+            }
+        }
+        return res;
+    }
+```
 
 
 
