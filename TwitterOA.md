@@ -8,6 +8,17 @@ OA questions and solutions about Twitter SDE OA 2018
 3. compare char equal use " c == '1' "
 4. queue.isEmpty() stack.isEmpty stack.empty()
 5. reduce time complexity: traverse the input first to get the key relations and store it in HashMap, then when solve problems use that relations in HashMap. this could help avoid time limited error
+6. s.substring(a, b) s.toCharArray() s.charAt()
+7. use StringBuilder .toString() Integer.valueOf
+8. map.getOrDefault(key, 0)
+9. stack push pop queue offer poll
+10. for(Map.Entry<String, Integer> entry : map.entrySet())
+11. for(Type c : list) for(Type c : array)
+12. use .equals() to compare String
+13. BFS use queue
+14. No direction tree or graph use Parent array or child number to indicate the relationship 
+15. isPrime function i < 2 and from 2 to i * i < num
+16. convert char[] to String: new String(charArray);
 
 # OA
 
