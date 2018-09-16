@@ -37,4 +37,8 @@ Note about data structure, problem solutions and mistakes during coding
 * convert char[] to String: new String(charArray);
 
 ### Median of Two Sorted Arrays
+* two sorted arrays fetch median first get the (m + n + 1)/2 element, use k / 2 mid compare, throw away a half of an array
+* a special binary search
+* mind the edge case, when array 1 or 2 is off or k == 1
+* use recursion
  
