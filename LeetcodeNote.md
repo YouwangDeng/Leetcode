@@ -52,4 +52,10 @@ Note about data structure, problem solutions and mistakes during coding
 * keep update the head
 * use "this"
 * DLinkedList parameter should not be private
+
+### note
+* Integer.parseInt(String s) and Integer.valueOf(String s), the former return int and the latter return Integer
+
+### Container With Most Water
+* 
  
