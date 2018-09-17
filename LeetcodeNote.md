@@ -57,5 +57,6 @@ Note about data structure, problem solutions and mistakes during coding
 * Integer.parseInt(String s) and Integer.valueOf(String s), the former return int and the latter return Integer
 
 ### Container With Most Water
-* 
+* two pointers left and right from two edge to center
+* compare the height of left and right
  
