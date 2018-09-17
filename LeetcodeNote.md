@@ -68,5 +68,8 @@ Note about data structure, problem solutions and mistakes during coding
 * must four direction check
 * compare char use ''
 
-
+### Longest Palindromic Substring
+* s.length()
+* function name spell right when using it
+* extend the substring in two cases
  
