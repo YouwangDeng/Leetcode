@@ -53,7 +53,7 @@ Note about data structure, problem solutions and mistakes during coding
 * use "this"
 * DLinkedList parameter should not be private
 
-### note
+### Note
 * Integer.parseInt(String s) and Integer.valueOf(String s), the former return int and the latter return Integer
 
 ### Container With Most Water
@@ -63,4 +63,10 @@ Note about data structure, problem solutions and mistakes during coding
 ### Valid Parentheses
 * use a stack
 * check if the stack isEmpty()
+
+### Number of Islands
+* must four direction check
+* compare char use ''
+
+
  
