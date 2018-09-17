@@ -59,4 +59,8 @@ Note about data structure, problem solutions and mistakes during coding
 ### Container With Most Water
 * two pointers left and right from two edge to center
 * compare the height of left and right
+
+### Valid Parentheses
+* use a stack
+* check if the stack isEmpty()
  
