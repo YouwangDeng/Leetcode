@@ -41,4 +41,15 @@ Note about data structure, problem solutions and mistakes during coding
 * a special binary search
 * mind the edge case, when array 1 or 2 is off or k == 1
 * use recursion
+
+### LRU Cache
+* this is a design problem
+* key point is least recently used cache idea, abandon the least used cache as the capacity is limited
+* implement a double LinkedList to help update the visited key:value to the head, the methods we need to implement include: addNode, removeNode, moveToHead(addNode, removeNode), popTail(removeNode)
+* use a HashMap to store the key and Node(key, value), the key stored in the Node is used to remove Node in the HashMap
+* the HashMap and DLinkedList hold the same data but in different order, the DLinkedList have the LRU order, the HashMap is used to quickly look up(constant time)
+* don't forget to decrease the count after pop the tail
+* keep update the head
+* use "this"
+* DLinkedList parameter should not be private
  
