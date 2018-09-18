@@ -101,3 +101,8 @@ Note about data structure, problem solutions and mistakes during coding
 * check left < right first then && nums operation
 * use Arrays.asList(a,b,c); instead of new ArrayList<>() and then add element to it
 * be careful about the duplicate element, use while or if to avoid duplicate
+
+### Roman to Integer
+* use array to store the value first
+* switch case usage
+* manipulate the data first the apply algorithm, this is more efficient
