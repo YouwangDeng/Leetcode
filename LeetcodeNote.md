@@ -72,4 +72,13 @@ Note about data structure, problem solutions and mistakes during coding
 * s.length()
 * function name spell right when using it
 * extend the substring in two cases
+
+### Combine Two Tables
+* A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+* example: SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate FROM Orders INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+* Here are the different types of the JOINs in SQL:
+* (INNER) JOIN: Returns records that have matching values in both tables
+* LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
+* RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
+* FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
  
