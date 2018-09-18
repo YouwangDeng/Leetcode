@@ -81,4 +81,9 @@ Note about data structure, problem solutions and mistakes during coding
 * LEFT (OUTER) JOIN: Return all records from the left table, and the matched records from the right table
 * RIGHT (OUTER) JOIN: Return all records from the right table, and the matched records from the left table
 * FULL (OUTER) JOIN: Return all records when there is a match in either left or right table
+
+### Integer to English Words
+* new String[] {"One", "Two"}; don't forget to use ""
+* care about corner case such as num == 0 return "Zero"
+* first deal with the thousands then deal with hundred
  
