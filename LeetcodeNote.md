@@ -86,4 +86,8 @@ Note about data structure, problem solutions and mistakes during coding
 * new String[] {"One", "Two"}; don't forget to use ""
 * care about corner case such as num == 0 return "Zero"
 * first deal with the thousands then deal with hundred
- 
+
+### Reverse Integer
+* could use Integer.toString() and then reverse the string
+* trick here use res = res * 10 + x % 10; IMPORTANT
+* use Integer.MAX_VALUE and Integer.MIN_VALUE instead of Math.pow()
