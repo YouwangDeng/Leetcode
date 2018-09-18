@@ -95,3 +95,9 @@ Note about data structure, problem solutions and mistakes during coding
 ### Maximum Subarray
 * use two while loop O(n) time complexity
 * be careful about the index Error when use while loop on array
+
+### 3Sum
+* check if there is a need to write code in function
+* check left < right first then && nums operation
+* use Arrays.asList(a,b,c); instead of new ArrayList<>() and then add element to it
+* be careful about the duplicate element, use while or if to avoid duplicate
