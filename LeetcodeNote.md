@@ -91,3 +91,7 @@ Note about data structure, problem solutions and mistakes during coding
 * could use Integer.toString() and then reverse the string
 * trick here use res = res * 10 + x % 10; IMPORTANT
 * use Integer.MAX_VALUE and Integer.MIN_VALUE instead of Math.pow()
+
+### Maximum Subarray
+* use two while loop O(n) time complexity
+* be careful about the index Error when use while loop on array
