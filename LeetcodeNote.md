@@ -122,3 +122,10 @@ Note about data structure, problem solutions and mistakes during coding
 * could use rev * 10 + num / 10 trick and compare reverse value and x
 * be careful about that num = x, should use num in the reverse process instead of x
 
+### Merge Intervals
+* could use a PriorityQueue and sort the intervals with their start point
+* use PriorityQueue<Interval> pq = new PriorityQueue<>(intervals.size(), (a, b) -> a.start - b.start);
+* could also use two arrays store the start and end points of those intervals
+* compare start[i+1] and end[i] and determine whether add a new Interval to the res list
+* care about the end of the array that's i == n - 1
+
