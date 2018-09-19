@@ -117,3 +117,8 @@ Note about data structure, problem solutions and mistakes during coding
 * then allocate the random pointer for the copy node
 * then extract the copy node from the list and restore the original list
 
+### Palindrome Number
+* could use string reverse but this will use some methods
+* could use rev * 10 + num / 10 trick and compare reverse value and x
+* be careful about that num = x, should use num in the reverse process instead of x
+
