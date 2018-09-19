@@ -161,3 +161,9 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 * must update cur, cur = cur.next
 * check null pointer
 
+### Reverse String
+* classic toCharArray() and swap solution
+* be carful about the s.length()
+
+
+
