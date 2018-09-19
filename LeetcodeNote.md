@@ -106,3 +106,9 @@ Note about data structure, problem solutions and mistakes during coding
 * use array to store the value first
 * switch case usage
 * manipulate the data first the apply algorithm, this is more efficient
+
+### Trapping water
+* use leftMax and rightMax from edge to center
+* be clear about the meaning of "trap", that only related with the left and right edge
+* could also one way passing, use a stack
+
