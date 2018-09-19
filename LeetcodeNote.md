@@ -149,5 +149,7 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 ```
 * the above way is more efficient than new PriorityQueue<>(lists.length, (a,b) -> a.val - b.val);
 
-
+### Linked List Cycle
+* use two pointers, slow and fast
+* careful about while(fast != null && fast.next != null)
 
