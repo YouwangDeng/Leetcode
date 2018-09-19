@@ -112,3 +112,8 @@ Note about data structure, problem solutions and mistakes during coding
 * be clear about the meaning of "trap", that only related with the left and right edge
 * could also one way passing, use a stack
 
+### Copy List with Random Pointer
+* copy a list, consider make every node occurs twice in the list
+* then allocate the random pointer for the copy node
+* then extract the copy node from the list and restore the original list
+
