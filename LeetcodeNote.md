@@ -153,3 +153,7 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 * use two pointers, slow and fast
 * careful about while(fast != null && fast.next != null)
 
+### Reverse Linked List
+* reverse LinkedList use three pointers, pre, cur and next
+* IMPORTANT:do not forget set head.next = null, otherwise there will be a circle
+
