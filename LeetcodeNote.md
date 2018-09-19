@@ -157,3 +157,7 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 * reverse LinkedList use three pointers, pre, cur and next
 * IMPORTANT:do not forget set head.next = null, otherwise there will be a circle
 
+### Merge Two Sorted Lists
+* must update cur, cur = cur.next
+* check null pointer
+
