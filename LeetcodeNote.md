@@ -129,3 +129,25 @@ Note about data structure, problem solutions and mistakes during coding
 * compare start[i+1] and end[i] and determine whether add a new Interval to the res list
 * care about the end of the array that's i == n - 1
 
+### Merge k Sorted Lists
+* use a PriorityQueue
+* the way to implement Comparator influence the efficiency of algorithm
+
+
+```
+PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Comparator<ListNode>(){
+    @Override
+    public int compare(ListNode o1,ListNode o2){
+         if (o1.val<o2.val)
+             return -1;
+         else if (o1.val==o2.val)
+             return 0;
+         else 
+             return 1;
+    }
+});
+```
+* the above way is more efficient than new PriorityQueue<>(lists.length, (a,b) -> a.val - b.val);
+
+
+
