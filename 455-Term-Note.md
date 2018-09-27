@@ -10,3 +10,4 @@
 * be carful about int or double types, no always int
 * the valid range for startLoc is [0, namesArr.length]
 * `locOfTarget == NOT_FOUND` use the constant name instead of the value
+* copy java files use *.java
