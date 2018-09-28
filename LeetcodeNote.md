@@ -227,5 +227,18 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * Merge K Sorted Array
         * index manipulation
 
+### ArrayList
+
+| Operation | Input | Output | Time Complexity |
+| --- | --- | --- | --- |
+| get | index | value | constant |
+| set | index, value | void | constant |
+| add | [index],value | void | linear |
+| remove | index/value | void | linear |
+| find | value | boolean | linear |
+
+
+    
+
 
 
