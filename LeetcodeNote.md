@@ -177,10 +177,10 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * Two Sum, etc.
 * Master method
     * T(n) = aT(n/b) + n^c
-    * Compare log b a and c
-        * if log b a > c, T(n) = n^(log b a)
-        * if log b a = c, T(n) = n^c *logn
-        * if log b a < c, T(n) = n^c
+    * Compare log<sub>b</sub>a and c
+        * if log<sub>b</sub>a > c, T(n) = n^log<sub>b</sub>a
+        * if log<sub>b</sub>a = c, T(n) = n^c *logn
+        * if log<sub>b</sub>a < c, T(n) = n^c
 * Commonly used time complexities
 
 #### How to get the equation
