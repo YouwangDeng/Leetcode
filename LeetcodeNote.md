@@ -165,5 +165,29 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 * classic toCharArray() and swap solution
 * be carful about the s.length()
 
+## Review Data Structures and Algorithms
+### Time Complexity
+#### How to calculate
+* Recursive deduction
+    * T(n) = T(n-1) + cn 
+    * T(n-1) = T(n-2) + c(n-1)
+    * ...
+* Solution space
+    * Permutation, Combination, etc.
+    * Two Sum, etc.
+* Master method
+    * T(n) = aT(n/b) + n^c
+    * Compare log b a and c
+        * if log b a > c, T(n) = n^(log b a)
+        * if log b a = c, T(n) = n^c *logn
+        * if log b a < c, T(n) = n^c
+* Commonly used time complexities
+
+#### How to get the equation
+* How do you solve the problem?
+* How do you divide the problem into smaller part?
+* Before going into smaller parts, how many operation do you need?
+* After solving smaller parts, how many more operations do you need?
+
 
 
