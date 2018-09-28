@@ -189,5 +189,43 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 * Before going into smaller parts, how many operation do you need?
 * After solving smaller parts, how many more operations do you need?
 
+### Array
+* A data structure consisting of a collection of elements (values or variables), each identiﬁed by at least one array index or key.
+    * Continuous space
+    * Same type elements
+    * Identiﬁed by index
+* Questions - Always ASK before you write code
+    * Second minimum element of the array
+    * Two Sum
+        * could use sort and two pointers O(nlogn)
+        * Two pointers
+            * Use TWO pointers, instead of one, to traverse the array in the same/opposite direction.
+            * Mostly, SORTED. in number order. in sequence order. linked list order.
+            * To ﬁnd two numbers, or two set of numbers, which are subject to some conditions.
+        * could also use HashMap O(n)
+    * Three Sum
+        * sort and two sum O(nlogn) + n * O(n) = O(n^(2))
+    * Summary for k-Sum
+        * Sort.
+        * Try ﬁrst number, use (k-1)-Sum. 
+        * Time Complexity
+            * 2-Sum: O(nlogn) + O(n) = O(nlogn)
+            * 3-Sum: O(nlogn) + O(n^2) = O(n^2)
+            * 4-Sum: O(nlogn) + O(n^3) = O(n^3)
+            * k-Sum: O(nlogn) + O(n^(k-1)) = O(n^(k-1))
+    * Reverse Array
+        * swap and two pointers
+    * Reverse Number
+        * % and / trick
+    * Palindrome Number/String
+        * two pointers
+    * Odd Even Sort || Pivot Sort || Remove Element
+        * two pointers
+        * continuous move(while loop) and then swap
+    * Merge Two Sorted Array
+    * Merge Two Sorted Linked List
+    * Merge K Sorted Array
+        * index manipulation
+
 
 
