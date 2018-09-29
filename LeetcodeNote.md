@@ -796,7 +796,35 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * DFS, BFS
         * Similar to Tree Traversal
         * There could be cycles in graph, so need to mark nodes visited after visiting. Different from tree here.
-            * 3 states: not visited, visiting, visited  
+            * 3 states: not visited, visiting, visited
+
+### Binary Search
+* Search in an Sorted Array
+* Binary search compares the target value to the middle element of the array
+* If they are unequal, the half in which the target cannot lie is eliminated and the search continues on the remaining half until it is successful or the remaining half is empty.
+* It is the fastest way to search in sorted array.
+    ![binary search](https://lh3.googleusercontent.com/-buG9PoSWz6I/W6_21fitPvI/AAAAAAAAAKk/0Hf8wsARrEwAAsg-fbwxrhqIpDDp92xywCHMYCw/I/binary%2Bsearch.png)
+         
+* Search Insert Position
+    ![search Insert position-BS](https://lh3.googleusercontent.com/-FZD37FqA1po/W6_5q-x3uqI/AAAAAAAAAK8/w8gz4Sc-YFIWtAUiL0UC179xR6gJwDVTwCHMYCw/I/search%2BInsert%2Bposition-BS.png)
+    
+* Search in Rotated Sorted Array
+    ![search in rotated array-BS](https://lh3.googleusercontent.com/-XX9k3aUcUiI/W6___Hvi71I/AAAAAAAAALU/1j_2DD60vxAIG6T9fYnlCvU81zajM5dogCHMYCw/I/search%2Bin%2Brotated%2Barray-BS.png)
+* Binary Search Summary
+    * The fastest way to search in sorted array. O(logN)
+    * Be careful with INFINITE LOOP.
+    * int begin = 0, end = nums.length; [begin, end)
+    * int begin = 0, end = nums.length-1; [begin, end]
+    * Condition to terminate the loop
+    * Condition for edge cases
+    * In each loop iteration, there can be only two cases.
+        * The range of [begin, end]/[begin, end) decrease.
+        * Jump out of the loop
+    * Make sure all cases are taken care of before writing code.
+    
+
+
+              
  
     
     
