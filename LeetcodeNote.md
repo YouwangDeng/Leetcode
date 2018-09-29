@@ -592,8 +592,199 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     }
             
     ```
+    
+### Tree & Graph
+#### What is tree?
+* A tree data structure can be deﬁned recursively (locally) as a collection of nodes (starting at a root node), where each node is a data structure consisting of a value, together with a list of references to nodes (the "children"), with the constraints that no reference is duplicated, and none points to the root.  
+
+#### When to Use Tree
+* Simulating a hierarchical tree structure
+    * File System, HTML, Compiler Pattern Recognition, etc.
+* Simulating search space for solutions
+    * DFS, BFS, Decision Tree, etc.
+* Performance Improvement 
+    * Red Black Tree, AVL, B/B+ Tree, etc.
+
+#### Properties
+* The depth of a node is the number of edges from the node to the tree's root node. A root node will have a depth of 0.  
+* Note that depth doesn't make sense for a tree.
+* The height of a node is the number of edges on the longest path from the node to a leaf. A leaf node will have a height of 0.
+* The height of a tree would be the height of its root node, or equivalently, the depth of its deepest node.
+
+#### Binary Tree
+* Types of Binary Tree
+    * Complete Binary Tree
+    * Full Binary Tree
+* Properties of Binary Tree
+    * At Level i, at most 2^i nodes
+    * A tree with height k, at most 2^(k+1)-1 nodes
+    * Complete binary tree
+        * With n nodes, the height will be log<sub>2</sub>(n + 1) − 1
+        * number nodes from the root, then for node k, its children would be 2 * k + 1 and 2 * k + 2
+* Traversal of a Binary Tree
+    * Depth First Search
+        * Tree is a recursive data structure.
+        * PreOrder
+        
+            ```
+            public void preorder(TreeNode root) { 
+                if(root != null) { 
+                    //Visit the node by printing the node data 
+                    System.out.printf("%d ",root.val); 
+                    preorder(root.left); 
+                    preorder(root.right); 
+                } 
+            }
+            ```
+        * InOrder
+
+            ```
+                public void preorder(TreeNode root) { 
+                    if(root != null) { 
+                        //Visit the node by printing the node data 
+                        preorder(root.left); 
+                        System.out.printf("%d ",root.val); 
+                        preorder(root.right); 
+                    } 
+                }
+            ```
+        
+        * PostOrder
+
+            ```
+                public void preorder(TreeNode root) { 
+                    if(root != null) { 
+                        //Visit the node by printing the node data 
+                        preorder(root.left); 
+                        preorder(root.right); 
+                        System.out.printf("%d ",root.val); 
+
+                    } 
+                }
+            ```
+                
+            ![DFS-BT](https://lh3.googleusercontent.com/-d9K9DXhhDVk/W6_Uw3w8vbI/AAAAAAAAAJg/xPhrO6KwNywIThPis4KcRsRFyBTB8-8xwCHMYCw/I/DFS-BT.png)  
+             
+    * Breadth First Search
+        * LevelOrder
+        * Queue will be needed to keep the order
+
+            ```
+            public void levelorder(TreeNode root) { 
+                // BFS 
+                Queue<TreeNode> queue = new LinkedList<>();
+                queue.offer(root);
+                while (!queue.isEmpty()) {
+                    TreeNode top = queue.pop(); 
+                    System.out.printf("%d ", top.val); 
+                    if (top.left != null) {
+                        queue.offer(top.left); 
+                    } 
+                    if (top.right != null) {
+                        queue.offer(top.right); 
+                    }
+                } 
+                return;
+            }
+            ```
+            
+* Questions
+    * Maximum Depth of Binary Tree
+        * recursive solution
+
+            ```
+            public int maxDepth(TreeNode root) { 
+                if (root == null) return 0; 
+                int leftDepth = maxDepth(root.left); 
+                int rightDepth = maxDepth(root.right); 
+                return Math.max(leftDepth, rightDepth) + 1; 
+            }
+            ```    
+    * Minimum Depth of Binary Tree
+        * recursive solution
+
+            ```
+            public int minDepth(TreeNode root) { 
+                if (root == null) return 0; 
+                
+                int leftDepth = minDepth(root.left); 
+                int rightDepth = minDepth(root.right);
+                
+                if (leftDepth == 0) {
+                    return rightDepth + 1; 
+                } else if (rightDepth == 0) {
+                    return leftDepth + 1; 
+                } 
+                
+                return Math.min(leftDepth, rightDepth) + 1; 
+            }
+            ```
+    * Same Tree
+        * recursive solution
+        
+            ```
+            public boolean isSameTree(TreeNode p, TreeNode q) { 
+                if (p == null && q == null) { 
+                    return true; 
+                } else if (p == null || q == null) { 
+                    return false; 
+                } 
+                return p.val == q.val 
+                    && isSameTree(p.left, q.left) 
+                    && isSameTree(p.right, q.right);
+            }            
+            ```
+   * Symmetric Tree Tree
+        * recursive solution
+    
+            ```
+            public boolean isSymmetric(TreeNode root) {
+                if(root == null) {
+                    return true;
+                }
+                return isSymmetric(root.left, root.right);
+            }
+            public boolean isSymmetric(TreeNode left, TreeNode right) {
+                if (left == null && right == null) { 
+                    return true; 
+                } else if (left == null || right == null) { 
+                    return false; 
+                } 
+                return left.val == right.val 
+                    && isSameTree(left.left, right.right) 
+                    && isSameTree(left.right, right.left);
+            }            
+            ```
+            
+    * Path Sum
+        * preorder DFS
+
+#### Binary Search Tree
+* All subtrees are BST
+* All elements in left sub-tree is small than root
+* All elements in Right sub-tree is larger than root
+* If we do InOrder traversal, the result of BST is a sorted array
+* Find  O(logn)
+    ![find-BST](https://lh3.googleusercontent.com/-V5pGWOjiCh8/W6_z37WBVjI/AAAAAAAAAJ4/rAIcx8VIrd41mZtE-RsNBca73WrmHpWOwCHMYCw/I/find-BST.png)
+    
+* Add   O(logn)
+
+    ![add-BST](https://lh3.googleusercontent.com/-3270ldSt1Ds/W6_z-5T2KoI/AAAAAAAAAJ8/OLtbgOHDu6gVfIAdTB8qyU5eIa5-IAdCACHMYCw/I/add-BST.png)
+
+* Remove  O(logn)
+
+    ![remove-2-BST](https://lh3.googleusercontent.com/-l7bHx3g8-hQ/W6_0D8mAhVI/AAAAAAAAAKA/n273nLbogNkW5UKGCRAzknu1jgpfNT-AACHMYCw/I/remove-2-BST.png)
+    ![remove-1-BST](https://lh3.googleusercontent.com/-8cPTM_EaR3c/W6_0D-sW0uI/AAAAAAAAAKE/9brl2Qx1xv0RrRDmbtcLbqzaRNsWznExgCHMYCw/I/remove-1-BST.png)
+    
+* Binary Search Tree - R&B Tree, AVL tree
+    * We know the search time is highly related to the height of the tree. If we keep add and remove elements in the tree, the tree will become unbalanced.
+    * So we have Red-black tree and AVL tree, they could use rotation and reconstruct to make the tree balance.
+ 
+    
+    
 
 
+    
     
     
 
