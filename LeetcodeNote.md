@@ -438,8 +438,112 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
         }
     }
     ```    
+### Recursion
+* Recursion in computer science is a method where the solution to a problem depends on solutions to smaller instances of the same problem (as opposed to iteration).
+* How to solve a problem
+    * Divide into small problems.   
+    * Solve small problems.
+    * Use the result of small problems to solve the original problem.
+    * If the small problems are the same as original one, just scale is diﬀerent. Then this is called recursion.
+* Recursion Properties
+    * Base case
+        * simple scenario that does not need recursion to produce an answer.
+    * Recursion
+        * a set of rules that reduce all other cases toward the base case.
+
+    ```
+    function solveProblem() {
+        divide into small problems;
+        ...
+        ...
+        solveProblem();
+    }
+    ```
+* Code problem with recursion
+    * Base case
+    * recursion rules
+    * Represent the problem with coding function.
+        * Deﬁne the essential parameters
+            * Parameters that deﬁne the problem.
+        * Deﬁne the return value    
+* Questions
+    * Fibonacci Number
+    * Greatest Common Divisor
+    * Binary Search
+    * Towers of Hanoi
+        * Move the ﬁrst (n-1) disk from A to B
+        * Move the nth disk from A to C
+        * Move the other (n-1) disk from B to C
+
+        ```
+        public static void hanoi(int n, char source, char spare, char target) { 
+            if (n > 0) { 
+                hanoi(n-1, source, target, spare);
+                System.out.println("Move " + source + " to " + target); 
+                hanoi(n-1, spare, source, target); 
+            }
+        }
+        ```
+    * Climb Building
+    * Sum of Linked List
+    * Remove Linked List Elements
+    * Reverse Linked List
+
     
-  
+### Backtracking
+* 0-1 Knapsack
+    * Given a knapsack which can hold s pounds of items, and a set of items with weight w1, w2, ... wn. Return whether we can pick speciﬁc items so that their total weight s.
+    * pick it, the problem become (s-w[i], w - w[i])
+    * not pick it, the problem become (s, w - w[i])
+    
+        ```
+        public static boolean knapsack(int s, int[] weights, int index) { 
+            if (s == 0) { 
+                return true;
+            } 
+            if (s < 0 || index >= weights.length) { 
+                return false; 
+            } 
+            return knapsack(s - weights[index], weights, index+1) || knapsack(s, weights, index+1);
+        }
+        ```
+* Maze
+    * Given a maze and a start point and a target point, return whether the target can be reached.
+
+        ```
+        public static boolean solveMaze(char[][] maze, int startX, int startY, int targetX, int targetY, ArrayList<Character> path) {
+            if (startX < 0 || startX >= maze.length 
+                || startY < 0 || startY >= maze[0].length 
+                || maze[startX][startY] == 'X' 
+                || visited[startX][startY]) {
+                return false;
+            }
+            if (startX == targetX && startY == targetY) {
+                return true; 
+            }
+            maze[startX][startY] = 'X';
+            int[] dx = {1, 0, -1, 0};
+            int[] dy = {0, 1, 0, -1};
+            char[] direction = {'D', 'R', 'U', 'L'};
+            for (int i = 0; i < 4; i++) {
+                path.add(direction[i]);
+                if (solveMaze(maze, startX+dx[i], startY+dy[i], targetX, targetY, path)) {
+                    return true;
+                }
+                path.remove(path.size() - 1);
+            }
+            return false;
+        }
+        ``` 
+* Eight Queens
+    * The eight queens puzzle is the problem of placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other.
+* Backtracking Summary
+    * Backtrack = try, iterate, traverse, etc. 
+    * Keep trying (in the search space) until
+        * Solution is found
+        * No more meaningful methods to try (no more search space)
+    * Level-N problem -> M * Level-(N-1) subproblem
+        * Keep states the same when entering subproblem except shared ﬁelds. 
 
 
     
