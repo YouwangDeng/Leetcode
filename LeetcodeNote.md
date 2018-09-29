@@ -544,6 +544,54 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
         * No more meaningful methods to try (no more search space)
     * Level-N problem -> M * Level-(N-1) subproblem
         * Keep states the same when entering subproblem except shared ﬁelds. 
+* Permutation
+    * use backtracking
+
+    ```
+    public List<List<Integer>> permute(int[] num) {
+        List<List<Integer>> results = new ArrayList<List<Integer>>(); 
+        Arrays.sort(num); 
+        permute(results, num, 0); 
+        return results;
+    }
+    public void permute(List<List<Integer>> results, ArrayList<Integer> cur, int[] num) {
+        if (cur.size() == num.length) {
+            results.add(new ArrayList<Integer>(cur)); 
+            return;
+        }
+        for (int i = 0; i < num.length; i++) {
+            if (cur.contains(num[i])) {
+                continue;
+            }
+            cur.add(num[i]); 
+            permute(results, cur, num); 
+            cur.remove(cur.size() - 1);
+        }
+    }
+    ```
+* Combination
+    * use backtracking
+
+    ```
+    public List<List<Integer>> combine(int[] nums) {
+        List<List<Integer>> results = new ArrayList<>();
+        combination(results, nums, 0, new ArrayList<Integer>());
+        return results;
+    }
+    public void combination(List<List<Integer>> results, int[] nums, int index, ArrayList<Integer> items) {
+        if (index == nums.length) {
+            results.add(new ArrayList<Integer>(items)); 
+            return;
+        }
+        for (int i = index; i < nums.length; i++) {
+            items.add(nums[i]);
+            combination(results, nums, i+1, items);
+            items.remove(items.size()-1);
+        }
+        combination(results, nums, nums.length, items);
+    }
+            
+    ```
 
 
     
