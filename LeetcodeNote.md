@@ -237,7 +237,15 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 | remove | index/value | void | linear |
 | find | value | boolean | linear |
 
-
+### Java Data Types & Variables
+* Primitive Type - Stack Memory
+    * byte, char, short, int, long, ﬂoat, double, boolean
+    * Passing the COPY of primitive value.
+    * The original variable will NEVER be changed.
+* Reference Type - Heap Memory
+    * Class, Interface, Array, Enum
+    * Type a = new Type();
+    * Passing the COPY of object address.
     
 
 
