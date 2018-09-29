@@ -246,6 +246,100 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * Class, Interface, Array, Enum
     * Type a = new Type();
     * Passing the COPY of object address.
+
+### LinkedList
+* A data structure consisting of a linear collection of data elements, called nodes pointing to the next node by means of pointer.
+    * Each node knows the address of its next node.
+    * The ﬁrst node can represent the whole linked list.
+    * Accessing any element in the linked list, needs going through all nodes before it. O(n).
+    * Sometimes, the node also knows the address of its previous node, then the list is known as "Doubly Linked List".
+* Cost of array resizing is very large, so we need to set capacity in advance
+* Usually we don't know how much space we need
+
+| Operation | Input | Output | Time Complexity |
+| --- | --- | --- | --- |
+| get | index | value | linear |
+| set | index, value | void | linear |
+| add | [index],value | void | linear |
+| remove | index/value | void | linear |
+| offer | value | value | constant |
+| poll | void | value | constant |
+| push | value | value | constant |
+| pop | void | value | constant |
+| peek | void | value | constant |
+
+* dummy.next can represent original linked list.
+* If data structure of the linkedlist will be changed, dummy node is needed.
+    * add, remove.
+* One node can only be accessed by its previous node.
+* Linked List in interview
+    * For most cases, there will only one head node given.
+        * No size.
+        * Check null when using while.
+        * while (cur != null) { // do something }
+        * while (pre.next != null) { // do something }
+    * Communication before you write code !!!
+        * size, index range, tail, etc.
+* Questions
+    * Linked list length.
+    * Kth node from the end.
+        * two pointers
+        * slow and fast
+        * fast ahead of slow kth nodes
+    * Mid node of the list.
+        * two pointers
+        * slow and fast
+        * fast speed is twice of slow speed
+        * while (fast.next != null && fast.next.next != null) the order matters a lot
+    * Whether circle exists.
+        * two pointers
+        * slow and fast
+        * fast speed is twice of slow speed
+    * Linked List Cycle - Follow up
+        * Given a linked list, return the node where the cycle begins or null.
+        ![circle start position](https://lh3.googleusercontent.com/-60qn8LTF3G8/W67R0r6AEDI/AAAAAAAAAJE/MOfM8lqMyXMD7tGBRtVdc73nCr0MVXupQCHMYCw/I/circle%2Bstart%2Bposition.png)
+        
+        ```
+        public ListNode detectCycle(ListNode head) { 
+            ListNode fast = head, slow = head; 
+            while (fast != null && slow != null) { 
+                if (fast.next != null) { 
+                    fast = fast.next.next;
+                } else { 
+                    return null;
+                }
+                slow = slow.next;
+                if (fast == slow) { 
+                    ListNode temp = head; 
+                    while (temp != slow) { 
+                        temp = temp.next; 
+                        slow = slow.next; 
+                    } 
+                return slow;
+                }
+            } 
+            return null;
+        }
+        ```
+    * Remove Duplicate from Sorted List
+        * appear once
+            * use one pointer
+        * delete all duplicate
+            * use dummy node
+            * use one pointer
+    * Reverse Linked List
+        * three pointers
+        * pre, cur, and temp
+    * Swap Nodes in Pairs
+        * use dummy node
+        * use three pointers
+        * pre, first, and second
+    * Merge Sorted List
+        * use dummy node
+    * Null Pointer Exception be carful        
+
+
+    
     
 
 
