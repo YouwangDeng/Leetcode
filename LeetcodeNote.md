@@ -779,6 +779,24 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 * Binary Search Tree - R&B Tree, AVL tree
     * We know the search time is highly related to the height of the tree. If we keep add and remove elements in the tree, the tree will become unbalanced.
     * So we have Red-black tree and AVL tree, they could use rotation and reconstruct to make the tree balance.
+
+### Graph
+* A graph data structure consists of a ﬁnite (and possibly mutable) set of vertices or nodes or points, together with a set of unordered pairs of these vertices for an undirected graph or a set of ordered pairs for a directed graph.
+* These pairs are known as edges, arcs, or lines for an undirected graph and as arrows, directed edges, directed arcs, or directed lines for a directed graph.
+* Undirected graph
+* Directed graph
+    * Directed Acylic Graph
+        * DFS
+        * Topological Sort
+* Graph Representation
+    * GraphNode
+    * Adjacent matrices
+    * Adjacent lists
+* Graph Traversal
+    * DFS, BFS
+        * Similar to Tree Traversal
+        * There could be cycles in graph, so need to mark nodes visited after visiting. Different from tree here.
+            * 3 states: not visited, visiting, visited  
  
     
     
