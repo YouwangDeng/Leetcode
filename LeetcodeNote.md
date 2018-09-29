@@ -235,7 +235,7 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
 | set | index, value | void | constant |
 | add | [index],value | void | linear |
 | remove | index/value | void | linear |
-| find | value | boolean | linear |
+| contains | value | boolean | linear |
 
 ### Java Data Types & Variables
 * Primitive Type - Stack Memory
@@ -336,7 +336,110 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
         * pre, first, and second
     * Merge Sorted List
         * use dummy node
-    * Null Pointer Exception be carful        
+    * Null Pointer Exception be carful
+
+### Stack & Queue
+* Stack: LIFO (Last in ﬁrst out)
+    * Stack<Type> stack = new Stack<>();
+    * push, pop, peek O(1)
+    * Implementation 
+        * Based on array
+        * elements, size, capacity
+* When to use Stack?
+    * Invoke a function
+    * Recursion (This is a special case of the ﬁrst)
+    * DFS (Depth-ﬁrst Search) (This is a special case of the second)
+* Stack in Operating System
+    * Stack and Heap
+    * Stack is faster
+        * primitive variables, function calls
+    * Heap can dynamically allocate space
+        * reference variables.
+* Queue: FIFO (First in ﬁrst out)
+    * Queue<Type> queue = new LinkedList<>();
+    * offer(add), poll(remove), peek O(1)
+    * LinkedList is used to implement features for Queue in Java
+    * use front and rear to implement Queue in array
+* When to use Queue?
+    * BFS (Breadth-ﬁrst Search)
+    * Priority Queue (Heap)
+    * Multi Task Queue (Design)
+* Implement Queue using Stacks
+    * use two stacks
+* Max Stack
+    * Design a stack that supports push, pop, top, and retrieving the maximum element in constant time.
+    * push(x) -- Push element x onto stack.
+    * pop() -- Removes the element on top of the stack.
+    * top() -- Get the top element.
+    * getMax() -- Retrieve the maximum element in the stack.    
+    * use two stacks, one stack normal, one stack store the simultaneous max value with the same size as the normal stack
+* Valid Parentheses
+    * use one stack
+    * What if we want to return the number of valid pairs?
+        * Return half of the length of the string.    
+* Decode String
+    * use one stack
+    * If it's number, update the number for the repeating times, push it into stack
+    * If it's '[', push the previous string into the stack and try to get the new string that needs to be repeated.
+    * If it's ']', the current string is ﬁnished, the previous string + repeating_times * current_string
+    * If it's other characters, update the current string.
+* spell of punctuation marks
+    * 'exclam'＝'!'
+    * 'full stop' = '.'
+    * 'comma' = ','
+    * 'colon' = ':'
+    * 'semicolon' = ';'
+    * 'at'＝'@'
+    * 'numbersign'＝'#'
+    * 'dollar'＝'$'
+    * 'percent'＝'%'
+    * 'caret'＝'^'
+    * 'ampersand'＝'&'
+    * 'asterisk'＝'*'
+    * 'parenleft'＝'('
+    * 'parenright'＝')'
+    * 'minus'＝'-'
+    * 'underscore'＝'_'
+    * 'equal'＝'='
+    * 'plus'＝'+'
+    * 'bracketleft'＝'['
+    * 'braceleft'＝'{'  
+* Largest Rectangle in Histogram
+    * Given n non-negative integers representing the histogram's bar height where the width of each bar is 1, ﬁnd the area of largest rectangle in the histogram.
+    * Keep one bar as long as it could possibly get a better result
+    * Using a stack to maintain the order
+    * Only add one bar if it is larger
+
+    ```
+    public int largestRectangleArea(int[] height) {
+        int maxArea = 0; 
+        java.util.Stack<Integer> stack = new java.util.Stack<Integer>(); 
+        for (int i = 0; i <= height.length; i++) {
+            int newHeight = i == height.length ? 0 : height[i];
+            if (stack.empty() || height[stack.peek()] < newHeight) { 
+                stack.push(i); 
+            } else {
+                int start = stack.pop(); 
+                int width = stack.empty() ? i : i - stack.peek() - 1; 
+                maxArea = Math.max(maxArea, height[start] * width); 
+                i--;
+            }
+        }
+        return maxArea;
+    }
+    ```
+* Missing Number
+    * use swap to reorder orders to continuous array
+    
+    ```
+    for (int i = 0; i < nums.length; i++) {
+        while (nums[i] != i && nums[i] < nums.length) {
+            swap(nums, i, nums[i]); 
+        }
+    }
+    ```    
+    
+  
 
 
     
