@@ -840,7 +840,49 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
              }
          });  
          ```
- 
+
+### HashMap
+* In computing, a hash table (hash map) is a data structure used to implement an associative array, a structure that can map keys to values.
+* Why to use HashMap
+    * We need to store a mapping relationship
+    * It is time-consuming to ﬁnd something in Array
+    * If we can calculate the index by the object we want to store, then ﬁnding will become O(1).
+        * use key to calculate index
+* Basic Operations
+    * size()
+    * isEmpty()
+    * containsValue(value) (not commonly used)
+    ![hashmap-operation](https://lh3.googleusercontent.com/-6mNDTvq3UKo/W7L_T_SbQ4I/AAAAAAAAAMI/lZyLFV3L2q8fmWNX8RAfTDeWlZgSjhKdACHMYCw/I/hashmap-operation.png)
+* HashMap is a array based data structure
+    * HashMap is to store <key, value> pair
+    * Use key to calculate index for the array
+    * put <key, value> pair into the right position
+* Implementation
+    * Hash function (how to map)
+        * Mod function
+    * Collision resolve
+        * Expand the space (Load Factor)
+            * Load factor: size/capacity
+            * Usually resize when load factor is larger than 0.75
+        * Open hashing
+            * Use a linked list (outside array) to store all collision elements
+        * Closed hashing
+            * Store collision elements somewhere else in the array
+* HashSet
+    * add, contains, remove
+* HashMap Iteration
+    
+    ```
+    for (Map.Entry<String, String> entry : map.entrySet()) { 
+        System.out.println("Key: " + entry.getKey() + " Value: " + entry.getValue()); 
+    }
+    ```
+* Questions
+    * Two Sum
+    * Word Pattern
+        * use two HashMap
+    * Group Anagrams
+        * Sort and put in Hashmap    
      
 
 
