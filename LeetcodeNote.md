@@ -823,8 +823,25 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * Make sure all cases are taken care of before writing code.
 
 ### Sorting
+     
+  ![sort-algorithms](https://lh3.googleusercontent.com/-50SW5TeUoqQ/W7L2l13GqzI/AAAAAAAAALw/78XYn4HqfT4G_Dhuy6GiwUdgIiQ1dTlMwCHMYCw/I/sort-algorithms.png)
+* Questions
+    * Sort Colors
+        * bucket sort
+    * Insert Sort List
+        * Insertion Sort
+    * Merge Intervals
     
-    
+         ```
+         Collections.sort(Type, new Comparator<Type>(){
+             @Override
+             public int compare(Type a, Type b){
+                return a.start - b.start;
+             }
+         });  
+         ```
+ 
+     
 
 
               
