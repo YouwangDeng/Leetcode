@@ -254,6 +254,7 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * Accessing any element in the linked list, needs going through all nodes before it. O(n).
     * Sometimes, the node also knows the address of its previous node, then the list is known as "Doubly Linked List".
 * Cost of array resizing is very large, so we need to set capacity in advance
+* ListIterator<Integer> iter = list.listIterator(list.size());//把iterator放在最后的位置
 * Usually we don't know how much space we need
 
 | Operation | Input | Output | Time Complexity |
