@@ -247,6 +247,13 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * Type a = new Type();
     * Passing the COPY of object address.
 
+### Inheritance and Polymorphism
+* JComponent comp = new CarComponent();
+* comp.getWheels(); doesn't compile
+* CarComponent carComp = (CarComponent) comp;
+* carComp.getWheels(); will compile
+    
+
 ### LinkedList
 * A data structure consisting of a linear collection of data elements, called nodes pointing to the next node by means of pointer.
     * Each node knows the address of its next node.
