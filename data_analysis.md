@@ -4,6 +4,8 @@
     * 3 ** 2 = 9
     * type(x)
     * bool: True False
+    * and not or
+    * if elif else remember the : sign
     * print("I started with $" + str(savings))
     * python list [a,b,c]
         * could contain different types
@@ -42,6 +44,8 @@
     * num[1]
     * num > 10 return a bool array
     * num[num > 10] return the desired array, ps: use [] not ()
+    * np.logical_and(num > 10, num < 20) return a bool array
+    * np.logical_or() np.logical_not()
     * 2D numpy array: create with a list built with several lists
         * num_2d[0][1] or num_2d[0,1] num_2d[:,1:3]
         * num_2d.shape return the dimension of 2d array , ps no () 
@@ -74,6 +78,29 @@
     * check if one key is in dict, use key in my_dict, this will return a boolean
     * delete a pair in dict use del(my_dict['key'])
 * Pandas
+    * high level data manipulation tool
+    * built on numpy
+    * use a dict to organize data first, keys are column labels, values are data column by column
+    * import pandas as pd
+    * my_frame = pd.DataFrame(my_dict)
+    * my_frame.index = [row labels,]
+    * could also make a frame from csv files, csv stands for comma separated value
+    * my_frame_2 = pd.read_csv("path/to/file.csv", index_col = 0)
+    * use my_frame['col_name'] to get a column values, return a pandas series data type, not a frame, if use my_frame[['col_name']], would return a data frame
+    * could use my_frame[['col_name1','col_name2']] to get multiply columns
+    * could use my_frame[1:4] to get row 1,2,3 values
+    * loc - label based
+        * my_frame.loc[['row-label']]
+        * my_frame.loc[['row-label1', 'row-label2']]  get row values
+        * my_frame.loc[:,['col-label1', 'col-label2']]  get col values
+        * my_frame.loc[['row-label1', 'row-label2'], ['col-label1', 'col-label2']] would return a intersection of this frame
+    * iloc - integer position based
+        * my_frame.iloc[[1]]
+        * my_frame.iloc[[1,2,3]]
+        * my_frame.iloc[[1,2,3],[0,1]]
+        * my_frame.iloc[:,[0,1]]
+
+        
 
 
 
