@@ -1,5 +1,79 @@
 # DataCamp Data Scientist with Python track
-* 
+* Python
+    * 5/2 = 2.5
+    * 3 ** 2 = 9
+    * type(x)
+    * bool: True False
+    * print("I started with $" + str(savings))
+    * python list [a,b,c]
+        * could contain different types
+        * num[0], num[-1]
+        * num[3:5] return 3 and 4
+        * num[:3] return 0,1,2
+        * nums[3:] return 3,4,5,...
+        * add two list
+        * delete element:del(elem)
+        * num2 = num, just copy the reference
+        * num2 = list(num) or num2 = num[:] will create a new list
+    * fuctions
+        * built in functions
+            * max(list_a)
+            * round(1.49,1) = 1.5 round(1.49) = 1
+            * help(round) open the documentation of round()
+            * len(list_a)
+            * sorted(iterable, key=None, reverse=False)
+            * num.index(elem)
+            * num.count(elem)
+            * s is a string, s.capitalize() return the first character capitalized string
+            * s.replace('a','bc'), s.index('a')
+            * but list do not have replace method
+            * list_a.append(elem) list.remove(elem) remove the first element that matchs list.reverse()
+            * s.upper() return all capitalized string
+            * s.count('a')
+        * packages
+            * import numpy 
+            * import numpy as np
+            * from numpy import array
+* NumPy
+    * numeric python
+    * alternative to python list: numpy array
+    * numpy array can only contain single data type
+    * num is a numpy array
+    * num[1]
+    * num > 10 return a bool array
+    * num[num > 10] return the desired array, ps: use [] not ()
+    * 2D numpy array: create with a list built with several lists
+        * num_2d[0][1] or num_2d[0,1] num_2d[:,1:3]
+        * num_2d.shape return the dimension of 2d array , ps no () 
+        * np.mean(num_2d[:,0]) same with median
+        * np.corrcoef(num_2d[:,0],num_2d[:,1])
+        * np.std(num_2d[:,0])
+        * np.sum(), np.sort()
+* Matplotlib
+    * import matplotlib.pyplot as plt
+    * plt.plot(x,y) x and y both are one dimension array
+    * plt.show()
+    * plt.scatter(x, y) and plt.show() to get the scatter plot
+    * plt.xscale('log') Put the x-axis on a logarithmic scale
+    * Histogram: get idea about distribution
+    * plt.hist(x, bins = 3), plt.show() bins are default as 10
+    * plt.clf() clean the plot
+    * plt.xlable('lable for x')
+    * plt.ylable('lable for y')
+    * plt.title('title for the plot')
+    * plt.yticks([0,2,4,8],['0','2B','4B','8B'])
+    * plt.scatter(x,y,s=z, c = col_dict, alpha = 0.8) customized the plot with size of each bubble, alpha stands for degree of transparent 
+    * plt.text(xNum, yNum, 'string') add tags to the plot
+    * plt.grid(True) make grid appears on the plot
+* Dictionary
+    * my_dict = { key:value, key: value}
+    * my_dict.keys() to get an array of keys
+    * my_dict['key'] to get the paired value
+    * keys should be immutable values, list can't be keys
+    * add key value pair just my_dict['key'] = value
+    * check if one key is in dict, use key in my_dict, this will return a boolean
+    * delete a pair in dict use del(my_dict['key'])
+* Pandas
 
 
 
