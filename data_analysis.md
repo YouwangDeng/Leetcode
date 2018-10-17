@@ -6,6 +6,26 @@
     * bool: True False
     * and not or
     * if elif else remember the : sign
+    * while expression :
+    * for elem in nums :
+    * for i in range(10):
+        * 0,1,2,...9
+    * for i in range(1,11):
+        * 1,2,3,..10
+    * for i in range (1,11,3):
+        * 1,4,7,10
+    * enumerate
+        * for index, elem in enumerate(nums, start = 0):
+    * for c in string: 
+        * iterate char by char
+    * for k, v in my_dict.items():
+    * for elem in np_array:
+    * for elem in np.nditer(2D_np_array):
+    * pandas for loop
+        * for label, row in num.iterrows():
+            * return a pandas series
+        * use apply function
+        * num['new_col'] = num['col1'].apply(func_name)
     * print("I started with $" + str(savings))
     * python list [a,b,c]
         * could contain different types
@@ -53,6 +73,10 @@
         * np.corrcoef(num_2d[:,0],num_2d[:,1])
         * np.std(num_2d[:,0])
         * np.sum(), np.sort()
+    * np.random.rand()
+    * np.random.seed(an_int)
+        * use a seed, then the next random generation will return the same value
+    * np.random.randint(start_inclusive, end_delusive)
 * Matplotlib
     * import matplotlib.pyplot as plt
     * plt.plot(x,y) x and y both are one dimension array
@@ -99,6 +123,12 @@
         * my_frame.iloc[[1,2,3]]
         * my_frame.iloc[[1,2,3],[0,1]]
         * my_frame.iloc[:,[0,1]]
+    * filter pandas DataFrame
+        * first num['area']get the column, ps: a pandas series not a frame
+        * second is_huge = num['area'] > 8 compare the value
+        * third num[is_huge]
+        * with one line: num[num['area'] > 8]
+        * use num[np.logical_and(num['area'] > 8, num['area'] < 10)]
 
         
 
