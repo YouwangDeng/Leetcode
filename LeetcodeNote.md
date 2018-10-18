@@ -890,7 +890,13 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * Word Pattern
         * use two HashMap
     * Group Anagrams
-        * Sort and put in Hashmap    
+        * Sort and put in Hashmap
+
+### Google Tech Dev Guide
+* String
+    * str = "Hello, World!"
+    * str2 = str.concat(" Nice Day!")
+    * str2 will be "Hello World! Nice Day!"   
      
 
 
