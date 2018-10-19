@@ -900,7 +900,10 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * str3 = str2.replace('o','0')
     * str3 will be "Hell0 W0rld! Nice Day!" 
 * Array
-    * int[] nums = {1, 2, 3};  
+    * int[] nums = {1, 2, 3}; 
+* Hangman Problem
+* Object
+    *  
      
 
 
