@@ -903,7 +903,21 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
     * int[] nums = {1, 2, 3}; 
 * Hangman Problem
 * Object
-    *  
+    * str
+    * str.equalsIgnoreCase(str2) return a boolean
+    * can not use toArray method to covert a list<Integer> to a int[], could only convert to Integer[] use list.toArray(new Integer[list.size()]) 
+    * HashTable collisions
+        * clustering find next available position
+            * worst case O(n)
+        * seperate chaining insert the element at the head of the linkedlist
+            * worst case will take O(n/k) time to find an element, k is the size of the table, k is constant, so still O(n)
+            * n/k n over k
+            * n * k n times k
+        * to reduce collosions
+            * make use of all info provided by key 
+            * uniformly distributed output across table
+            * map similar keys to very different hash values
+            * use only very fast operations
      
 
 
