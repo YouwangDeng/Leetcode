@@ -81,4 +81,28 @@
         * ...
         * 2019 ES2019
     * Javascript Language Design
-        * 
+        * Where to execute javascript code
+            * Browsers
+            * Node.js
+        * JavaScript Engine execute code
+            * code --> parser --> abstract syntax tree --> conversion to machine code --> code runs
+        * Execution context
+            * a box, a container, or a wrapper which store our variables and in which a piece of our code is evaluated and executed
+            * the global execution context
+                * for code that is not inside any function
+                * in the browser that is the window object
+                * execution stack
+            * Creation phase
+                * creation of variable object(VO)
+                    * the argument object is created, containing all the arguments that were passed to the function
+                    * code is scanned for function declarations: for each function, a property is created in the variable object, pointing to the function
+                    * code is scanned for variable declarations: for each variable, a property is created in the variable object, and set to undefined
+                    * the second and third steps are called hoisting
+                * creation of scope chain
+                    * scope answers the question: where can we access a certain variable
+                    * each new function create a scope
+                    * lexical scoping: a function is lexically within another function gets access to the scope of the outer function
+                * determine value of this variable
+                    * function call "this": points to the global object(window in the browser)
+                    * method call "this": points the object that calls the method
+            * Execution phase
