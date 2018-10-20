@@ -18,7 +18,16 @@
             * Don’t be too candid or you risk coming across as negative. This answer also makes it seem like you’re interested in a job, any job — not this job in particular.
             * Good: “Although I love my current role, I feel I’m now ready for a more challenging assignment and this position really excites me.”
             * I'm a person who thrives in a fast-paced environment, so right now I'm looking for an opportunity to apply my technology expertise, along with my creative problem solving skills at an innovative software company.
-* 
+* what's your greatest weakness?
+    * should be sincere
+    * should not be crucial to the job
+    * offer your solution to this weakness and your progress
+* The biggest mistake you made and what you learn from it?
+* Have you worked with someone you did not like and is difficult to get along with?
+    * working with the person I did not like is stressing, so I decide to work toward this issue. I aimed at understanding the person and knowing what made him behave this way. You did this through engaging a project that involved working with the colleague and by the end of it, I managed to understand the person and worked towards building a positive relationship.
+    * May also mention that one might be wrong, but we should work towards building on strengths rather than concentrating on weaknesses.
+* Have you worked with a coworker who was not shouldering fair share of work?
+    * 
 
 
     
