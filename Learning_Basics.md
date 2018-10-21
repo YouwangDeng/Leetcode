@@ -130,4 +130,23 @@
         * Hide or Display a element
             * document.getElementById('someId').style.display = 'none';
             * document.getElementById('someId').style.display = 'block';
-    * 
+    * Object oriented programming
+        * Objects interacting with one another through methods and properties
+        * used to store data, structure applications into modules and keep code clean
+        * Prototype
+            * every javascript object has a prototype property, which makes inheritance possible in javascript
+            * the prototype property is where we put methods and properties that we want other objects to inherit
+            * the constructor's prototype property is not the prototype of the constructor itself, it is the prototype of all its instances that are created through it
+            * when a certain method or property is called, the search starts from the object, and if it can't be found, the search moves on to the object's prototype, this continues until the method is found: prototype chain
+        * function constructor
+            * var Person = function(name, yearOfBirth, job) { this.name = name; this.yearOfBirth = yearOfBirth; this.job = job; }
+            * Person.prototype.calculateAge = function() {console.log(2018 - this.yearOfBirth);}
+            * Person.prototype.lastName = 'Smith';
+            * var john = new Person('John', 1990, 'teacher');
+            * john.calculateAge();
+            * john.lastName;
+            * john.hasOwnProperty('job') --> true
+            * john.hasOwnProperty('lastName') --> false
+        * function is an object in javascript
+        * callback functions: function passed to a function as an argument and will then be executed
+        * 
