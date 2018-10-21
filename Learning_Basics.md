@@ -106,3 +106,28 @@
                     * function call "this": points to the global object(window in the browser)
                     * method call "this": points the object that calls the method
             * Execution phase
+    * DOM manipulation in JavaScript
+        * DOM: document object model
+        * structured representation of an html document
+        * the DOM is used to connect webpages to scripts like JavaScript
+        * for each html box, there is an object in the DOM that we can access and interact with
+        * querySelector
+            * set an element content
+                * document.querySelector('.something or #something').textContent = valueWantToSet;
+                * document.querySelector('.something or #something').innerHTML = '<em>' + valueWantToSet + '</em>';
+                * faster select id
+                    * document.getElementById('idName').textContent = something;
+            * get an element content
+                * var value = document.querySelector('.something or #something').textContent
+            * change an element css style
+                * document.querySelector('.something or #something').style.propertyWant = something;
+        * Event
+            * document.querySelector('.something or #something').addEventListener('click', function() {});
+        * Get input value
+            * var input = document.querySelector('.something or #something').value;
+        * ClassList add or remove or toggle
+            * document.querySelector('.something or #something').classList.add/remove/toggle('someStyle');
+        * Hide or Display a element
+            * document.getElementById('someId').style.display = 'none';
+            * document.getElementById('someId').style.display = 'block';
+    * 
