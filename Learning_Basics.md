@@ -149,4 +149,17 @@
             * john.hasOwnProperty('lastName') --> false
         * function is an object in javascript
         * callback functions: function passed to a function as an argument and will then be executed
-        * 
+    * closure
+        * function return a customized function
+    * call method 
+        * allow to borrow a method and set "this" variable to another object
+    * apply method
+        * same as call method but arguments are in an array
+    * bind method
+        * similar as call method, but store the borrowed method in a variable
+        * use "this"
+    * prompt
+        * var input = prompt("Please input something");
+        * input get a string
+        * var inputInt = parseInt(prompt("Please input an Integer"));
+        * inputInt get an Integer
