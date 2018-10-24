@@ -918,6 +918,13 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
             * uniformly distributed output across table
             * map similar keys to very different hash values
             * use only very fast operations
+* Constructor rules for class Construction
+    * rule 1
+        * extends Object
+    * rule2 
+        * if there is no constructor in the class, the compiler will insert one constructor with no arguments
+    * Rule3
+        * if there is no super() or this() in the constructor, the compiler will insert one
      
 
 
