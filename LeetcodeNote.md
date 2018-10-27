@@ -969,7 +969,18 @@ public class logProcess {
 ### Recursion
 * Tail Recursion
     * Tail recursion is a special kind of recursion where the recursive call is the very last thing in the function. It's a function that does not do anything at all after recursing.
-    
+* Classical Recursion Problem
+    * Fibonacci Number
+        * Can be solved by DP, which is better
+    * Climbing Stairs
+        * Same as Fibonacci
+    * Merge Sort
+        * We will talk more about that in Sort
+    * Towers of Hanoi
+    * Binary Search
+        * This is a tail Recursion
+* Questions
+    * Gray Code    
      
 
 
