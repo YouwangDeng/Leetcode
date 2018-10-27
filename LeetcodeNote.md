@@ -980,7 +980,31 @@ public class logProcess {
     * Binary Search
         * This is a tail Recursion
 * Questions
-    * Gray Code    
+    * Gray Code
+    
+        ![Screen Shot 2018-10-27 at 14.05.56](https://lh3.googleusercontent.com/-4f1eesL_CSQ/W9TTYhyTSLI/AAAAAAAAAMo/-lRKn6KQU0MBBveG4JjKH2dqnLlQR96hACHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.05.56.png)
+    
+        ![Screen Shot 2018-10-27 at 14.09.59](https://lh3.googleusercontent.com/-QHkx-yAsnMI/W9TUQ7tpTVI/AAAAAAAAAMw/OggexFEbU4QlneAwqGXCzDf84qGyqfcyACHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.09.59.png)
+    * 0-1 Knapsack
+        
+        ![Screen Shot 2018-10-27 at 14.12.45](https://lh3.googleusercontent.com/-C4zHIR-odLM/W9TU66z1zSI/AAAAAAAAAM4/1GiEONGw2u0Jm2v4trAdY5xpFcvdHvqJQCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.12.45.png)
+    * Maze
+        
+        ![Screen Shot 2018-10-27 at 14.18.12](https://lh3.googleusercontent.com/-pu19M1kqQ_8/W9TXECqK-sI/AAAAAAAAANQ/BoOb0caCeTE5W3m_6zij3-DoRlrWUrOIQCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.18.12.png)
+
+        ![Screen Shot 2018-10-27 at 14.18.31](https://lh3.googleusercontent.com/-mRxuPefBVF8/W9TXHpiscuI/AAAAAAAAANU/tH4danzbTpcarMFd11VkojlaqA9Jbe-kgCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.18.31.png)
+
+        ![Screen Shot 2018-10-27 at 14.21.58](https://lh3.googleusercontent.com/-0mdbMOGyovU/W9TXJ2fOSzI/AAAAAAAAANY/adfGSY5Ola05Yycz42va53tTb8Sr3Q1rgCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.21.58.png)
+        
+* Backtracking Summary
+    * Backtrack = try, iterate, traverse, etc.
+    * Keep trying (in the search space) until
+        * Solution is found
+        * No more meaningful methods to try (no more search space)
+    * Level-N problem -> M * Level-(N-1) subproblem
+        * Keep states the same when entering subproblem except shared ﬁelds.
+
+    
      
 
 
