@@ -1029,6 +1029,31 @@ public class logProcess {
     * Generate Parenthesis
         * Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
 
+        ![Screen Shot 2018-10-27 at 15.41.45](https://lh3.googleusercontent.com/-_7qGUDQx71o/W9TpwkH-C8I/AAAAAAAAAPA/VXM9qQURotEJcEK3tmHpGNCUOOi-JLdpwCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B15.41.45.png)
+        
+    * Permutation
+        * Given a collection of distinct numbers, return all possible permutations.
+        
+        ![Screen Shot 2018-10-27 at 15.50.54](https://lh3.googleusercontent.com/-W_i2OVMlw0E/W9Tr5mDDGyI/AAAAAAAAAPM/7w6OSzX39ZU2WjdBF-5KHvPTNbUrgd77QCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B15.50.54.png)
+
+    * Permutation II
+        * Given a collection of ~~distinct~~ numbers, return all possible permutations.
+
+        ![Screen Shot 2018-10-27 at 15.58.52](https://lh3.googleusercontent.com/-NsgFt_-ZJYA/W9Tty12fSTI/AAAAAAAAAPk/1fpDw8ddyYw4EvECOcbIuqyjFTs-OD2FQCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B15.58.52.png)
+
+    * Combination
+        * Given a collection of distinct numbers, return all possible combinations.
+         
+        ![Screen Shot 2018-10-27 at 16.19.48](https://lh3.googleusercontent.com/-BANuRwITXNI/W9TzcjBc-NI/AAAAAAAAAQI/XB4sR1GtAnI8wEgmK2lIdiLXMWL9d7tRgCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B16.19.48.png)
+
+    * Lucky Numbers
+        * 888 is a lucky number. And for each American phone number, we can actually add some operators to make it become 888. For example:
+        * phone number is 7765332111, you will have 7/7\*65\*3+3\*21\*11 = 888 776+5+3\*32+11*1 = 888 ...
+        * We want to get a full list of all the operation equations that can get a certain lucky number. The interface will be List<String> luckyNumbers(String num, int target)
+
+        ![Screen Shot 2018-10-27 at 16.38.59](https://lh3.googleusercontent.com/-UoNTHd2xTEM/W9T3QmrP7mI/AAAAAAAAAQg/ALF4iraJtJU4YUal_j6zCDeSGezmGph0gCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B16.38.59.png)
+
+
 
 
     
