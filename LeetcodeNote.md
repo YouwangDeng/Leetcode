@@ -925,6 +925,45 @@ PriorityQueue<ListNode> pq= new PriorityQueue<ListNode>(lists.length,new Compara
         * if there is no constructor in the class, the compiler will insert one constructor with no arguments
     * Rule3
         * if there is no super() or this() in the constructor, the compiler will insert one
+        
+### Java File Read and Write
+
+```
+import java.io.IOException;
+import java.util.HashMap;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.util.Map;
+
+public class logProcess {
+	public static void main(String[] args) {
+		String fileName = "log.txt";
+		Map<String, Integer> map = new HashMap<>();
+		try (BufferedReader log = new BufferedReader(new FileReader(fileName))) {
+			String record = "";
+			String host = "";
+			while((record = log.readLine()) != null) {
+				host = record.split(" - - ")[0];
+				map.put(host, map.getOrDefault(host, 0) + 1);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		String outputFile = "records_" + fileName;
+		try (BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile, true))) {
+			for(Map.Entry<String, Integer> entry : map.entrySet()) {
+				bw.write(entry.getKey() + " " + Integer.toString(entry.getValue()) + "\n");
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+}
+```
+
 
 ## Advanced Review of Data Structures and Algorithms
 ### Recursion
