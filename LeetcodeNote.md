@@ -1003,6 +1003,33 @@ public class logProcess {
         * No more meaningful methods to try (no more search space)
     * Level-N problem -> M * Level-(N-1) subproblem
         * Keep states the same when entering subproblem except shared ﬁelds.
+* Important Problems
+    * Knapsack
+        * Given a set of candidate numbers (C) and a target number (T), ﬁnd all unique combinations in C where the candidate numbers sums to T.
+        * All candidate numbers are unique.
+        * The same repeated number may be chosen from C unlimited number of times.
+        
+        ![Screen Shot 2018-10-27 at 14.40.51](https://lh3.googleusercontent.com/-d8WmiEkFR4g/W9TbeFVFXAI/AAAAAAAAAOE/HqA0E5uBB1E1AR69UOhL79iqqd51Hg6UACHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.40.51.png)
+
+
+        ![Screen Shot 2018-10-27 at 14.38.58](https://lh3.googleusercontent.com/-9v0Nn4FPagI/W9TbTYS8kvI/AAAAAAAAAOA/LRe39teBz-c0zk2cSR5eCoMjPBXmQ4EtwCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.38.58.png)
+        
+    * Knapsack II
+        * Given a collection of candidate numbers (C) and a target number (T), ﬁnd all unique combinations in C where the candidate numbers sums to T.
+        * Candidate numbers may contain duplicate.
+        * Each number in C may only be used once in the combination.
+        
+        ![Screen Shot 2018-10-27 at 14.53.09](https://lh3.googleusercontent.com/-MXOppJ26Ve4/W9TeWyDyo_I/AAAAAAAAAOg/JsTROPE6quoNYdNhYNf2QtwWe3wCWoT8gCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.53.09.png)
+        
+    * 0-1 Knapsack II
+        * Given a knapsack which can hold s pounds of items, and a set of items with weight w1, w2, ... wn. Try to put items into the pack as many as possible, return the largest weight we can get in the knapsack.
+        
+        ![Screen Shot 2018-10-27 at 14.56.21](https://lh3.googleusercontent.com/-R7mclEN-aQo/W9TfG314QQI/AAAAAAAAAOo/S2JVMi-zecc1Qz605djo0KnPLnKKDILeQCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B14.56.21.png)
+
+    * Generate Parenthesis
+        * Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.
+
+
 
     
      
