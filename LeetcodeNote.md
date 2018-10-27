@@ -967,7 +967,8 @@ public class logProcess {
 
 ## Advanced Review of Data Structures and Algorithms
 ### Recursion
-* 
+* Tail Recursion
+    * Tail recursion is a special kind of recursion where the recursive call is the very last thing in the function. It's a function that does not do anything at all after recursing.
     
      
 
