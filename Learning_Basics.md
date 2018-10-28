@@ -171,6 +171,7 @@
     * html
         * head
             * title
+            * \<link rel="stylesheet" type="text/css" href="css/file/path"
         * body 
             * h1
             * p
@@ -180,3 +181,24 @@
             * \<br> for next line, no closing tag
             * \<img src="path/to/img" alt="text to describe the image"> no closing tag
             * \<a href="links or documents such as images" target="_blank">Links Title</a> for links, target set to blank will open a new tab
+# CSS
+* Cascading Style Sheets
+* three ways to write css
+    * css code inside a tag
+        * \<p style="some style">
+    * css code inside a html document
+        * \<style> p { some style }</style>
+    * css code in external file
+        * p { some style }
+* elements
+    * font-size
+    * font-family
+    * color
+    * text-align
+    * global rule just use body selector
+* inheritance
+    * child inherit the properties from the parent element, but same defined property will override the inherited one
+* Colors in CSS
+    * #RRGGBB
+    * for six value is the same, such as #666666 just use #666
+    * could also use transparent attribute, rgba(RR,GG,BB, 0.7)
