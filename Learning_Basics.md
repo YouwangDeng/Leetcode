@@ -173,6 +173,7 @@
             * title
             * \<link rel="stylesheet" type="text/css" href="css/file/path"
         * body 
+            * div
             * h1
             * p
             * strong
@@ -207,4 +208,19 @@
     * id could only be applied to one element
     * use "." to select class
     * use "#" to select id
-* 
+    * use "*" to select all elements
+* CSS Box Model
+    * content: text, img, etc. height and width 
+    * padding: transparent area around the content, inside of the box
+    * boarder: goes around the padding and content
+    * margin: space between boxes margin-bottom ...
+    * use box-sizing to set height and width for entire box
+* block element and inline element
+
+```
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+  }
+```
