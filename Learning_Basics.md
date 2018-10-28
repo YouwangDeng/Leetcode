@@ -202,3 +202,9 @@
     * #RRGGBB
     * for six value is the same, such as #666666 just use #666
     * could also use transparent attribute, rgba(RR,GG,BB, 0.7)
+* Class and IDS
+    * class could be applied to multiple elements 
+    * id could only be applied to one element
+    * use "." to select class
+    * use "#" to select id
+* 
