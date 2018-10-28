@@ -195,6 +195,7 @@
     * font-size
     * font-family
     * color
+    * background-color
     * text-align
     * global rule just use body selector
 * inheritance
@@ -213,14 +214,24 @@
     * content: text, img, etc. height and width 
     * padding: transparent area around the content, inside of the box
     * boarder: goes around the padding and content
-    * margin: space between boxes margin-bottom ...
+    * margin: space between boxes margin-bottom ... margin: top right bottom left;
     * use box-sizing to set height and width for entire box
 * block element and inline element
 
-```
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; 
-  }
-```
+    ```
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+      }
+    ```
+* use container and div and different classed to separate different parts of a page
+* width and height could use"%"
+* use "float" property to place blocks, these blocks are side by side
+* select an image inside of a class use ".className img {}"
+* change a img from square to circle use "border-radius: 50%"
+* Relative and Absolute
+    * position:relative/absolute;
+    * relative elements are relative to each other
+    * absolute elements is independent
+* 
