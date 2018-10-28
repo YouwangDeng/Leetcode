@@ -234,4 +234,30 @@
     * position:relative/absolute;
     * relative elements are relative to each other
     * absolute elements is independent
-* 
+    
+# Typography
+* use a font-size between 15px and 25px for main content
+* use (really) big font size for headlines
+* use line spacing between 120% and 150%
+* 45 - 90 chars per line
+* use good fonts
+    * choose a font which reflects the look and feel you want for your website
+    * decide use sans-serif or serif typeface
+    * use a good font
+    * use only that one typeface
+
+# Colors
+* use only one base color
+* use a tool if you want to use more colors
+* use color to draw attention
+* never use black in your design
+* choose color wisely
+    * <span style="color:red">Red</span> is a great color to use when power, passion, strength and excitement want to be transmitted. Brighter tones are more energetic and darker shades are more powerful and elegant.
+    * <span style="color:orange">Orange</span> draws attention without being as overpowering as red. It means cheerfulness and creativity. Orange can be associated with friendliness, confidence, and courage.
+    * <span style="color:yellow">Yellow</span> is energetic and gives the feeling of happiness and liveliness. Also, it associates with curiosity, intelligence, brightness, etc.
+    * <span style="color:green">Green</span> is the color of harmony, nature, life and health. Also, it is often associated with money. In design, green can have a balancing and harmonizing effect.
+    * <span style="color:blue">Blue</span> means patience, peace, trustworthiness, and stability. It is one of the most beloved colors, especially by men. It is associated with professionalism, trust and honor. That's actually why the biggest social networks use blue.
+    * <span style="color:purple">Purple</span> is traditionally associated with power, nobility and wealth. In your design, purple can give a sense of wisdom, royalty, nobility, luxury, and mystery.
+    * <span style="color:pink">Pink</span> expresses romance, passivity, care, peace, affection, etc.
+    * <span style="color:brown">Brown</span>is the color of relaxation and confidence. Brown means earthiness, nature, durability, comfort, and reliability.
+    * 
