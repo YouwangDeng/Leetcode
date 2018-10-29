@@ -246,7 +246,7 @@
     * use a good font
     * use only that one typeface
 
-# Colors
+# Use of Colors
 * use only one base color
 * use a tool if you want to use more colors
 * use color to draw attention
@@ -260,4 +260,34 @@
     * <span style="color:purple">Purple</span> is traditionally associated with power, nobility and wealth. In your design, purple can give a sense of wisdom, royalty, nobility, luxury, and mystery.
     * <span style="color:pink">Pink</span> expresses romance, passivity, care, peace, affection, etc.
     * <span style="color:brown">Brown</span>is the color of relaxation and confidence. Brown means earthiness, nature, durability, comfort, and reliability.
-    * 
+    
+# Use of Images
+* put text directly on the image
+* overlay the image
+* put your text in a box
+* blur the image
+* the floor fade
+
+# Resources
+* http://codingheroes.io/resources/
+
+# Use of Icons
+* use icons to list features and steps
+* use icons for actions and links
+    * icons should be recognizable
+    * label your icons
+* icons should not take a center stage
+* use icon fonts(vector) whenever possible
+
+# Use of Space and Layout
+* use whitespace
+    * put whitespace between your elements, group of elements, website's sections
+    * don't exaggerate  
+* define hierachy
+    * define where you want your audience to look first
+    * establish a flow that corresponds to your content's message
+    * use whitespace to build that flow
+
+# User Experience
+* user interface is the presentation of a product, how it looks and feels
+* user experience is the overall experience the user has with a product
