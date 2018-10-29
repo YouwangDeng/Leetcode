@@ -291,3 +291,11 @@
 # User Experience
 * user interface is the presentation of a product, how it looks and feels
 * user experience is the overall experience the user has with a product
+
+# Responsive Web Design
+* Fluid grid
+    * all layout elements are sized in relative units(% instead of px)
+* Flexible images
+    * images are also sized in relative images
+* Media Queries
+    * allow us to specify different CSS style rules for different browser widths
