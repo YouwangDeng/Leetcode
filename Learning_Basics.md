@@ -299,3 +299,5 @@
     * images are also sized in relative images
 * Media Queries
     * allow us to specify different CSS style rules for different browser widths
+
+    
