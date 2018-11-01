@@ -13,4 +13,6 @@
 * copy java files use *.java
 
 # 455 Mid Term 2
-* 
+* while Hash Table insert an element, it has first to find if there is already a one in the LinkedList, search costs time
+* Hash Size should be a prime, since we have to use modulus on the size, such as hash code % size
+* for hashCode contract, if a.equals(b), then a.hashCode() == b.hashCode(), the converse contract is not true, if a and b have the same hashCode, it does not mean that a equals b.
