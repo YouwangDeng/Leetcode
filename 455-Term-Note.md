@@ -21,3 +21,28 @@
 * ListIterator<Integer> iter1 = list1.listIterator();
 * use the interface on the exam code handout
 * O(numAL), O(numAL), O(numLL), O(numLL^2) 
+
+    ```
+    public static boolean isSubset(LinkedList<Integer> list,
+                                   LinkedList<Integer> sub) {
+    
+       ListIterator<Integer> iter = list.listIterator();
+       ListIterator<Integer> subIter = sub.listIterator();
+    
+       while (iter.hasNext()) && subIter.hasNext()) {
+          int curr = iter.next();     // values to compare are set at the beginning of the loop
+          int subCurr = subIter.next();
+          if (curr < subCurr) {
+             subIter.previous();    // need to compare subCurr again:
+                                    // may appear later in list
+          }
+          else if (curr > subCurr) {  // means subCurr isn't in list
+             return false;
+          }                           
+          // else just compare the next two elements
+      }
+    
+       return !subIter.hasNext();
+          // if we get to end of list, only true if finished all in subList too
+    }
+    ```
