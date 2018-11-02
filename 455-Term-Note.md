@@ -20,3 +20,4 @@
 * LinkedList<Integer> result = new LinkedList();
 * ListIterator<Integer> iter1 = list1.listIterator();
 * use the interface on the exam code handout
+* O(numAL), O(numAL), O(numLL), O(numLL^2) 
