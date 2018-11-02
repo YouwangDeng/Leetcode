@@ -46,3 +46,5 @@
           // if we get to end of list, only true if finished all in subList too
     }
     ```
+    
+* Object hashCode and equals will return the address of the object
