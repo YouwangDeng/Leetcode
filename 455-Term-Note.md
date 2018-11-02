@@ -48,3 +48,4 @@
     ```
     
 * Object hashCode and equals will return the address of the object
+* class DivBy3Tester implements ConditionTester 
