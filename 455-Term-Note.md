@@ -51,3 +51,4 @@
 * class DivBy3Tester implements ConditionTester
 * This method isn't responsible for the recovery policy for exceptions for this program.
 * The method has a non-void return type and there is no valid return value we could return from this method once this exception occurs.
+* walls = new HashSet<MazeCoord>(); initialize
