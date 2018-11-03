@@ -53,3 +53,20 @@
 * The method has a non-void return type and there is no valid return value we could return from this method once this exception occurs.
 * walls = new HashSet<MazeCoord>(); initialize
 * File inFile = new File(fileName); may also throw FileNotFoundException
+* be careful about recursion method comments
+
+    ```
+    /**
+      Returns a String made up of the words in the subarray of words from location
+      start to the end of words.  In the resulting String, each of the words is 
+      space terminated.  
+      If start == words.length, returns an empty string.
+      PRE: 0 <= start <= words.length
+    */
+    private static String makeStringR(String[] words, int start) {
+       if (start == words.length) {
+          return "";
+       }
+       return words[start] + " " + makeStringR(words, start + 1);
+    }
+    ```
