@@ -70,3 +70,5 @@
        return words[start] + " " + makeStringR(words, start + 1);
     }
     ```
+    
+* mid = str.length() / 2 or (0 + str.length() - 1) / 2
