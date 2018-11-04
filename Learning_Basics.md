@@ -182,6 +182,7 @@
             * \<br> for next line, no closing tag
             * \<img src="path/to/img" alt="text to describe the image"> no closing tag
             * \<a href="links or documents such as images" target="_blank">Links Title</a> for links, target set to blank will open a new tab
+            
 # CSS
 * Cascading Style Sheets
 * three ways to write css
