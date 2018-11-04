@@ -8,7 +8,7 @@
 * dynamic data type
 * console.log()
 * var item = prompt()
-* basic operators
+* basic operators                                         
     * +
     * -
     * *
@@ -20,10 +20,10 @@
         * 77 === '77' false
         * 77 == '77' true
         * === both type and value are equal 
-        * == only value are equal, will conduct type coreciona
+        * == only value are equal, will conduct type corecion
     * !== and !=
     * typeof
-        * var a =10
+        * var a = 10
         * typeof a
         * return number
     * x += 1
