@@ -41,6 +41,7 @@ Note about data structure, problem solutions and mistakes during coding
 * a special binary search
 * mind the edge case, when array 1 or 2 is off or k == 1
 * use recursion
+* remove the less than half since this idea is to find the kth smallest element, each time reduce k by half
 
 ### LRU Cache
 * this is a design problem
@@ -50,7 +51,6 @@ Note about data structure, problem solutions and mistakes during coding
 * the HashMap and DLinkedList hold the same data but in different order, the DLinkedList have the LRU order, the HashMap is used to quickly look up(constant time)
 * don't forget to decrease the count after pop the tail
 * keep update the head
-* use "this"
 * DLinkedList parameter should not be private
 
 ### Note

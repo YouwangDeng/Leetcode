@@ -301,4 +301,8 @@
 * Media Queries
     * allow us to specify different CSS style rules for different browser widths
 
+# SQL
+* SELECT * FROM tableName;
+* SELECT * FROM tableName ORDER BY colName DESC;
+
     
