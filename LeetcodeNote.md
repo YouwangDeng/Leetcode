@@ -22,7 +22,7 @@ Note about data structure, problem solutions and mistakes during coding
 * Stack<type> stack = new Stack<>();
 * Queue<type> queue = new LinkedList<>();
 * compare char equal use " c == '1' "
-* queue.isEmpty() stack.isEmpty stack.empty()
+* queue.isEmpty() stack.isEmpty() stack.empty()
 * reduce time complexity: traverse the input first to get the key relations and store it in HashMap, then when solve problems use that relations in HashMap. this could help avoid time limited error
 * s.substring(a, b) s.toCharArray() s.charAt()
 * use StringBuilder .toString() Integer.valueOf
@@ -101,6 +101,7 @@ Note about data structure, problem solutions and mistakes during coding
 * check left < right first then && nums operation
 * use Arrays.asList(a,b,c); instead of new ArrayList<>() and then add element to it
 * be careful about the duplicate element, use while or if to avoid duplicate
+* three places to skip duplicated elements
 
 ### Roman to Integer
 * use array to store the value first
