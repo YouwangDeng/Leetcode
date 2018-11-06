@@ -77,3 +77,16 @@
 * ArrayList<String> stooges = Arrays.asList(1,2,3); will not work
 * List<String> stooges = Arrays.asList(new int[] {1, 2, 3}); will  not work
 * List<String> stooges = Arrays.asList(new Integer[] {1, 2, 3}); will work
+* use Collections.sort(list, new Comaprator<Type>(){})
+* treeMap or treeSet type must have compareTo method, also should have equals and hashCode method
+
+    ```
+    public class ClassName implements Comparable<ClassName> {
+        @Override
+        public int compareTo(ClassName other) {
+            return this.someProperty - other.someProperty;
+        }
+    }
+         
+    ```
+
