@@ -72,3 +72,4 @@
     ```
     
 * mid = str.length() / 2 or (0 + str.length() - 1) / 2
+* private static final int INITIAL_CAPACITY = 10; avoid magic number
