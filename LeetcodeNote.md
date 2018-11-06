@@ -1053,6 +1053,18 @@ public class logProcess {
         * We want to get a full list of all the operation equations that can get a certain lucky number. The interface will be List<String> luckyNumbers(String num, int target)
 
         ![Screen Shot 2018-10-27 at 16.38.59](https://lh3.googleusercontent.com/-UoNTHd2xTEM/W9T3QmrP7mI/AAAAAAAAAQg/ALF4iraJtJU4YUal_j6zCDeSGezmGph0gCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B16.38.59.png)
+     
+## Best time to buy and sell stock （buy and sell at most once)
+* use minSoFar track the min value so far
+* use max to track the max profit: price - minSoFar
+
+## Best time to buy and sell stock （can buy and sell any times)
+* find any increase part and add them up
+
+## 
+
+   
+    
 
 
 
