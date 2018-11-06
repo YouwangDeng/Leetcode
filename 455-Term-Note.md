@@ -89,4 +89,6 @@
     }
          
     ```
+    
+* In Java, treeMap is based on black-red tree, HashMap is base on hashCode and equals, PriorityQueue is base on Min-Heap
 
