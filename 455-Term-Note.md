@@ -73,3 +73,7 @@
     
 * mid = str.length() / 2 or (0 + str.length() - 1) / 2
 * private static final int INITIAL_CAPACITY = 10; avoid magic number
+* List<String> stooges = Arrays.asList(1,2,3); will work
+* ArrayList<String> stooges = Arrays.asList(1,2,3); will not work
+* List<String> stooges = Arrays.asList(new int[] {1, 2, 3}); will  not work
+* List<String> stooges = Arrays.asList(new Integer[] {1, 2, 3}); will work
