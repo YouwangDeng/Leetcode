@@ -1079,7 +1079,16 @@ public class logProcess {
         return profit[2][prices.length - 1];
     }
     ```
-* optimization process: first original formula O(n^2) and then eliminate the duplicate calculation of min, to O(k*n), could also swap the for loop to compress the DP from 2D to 1D to decrease space complexity 
+* optimization process: first original formula O(n^2) and then eliminate the duplicate calculation of min, to O(k*n), could also swap the for loop to compress the DP from 2D to 1D to decrease space complexity
+* for k is very big, use another algorithm to solve the problem, avoid time limited or memory limited 
+
+## Product of Array Except Self
+* could not use division and must be O(n)
+* multiply by the left part and the right part
+* original version use linear space
+* use res array first to store left n - 1 product, and update res from right to left, this method would only use constant space
+
+
 
    
     
