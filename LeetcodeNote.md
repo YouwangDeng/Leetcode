@@ -1054,14 +1054,31 @@ public class logProcess {
 
         ![Screen Shot 2018-10-27 at 16.38.59](https://lh3.googleusercontent.com/-UoNTHd2xTEM/W9T3QmrP7mI/AAAAAAAAAQg/ALF4iraJtJU4YUal_j6zCDeSGezmGph0gCHMYCw/I/Screen%2BShot%2B2018-10-27%2Bat%2B16.38.59.png)
      
-## Best time to buy and sell stock （buy and sell at most once)
+## Best time to buy and sell stock I（buy and sell at most once)
 * use minSoFar track the min value so far
 * use max to track the max profit: price - minSoFar
 
-## Best time to buy and sell stock （can buy and sell any times)
+## Best time to buy and sell stock II（can buy and sell any times)
 * find any increase part and add them up
 
-## 
+## Best time to buy and sell stock III (at most buy k times)
+* use DP formula 
+` dp[k, i] = max(dp[k, i-1], prices[i] - prices[j] + dp[k-1, j-1]), j=[0..i-1]`
+
+    ```
+    public int maxProfit(int[] prices) {
+        if(prices.length < 2) return 0;
+        int[][] profit = new int[3][prices.length];
+        for(int k = 1; k < 3; k++) {
+            int min = prices[0];
+            for(int j = 1; j < prices.length; j++) {
+                min = Math.min(min, prices[j] - profit[k - 1][j - 1]);
+                profit[k][j] = Math.max(profit[k][j - 1], prices[j] - min);
+            }
+        }
+        return profit[2][prices.length - 1];
+    }
+    ```
 
    
     
