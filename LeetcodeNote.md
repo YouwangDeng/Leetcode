@@ -1061,9 +1061,9 @@ public class logProcess {
 ## Best time to buy and sell stock II（can buy and sell any times)
 * find any increase part and add them up
 
-## Best time to buy and sell stock III (at most buy k times)
+## Best time to buy and sell stock III & IV (at most buy k times)
 * use DP formula 
-` dp[k, i] = max(dp[k, i-1], prices[i] - prices[j] + dp[k-1, j-1]), j=[0..i-1]`
+` dp[k, i] = max(dp[k, i-1], prices[i] - prices[j] + dp[k-1, j-1]), j=[0..i]`
 
     ```
     public int maxProfit(int[] prices) {
@@ -1079,6 +1079,7 @@ public class logProcess {
         return profit[2][prices.length - 1];
     }
     ```
+* optimization process: first original formula O(n^2) and then eliminate the duplicate calculation of min, to O(k*n), could also swap the for loop to compress the DP from 2D to 1D to decrease space complexity 
 
    
     
