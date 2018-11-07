@@ -1088,7 +1088,26 @@ public class logProcess {
 * original version use linear space
 * use res array first to store left n - 1 product, and update res from right to left, this method would only use constant space
 
+## Regular Expression Matching
+* use DP f[s.length() + 1][p.length() + 1]
+* base case:
+    * f[0][0] = true;
+    * f[k][0] = false, f[0][2*k -1] = false for k >= 1
+    * for p.charAt(2k - 1) == '*', f[0][2k - 2] = f[0][2k]
+* DP formula:
 
+    ```
+    for (int i = 1; i <= s.length(); i++) {
+        for (int j = 1; j <= p.length(); j++) {
+            if (p.charAt(j - 1) != '*') {
+                f[i][j] = f[i - 1][j - 1] && isCharMatch(s.charAt(i - 1), p.charAt(j - 1));
+            } else {
+                f[i][j] = f[i][j - 2] || f[i - 1][j] && isCharMatch(s.charAt(i - 1), p.charAt(j - 2));
+            }
+        }
+    }
+    ```
+* return f[s.length()][p.length()]    
 
    
     
