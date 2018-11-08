@@ -1108,8 +1108,8 @@ public class logProcess {
     }
     ```
 * return f[s.length()][p.length()]    
-
-   
+## Jewels and Stones
+* s is a Sting, could not use for(char c : s)  
     
 
 
