@@ -396,6 +396,7 @@ default value in arguments
 * call a template:
     * int k = sum<int>(i,j);
     * double h=sum<double>(f,g);
+* The main difference between objects in general in C++ and Java is that the first statement above that declares the vector also creates the object and initializes it (i.e., it calls the default constructor for vector). So v holds the vector itself, not a reference to it. (You will get a compile error if you try to assign a "new" expression to it.)
 
 
 
