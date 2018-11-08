@@ -305,4 +305,83 @@
 * SELECT * FROM tableName;
 * SELECT * FROM tableName ORDER BY colName DESC;
 
+# C++
+![Screen Shot 2018-11-07 at 15.18.07](https://lh3.googleusercontent.com/-JX5gH1E_RvQ/W-NyyuBDBoI/AAAAAAAAARU/Iav_z0p3M1w1q0IEEdp2DzAekR8nr_i6QCHMYCw/I/Screen%2BShot%2B2018-11-07%2Bat%2B15.18.07.png)
+* 75         // decimal
+* 0113       // octal
+* 0x4b       // hexadecimal  
+* 75         // int
+* 75u        // unsigned int
+* 75l        // long
+* 75ul       // unsigned long 
+* 75lu       // unsigned long 
+* 3.14159    // 3.14159
+* 6.02e23    // 6.02 x 10^23
+* 1.6e-19    // 1.6 x 10^-19
+* 3.0        // 3.0
+* 3.14159L   // long double
+* 6.02e23f   // float 
+* 'z'
+* 'p'
+* "Hello world"
+* "How do you do?"
+
+    ![Screen Shot 2018-11-07 at 15.22.30](https://lh3.googleusercontent.com/-sLd2PDekUQU/W-N0DW3SqZI/AAAAAAAAARg/7RT-8JgI2rodnn7SEnaOI6rogsvCYruuACHMYCw/I/Screen%2BShot%2B2018-11-07%2Bat%2B15.22.30.png)
+* x = "string expressed in \
+two lines" is equivalent to x = "string expressed in two lines"
+* bool foo = true;
+bool bar = false;
+int* p = nullptr;
+* const double pi = 3.1415926;
+const char tab = '\t';
+* \#define PI 3.14159  do not require semicolons (;) at the end;
+* \#define NEWLINE '\n'  do not require semicolons (;) at the end; 
+* Explicit type casting operator
+    * int i;
+    * float f = 3.14;
+    * i = (int) f;
+    * i = int (f);
+    * both are ok
+* sizeof
+    * This operator accepts one parameter, which can be either a type or a variable, and returns the size in bytes of that type or object: 
+    * x = sizeof (char);
+
+    ![Screen Shot 2018-11-07 at 15.37.56](https://lh3.googleusercontent.com/-oBEv3-kDg8w/W-N3hP-xJII/AAAAAAAAASE/gCsQ1Vj51DQhY1CHV1s9vTxDeZp5QyyjgCHMYCw/I/Screen%2BShot%2B2018-11-07%2Bat%2B15.37.56.png)
+* cout << "I am " << age << " years old and my zipcode is " << zipcode;
+* cout << "First sentence.\n"; is the same as cout << "First sentence." << endl;
+* int age; cin >> age;
+* cin >> a >> b; is same as cin >> a; cin >> b;
+* cin extraction always considers spaces (whitespaces, tabs, new-line...) as terminating the value being extracted, and thus extracting a string means to always extract a single word, not a phrase or an entire sentence.
+* To get an entire line from cin, there exists a function, called getline, that takes the stream (cin) as first argument, and the string variable as second. For example: getline (cin, mystr);
+* The standard header <sstream> defines a type called stringstream that allows a string to be treated as a stream, and thus allowing extraction or insertion operations from/to strings in the same way as they are performed on cin and cout. This feature is most useful to convert strings to numerical values and vice versa. For example, in order to extract an integer from a string we can write:
+    * string mystr ("1204");
+    * int myint;
+    * stringstream(mystr) >> myint;
+* string concatenate (string a, string b)
+{
+  return a+b;
+}
+pass arguments by copy of value
+* string concatenate (string& a, string& b)
+{
+  return a+b;
+}
+pass arguments by reference, could modify the value of reference 
+* string concatenate (const string& a, const string& b)
+{
+  return a+b;
+}
+pass arguments by reference, could not modify the value of reference 
+* int divide (int a, int b=2)
+{
+  int r;
+  r=a/b;
+  return (r);
+}
+default value in arguments
+* Functions cannot be called before they are declared. That is why, in all the previous examples of functions, the functions were always defined before the main function, which is the function from where the other functions were called. 
+* The prototype of a function can be declared without actually defining the function completely, giving just enough details to allow the types involved in a function call to be known. Naturally, the function shall be defined somewhere else, like later in the code. But at least, once declared like this, it can already be called.
+
+
+
     
