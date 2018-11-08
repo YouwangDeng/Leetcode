@@ -383,6 +383,20 @@ default value in arguments
 * The prototype of a function can be declared without actually defining the function completely, giving just enough details to allow the types involved in a function call to be known. Naturally, the function shall be defined somewhere else, like later in the code. But at least, once declared like this, it can already be called.
 * Overload 
 * In C++, two different functions can have the same name if their parameters are different; either because they have a different number of parameters, or because any of their parameters are of a different type. 
+* a efficient way for overloading is template
+
+    ```
+    template <class T>
+    T sum (T a, T b) {
+      T result;
+      result = a + b;
+      return result;
+    }
+    ```
+* call a template:
+    * int k = sum<int>(i,j);
+    * double h=sum<double>(f,g);
+
 
 
 
