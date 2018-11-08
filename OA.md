@@ -653,6 +653,17 @@ public boolean isValidChar(int num) {
 
 # Akuna Capital OA
 
+两个Section，S1 & S2，S1小题（选择题）10道左右，20min。S2一道Python编程题。
+S1：比较重基础知识，B树、排序、二进制补码等都有涉及，总体不算难，碰到了几道地里的原题，这里要感谢这个面经贴：https://www.1point3acres.com/bbs/thread-450890-1-1.html
+注意：S1只有20min，所以还是要抓紧时间赶紧做，而做完一道题一定要点题下面绿色的submit按钮，否则答案是不保存的。我有一道题忘了点，结果到时间了等于白做了一题。
+
+S2：Order Marking，地里的老题了，可参考 https://www.1point3acres.com/bbs/thread-295824-1-1.html，本身不难，就是题干略长，读题要花点功夫。
+
+https://www.jianshu.com/p/e29d07b92415
+
+core skill是9道选择题+1道填空题。内容包括unit testing，mutex，tree traversal, function call。20分钟。
+
+
 
 
 
