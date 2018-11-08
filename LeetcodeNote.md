@@ -1109,7 +1109,10 @@ public class logProcess {
     ```
 * return f[s.length()][p.length()]    
 ## Jewels and Stones
-* s is a Sting, could not use for(char c : s)  
+* s is a Sting, could not use for(char c : s)
+
+## Palindrome Number
+* reverse the number and compare the value with the original one  
     
 
 
