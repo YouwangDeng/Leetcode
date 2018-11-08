@@ -1113,6 +1113,13 @@ public class logProcess {
 
 ## Palindrome Number
 * reverse the number and compare the value with the original one  
+
+## Remove Invalid Parentheses
+* avoid duplicate results
+    * store last_i and last_j
+    * skip the same pair
+    * return after the for loop
+* reverse the string and reuse the code
     
 
 
