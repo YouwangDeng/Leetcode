@@ -1120,6 +1120,23 @@ public class logProcess {
     * skip the same pair
     * return after the for loop
 * reverse the string and reuse the code
+
+## Fruit Into Baskets
+* store the pre and cur fruit and number and update the lastIndex
+* could also use a HashMap, more generic
+* careful about the last element
+
+## Letter Combinations of a Phone Number
+* convert a char digit to a digit, use int digit = c - 'a';
+* StringBuilder path = new StringBuilder();
+* path.append("abc");
+* path.delete(int start, int end);
+* could use both DFS and BFS way to solve the problem;
+* BFS is simpler and much more elegant
+
+## Search in Rotated Sorted Array
+* compare the mid with begin and end to find isLeftSorted or isRightSorted
+* 
     
 
 
