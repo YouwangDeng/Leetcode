@@ -667,6 +667,9 @@ core skill是9道选择题+1道填空题。内容包括unit testing，mutex，tr
 多选:  B tree ，unit test， testing features， SOLID， 读程序题（就是普通loop，或者找最大最小），基本排序算法复杂度
 填空: 了解一下找最大公约数，然后就是for loop计算
 
+## B tree
+* In computer science, a B-tree is a self-balancing tree data structure that maintains sorted data and allows searches, sequential access, insertions, and deletions in logarithmic time. The B-tree is a generalization of a binary search tree in that a node can have more than two children.[1] Unlike self-balancing binary search trees, the B-tree is well suited for storage systems that read and write relatively large blocks of data, such as discs. It is commonly used in databases and file systems.
+
 
 
 
