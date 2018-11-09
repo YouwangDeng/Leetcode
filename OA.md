@@ -663,7 +663,9 @@ https://www.jianshu.com/p/e29d07b92415
 
 core skill是9道选择题+1道填空题。内容包括unit testing，mutex，tree traversal, function call。20分钟。
 
-
+20min 多选题 + 填空
+多选:  B tree ，unit test， testing features， SOLID， 读程序题（就是普通loop，或者找最大最小），基本排序算法复杂度
+填空: 了解一下找最大公约数，然后就是for loop计算
 
 
 

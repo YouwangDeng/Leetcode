@@ -1137,6 +1137,10 @@ public class logProcess {
 ## Search in Rotated Sorted Array
 * compare the mid with begin and end to find isLeftSorted or isRightSorted
 * four cases, must be clear
+
+## Search in Rotated Sorted Array II contain duplicates
+* the only difference from the first one, trickly case, such as 3 1 2 3 3 3 3, so have to increase left and decrease right, so we can be clear about which part is ordered
+* other code is simillar
     
 
 
