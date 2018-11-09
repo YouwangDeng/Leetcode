@@ -1136,7 +1136,7 @@ public class logProcess {
 
 ## Search in Rotated Sorted Array
 * compare the mid with begin and end to find isLeftSorted or isRightSorted
-* 
+* four cases, must be clear
     
 
 
