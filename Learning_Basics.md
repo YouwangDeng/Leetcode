@@ -398,6 +398,14 @@ default value in arguments
     * double h=sum<double>(f,g);
 * The main difference between objects in general in C++ and Java is that the first statement above that declares the vector also creates the object and initializes it (i.e., it calls the default constructor for vector). So v holds the vector itself, not a reference to it. (You will get a compile error if you try to assign a "new" expression to it.)
 
+# 源码、反码、补码
+* 原码就是符号位加上真值的绝对值, 即用第一位表示符号, 其余位表示值. 
+* 正数的反码是其本身，负数的反码是在其原码的基础上, 符号位不变，其余各个位取反.
+* 正数的补码就是其本身，负数的补码是在其原码的基础上, 符号位不变, 其余各位取反, 最后+1. (即在反码的基础上+1)
+* 原码true code ，反码ones-complement code， 补码 twos-complement code 
+
+
+
 
 
 
