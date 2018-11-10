@@ -1141,6 +1141,11 @@ public class logProcess {
 ## Search in Rotated Sorted Array II contain duplicates
 * the only difference from the first one, trickly case, such as 3 1 2 3 3 3 3, so have to increase left and decrease right, so we can be clear about which part is ordered
 * other code is simillar
+
+## Next Closest Time
+* use DFS to backtracking all possible times
+* special case in DFS, remember to return
+* use String[] s = new String[1] and int[] min = new int[1] to pass reference and avoid usage of global variable
     
 
 
