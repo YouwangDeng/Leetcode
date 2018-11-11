@@ -1146,6 +1146,12 @@ public class logProcess {
 * use DFS to backtracking all possible times
 * special case in DFS, remember to return
 * use String[] s = new String[1] and int[] min = new int[1] to pass reference and avoid usage of global variable
+
+## Meeting Rooms I check if can attend all meetings 
+* to sort the array, use Arrays.sort not Collections.sort
+* sort and compare the start and end
+
+## Meeting Room II 
     
 
 
