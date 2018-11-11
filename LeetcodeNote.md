@@ -1151,7 +1151,10 @@ public class logProcess {
 * to sort the array, use Arrays.sort not Collections.sort
 * sort and compare the start and end
 
-## Meeting Room II 
+## Meeting Room II minimum meeting rooms needed
+* use two Comparator, first sort the intervals according to the start
+* add the intervals into a PriorityQueue according to the end
+
     
 
 
