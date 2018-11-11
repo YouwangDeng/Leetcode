@@ -1159,6 +1159,11 @@ public class logProcess {
 * could format from the end to the beginning, find chance to append "-"
 * % trick: sb.length() % (k + 1) == k, instead of sb.length() % k == 0
 
+## Serialize and Deserialize Binary Tree
+* use StringBuilder, define it in the function, then pass it to the recursive solution, don't have to use array reference
+* index have to use array reference, if want to change the index globally
+* TreeNode preorder traversal 
+
 
 
 
