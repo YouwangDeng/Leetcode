@@ -59,6 +59,18 @@
 * React is not a framework (unlike Angular, which is more opinionated).
 * React is used to build user interfaces (UI) on the front end.
 * React is the view layer of an MVC application (Model View Controller)
+* As you’ve seen, we’ve been using what looks like HTML in our React code, but it’s not quite HTML. This is JSX, which stands for JavaScript XML.
+* JSX is actually closer to JavaScript, not HTML, so there are a few key differences to note when writing it.
+    * className is used instead of class for adding CSS classes, as class is a reserved keyword in JavaScript.
+    * Properties and methods in JSX are camelCase – onclick will become onClick.
+    * Self-closing tags must end in a slash – e.g. <img />
+* JavaScript expressions can also be embedded inside JSX using curly braces, including variables, functions, and properties.
+
+    ```
+    const name = 'Tania';
+    const heading = <h1>Hello, {name}</h1> ;
+    ```
+* 
     
 ## Redux
 ## React Router
