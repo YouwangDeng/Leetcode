@@ -1155,7 +1155,9 @@ public class logProcess {
 * use two Comparator, first sort the intervals according to the start
 * add the intervals into a PriorityQueue according to the end
 
-    
+## License Key Formatting
+* could format from the end to the beginning, find chance to append "-"
+* % trick: sb.length() % (k + 1) == k, instead of sb.length() % k == 0
 
 
 
