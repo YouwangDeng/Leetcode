@@ -70,7 +70,11 @@
     const name = 'Tania';
     const heading = <h1>Hello, {name}</h1> ;
     ```
-* 
+* A class component must include render(), and the return can only return one parent element.
+* props is read-only, state can change
+* To update the state, we’ll use this.setState(), a built-in method for manipulating state. 
+* The new aspect to this code is componentDidMount(), a React lifecycle method. Lifecycle is the order in which methods are called in React. Mounting refers to an item being inserted into the DOM.
+* When we pull in API data, we want to use componentDidMount, because we want to make sure the component has rendered to the DOM before we bring in the data. 
     
 ## Redux
 ## React Router
