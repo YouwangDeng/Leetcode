@@ -104,9 +104,8 @@ Note about data structure, problem solutions and mistakes during coding
 * three places to skip duplicated elements
 
 ### Roman to Integer
-* use array to store the value first
-* switch case usage
-* manipulate the data first the apply algorithm, this is more efficient
+* use HashMap cache the roman number
+* loop from the end to the beginning, store pre value, determine add or decrease 
 
 ### Trapping water
 * use leftMax and rightMax from edge to center
