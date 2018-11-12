@@ -1165,6 +1165,7 @@ public class logProcess {
 
 ## Word Break
 * can not use greedy algorithm
+* use HashSet to cache list of words, contains method of set will consume only constant time, but for list will cost linear time
 * use DP to solve the problem, base case and formula
 
 
