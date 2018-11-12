@@ -1168,6 +1168,10 @@ public class logProcess {
 * use HashSet to cache list of words, contains method of set will consume only constant time, but for list will cost linear time
 * use DP to solve the problem, base case and formula
 
+## Next Permutation
+* find the logic, from the end to the beginning, find the change location, find the next minimum change loc, swap, and reverse
+* use function to build the structure
+
 
 
 
