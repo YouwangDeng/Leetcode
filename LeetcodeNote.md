@@ -1163,6 +1163,10 @@ public class logProcess {
 * index have to use array reference, if want to change the index globally
 * TreeNode preorder traversal 
 
+## Word Break
+* can not use greedy algorithm
+* use DP to solve the problem, base case and formula
+
 
 
 
