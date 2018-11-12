@@ -79,7 +79,11 @@
 ## Redux
 ## React Router
 ## Socket.io
+## Express
+* a lightweight web framework based on Node.js
 ## MongoDB
+* use mongoose library to connect mongoDB with Express
+* mongoose find and findOne are different, the former return an array, the second return a object(dict)
 
 # QuickSearch - Scrapy and Django search application
 ## Impacts
