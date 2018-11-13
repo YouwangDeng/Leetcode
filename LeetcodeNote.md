@@ -1172,6 +1172,12 @@ public class logProcess {
 * find the logic, from the end to the beginning, find the change location, find the next minimum change loc, swap, and reverse
 * use function to build the structure
 
+## Minimum Window Substring
+* use a HashMap to cache data
+* use a queue to store next move position
+* use two pointers to indicate the length
+* use while loop to update the left pointer
+
 
 
 
