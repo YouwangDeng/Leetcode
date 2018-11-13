@@ -1178,6 +1178,10 @@ public class logProcess {
 * use two pointers to indicate the length
 * use while loop to update the left pointer
 
+## Generate Parentheses
+* use a String and "+", instead of a StringBuilder, because they will share a same reference, same with left and right indicator
+* when left < n, increase left, when left > right, increase right
+
 
 
 
