@@ -1182,6 +1182,8 @@ public class logProcess {
 * use a String and "+", instead of a StringBuilder, because they will share a same reference, same with left and right indicator
 * when left < n, increase left, when left > right, increase right
 
+## Fizz Buzz
+* no constructor for new String(int), could only use Integer.toString(int) to convert a int to a String
 
 
 
