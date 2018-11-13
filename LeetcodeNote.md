@@ -1185,6 +1185,11 @@ public class logProcess {
 ## Fizz Buzz
 * no constructor for new String(int), could only use Integer.toString(int) to convert a int to a String
 
+## Move Zeroes
+* first write a swap function
+* swap between 0 position and nonzero position, and increase left by 1.
+* could also fill the array from the beginning with nonzero values, and fill the rest array with 0.
+
 
 
     
