@@ -1190,6 +1190,10 @@ public class logProcess {
 * swap between 0 position and nonzero position, and increase left by 1.
 * could also fill the array from the beginning with nonzero values, and fill the rest array with 0.
 
+## Spiral Matrix
+* use rowBegin, rowEnd, colBegin, colEnd four pointers to solve the problem
+* constrains about the row and col should update with the while loop
+
 
 
     
