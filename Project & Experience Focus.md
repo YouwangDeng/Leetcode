@@ -85,6 +85,10 @@
 * use mongoose library to connect mongoDB with Express
 * mongoose find and findOne are different, the former return an array, the second return a object(dict)
 
+## note
+* 代码重利用
+* 写代码就像搭积木，很多components, 但是比较麻烦的事参数的传递，redux
+
 # QuickSearch - Scrapy and Django search application
 ## Impacts
 ## Scrapy
