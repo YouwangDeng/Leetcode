@@ -404,6 +404,13 @@ default value in arguments
 * 正数的补码就是其本身，负数的补码是在其原码的基础上, 符号位不变, 其余各位取反, 最后+1. (即在反码的基础上+1)
 * 原码true code ，反码ones-complement code， 补码 twos-complement code 
 
+## C++ pointers
+* *p++   // same as *(p++): increment pointer, and dereference unincrement address
+* *++p   // same as *(++p): increment pointer, and dereference incremented address
+* ++*p   // same as ++(\*p): dereference pointer, and increment the value it points to
+* (*p)++ // dereference pointer, and post-increment the value it points to 
+
+
 
 
 
