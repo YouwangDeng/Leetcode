@@ -410,6 +410,19 @@ default value in arguments
 * ++*p   // same as ++(\*p): dereference pointer, and increment the value it points to
 * (*p)++ // dereference pointer, and post-increment the value it points to 
 
+    ```
+    int x;
+          int *       p1 = &x;  // non-const pointer to non-const int
+    const int *       p2 = &x;  // non-const pointer to const int
+          int * const p3 = &x;  // const pointer to non-const int
+    const int * const p4 = &x;  // const pointer to const int 
+    const int * p2a      = &x;  //      non-const pointer to const int
+    int const * p2b      = &x;  // also non-const pointer to const int 
+    ```
+    
+* But they can also be accessed directly. String literals are arrays of the proper array type to contain all its characters plus the terminating null-character, with each of the elements being of type const char (as literals, they can never be modified)
+    
+
 
 
 
