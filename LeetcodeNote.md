@@ -1194,6 +1194,11 @@ public class logProcess {
 * use rowBegin, rowEnd, colBegin, colEnd four pointers to solve the problem
 * constrains about the row and col should update with the while loop
 
+## Alien Dictionary
+* the  lexicographically order is compare by column, no concern with row
+* use degree map and a queue to do BFS, use a map to store the data
+* set has to be declared in the outer scope
+
 
 
     
