@@ -1199,6 +1199,10 @@ public class logProcess {
 * use degree map and a queue to do BFS, use a map to store the data
 * set has to be declared in the outer scope
 
+## Friend Circles
+* find a unvisited person, add 1 to count, dfs relationship with this person, find relation, continue dfs
+* 2D array relation, line by line search, jump between lines
+
 
 
     
