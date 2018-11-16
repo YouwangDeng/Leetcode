@@ -1203,6 +1203,10 @@ public class logProcess {
 * find a unvisited person, add 1 to count, dfs relationship with this person, find relation, continue dfs
 * 2D array relation, line by line search, jump between lines
 
+## Merge Sorted Array
+* shift array from left to right, start from the end one
+* bottom-up solution is better
+
 
 
     
