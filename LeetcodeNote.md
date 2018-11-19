@@ -1252,7 +1252,13 @@ public class logProcess {
 
 ## Max Area of Island
 * use DFS to traverse the 2D array, return an int
-* be careful about the variable name 
+* be careful about the variable name
+
+## String to Integer (atoi)
+* take all conditions into consideration
+* refractor the code, make it more clean, and more readable
+* avoid nested if and else
+* if do not want to use long, could use Integer.MAX_VALUE / 10, but have to take care of the last digit 
 
 
 
