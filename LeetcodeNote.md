@@ -1260,6 +1260,10 @@ public class logProcess {
 * avoid nested if and else
 * if do not want to use long, could use Integer.MAX_VALUE / 10, but have to take care of the last digit 
 
+## Group Anagrams
+* convert a char array to a string, use new String(cArr);
+* if List is a value in the HashMap, directly use map.get(key).add(item), but remember to initialize put a new ArrayList in it.
+
 
 
     
