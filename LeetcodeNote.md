@@ -1250,6 +1250,10 @@ public class logProcess {
 * shift array from left to right, start from the end one
 * bottom-up solution is better
 
+## Max Area of Island
+* use DFS to traverse the 2D array, return an int
+* be careful about the variable name 
+
 
 
     
