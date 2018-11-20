@@ -323,8 +323,6 @@
 * 6.02e23f   // float 
 * 'z'
 * 'p'
-* "Hello world"
-* "How do you do?"
 
     ![Screen Shot 2018-11-07 at 15.22.30](https://lh3.googleusercontent.com/-sLd2PDekUQU/W-N0DW3SqZI/AAAAAAAAARg/7RT-8JgI2rodnn7SEnaOI6rogsvCYruuACHMYCw/I/Screen%2BShot%2B2018-11-07%2Bat%2B15.22.30.png)
 * x = "string expressed in \
