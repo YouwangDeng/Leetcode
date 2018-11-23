@@ -77,8 +77,25 @@
 * When we pull in API data, we want to use componentDidMount, because we want to make sure the component has rendered to the DOM before we bring in the data. 
     
 ## Redux
-## React Router
+* use redux to manage store and update store
+* use redux-thunk library to deal with asynchronous actions
+* use react-redux to connect react and redux, no need to write subscribe, just use connect and provider
+* provider 组件在应用最外层，传入一次store即可
+* connect负责从外部获取组件需要的参数
+## React Router 4
+* router library
+* BrowserRouter, Link, Switch
+* BrowserRouter embraces whole app component, inside of Provider
+* Route corresponds to components
+* Link used to redirection
+* Redirect 组件跳转
+* Switch only render one component
+* 有多个reducer需要合并多个reducer为一个
 ## Socket.io
+* 如何存储数据，user， chat数据存储方式
+* 前后端联调，使用axios发送异步请求，端口不一致如何发送，使用proxy配置转发，部署出问题可能是因为这个
+* axois拦截器，对所有数据进行拦截，做loading处理时需要用到
+* redux里使用异步数据渲染页面
 ## Express
 * a lightweight web framework based on Node.js
 ## MongoDB
