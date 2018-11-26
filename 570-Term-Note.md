@@ -14,3 +14,8 @@
     ![Screen Shot 2018-11-24 at 15.44.24](https://lh3.googleusercontent.com/-a6bYgBELUXE/W_niZGm9L8I/AAAAAAAAASk/DZ52TinjU5EOmOy7LHVtfc2sI_PonGeAACHMYCw/I/Screen%2BShot%2B2018-11-24%2Bat%2B15.44.24.png)
 
     ![Screen Shot 2018-11-24 at 16.43.04](https://lh3.googleusercontent.com/-iQafykY6Qow/W_nwI0dL2NI/AAAAAAAAAS8/t5g_K5ONpG0QXYZ4_toNQand6DVeN-bLACHMYCw/I/Screen%2BShot%2B2018-11-24%2Bat%2B16.43.04.png)
+    
+*  Randomize 
+  
+    ![Screen Shot 2018-11-24 at 23.51.56](https://lh3.googleusercontent.com/-UmF3aIvbb4s/W_pUvPi87dI/AAAAAAAAATY/Yc0oeTmg5jULAISKhVTme54Ay5IuQJ1VwCHMYCw/I/Screen%2BShot%2B2018-11-24%2Bat%2B23.51.56.png)
+
