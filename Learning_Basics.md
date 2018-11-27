@@ -420,6 +420,8 @@ default value in arguments
     
 * But they can also be accessed directly. String literals are arrays of the proper array type to contain all its characters plus the terminating null-character, with each of the elements being of type const char (as literals, they can never be modified)
     
+* Stack<Character> stack = new Stack<Character>();
+    * must have both types decleared
 
 
 
