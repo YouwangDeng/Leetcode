@@ -41,4 +41,13 @@
             * if and only if 
             * max flow value
             * proof --> <--
-        * 
+        * flow network with low bound
+            * remove lower bound
+                * calculate L(v) = f(in)(v) - f(out)(v)
+                * d'(v) = d(v) - L(v)
+                * update edge capacity
+            * add source s and sink t, add edges turn demand into capacity of edges
+                * may be two cases
+            * find if there is a feasible circulation
+                * total demand value = total supply value
+                * there exists a max flow or min cut
