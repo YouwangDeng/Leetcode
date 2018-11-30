@@ -32,3 +32,13 @@
             * augment through the path
             * repeat until no path found
         * find the min-cut(could be multiple)
+        * construct flow network
+            * vertex
+            * edge
+            * source vertex s
+            * sink vertex t
+            * capacity
+            * if and only if 
+            * max flow value
+            * proof --> <--
+        * 
