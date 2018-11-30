@@ -19,3 +19,16 @@
   
     ![Screen Shot 2018-11-24 at 23.51.56](https://lh3.googleusercontent.com/-UmF3aIvbb4s/W_pUvPi87dI/AAAAAAAAATY/Yc0oeTmg5jULAISKhVTme54Ay5IuQJ1VwCHMYCw/I/Screen%2BShot%2B2018-11-24%2Bat%2B23.51.56.png)
 
+* Notes about answering problems
+    * DP 
+        * OPT defination
+        * formula and base case
+        * pseudo code
+        * time complexity analyze
+    * Max Flow
+        * Ford-Fulkerson algorithm
+            * f(E + V)
+            * find a path DFS
+            * augment through the path
+            * repeat until no path found
+        * find the min-cut(could be multiple)
