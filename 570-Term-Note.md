@@ -63,3 +63,11 @@
                 * create a instance
                 * claim
                     * proof --> <--
+
+        * Linear Programming
+            * max C(T)X 
+            * AX <= b
+            * X >= 0
+            * min B(T)Y
+            * A(T)Y >= C
+            * Y >= 0 
