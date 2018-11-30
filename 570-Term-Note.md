@@ -51,3 +51,15 @@
             * find if there is a feasible circulation
                 * total demand value = total supply value
                 * there exists a max flow or min cut
+        * NP-Complete
+            * independent set -- vertex cover
+            * 3 SAT < IndSet < VTC
+            * 3 SAT < 3 Coloring
+            * SAT < Hamiltonian Cycle Hamiltonian Path
+            * first is a NP problem
+                * certificate
+                * verifier
+            * reduction
+                * create a instance
+                * claim
+                    * proof --> <--
