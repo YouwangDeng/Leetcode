@@ -98,9 +98,12 @@
 * redux里使用异步数据渲染页面
 ## Express
 * a lightweight web framework based on Node.js
+* install cookie-parser, 基于cookie用户验证
 ## MongoDB
 * use mongoose library to connect mongoDB with Express
 * mongoose find and findOne are different, the former return an array, the second return a object(dict)
+* use utility library md5 method and salt string to encode password
+* use express and mongoDB findOne method to verify the user and password
 
 ## note
 * 代码重利用
