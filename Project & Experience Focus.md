@@ -99,11 +99,13 @@
 ## Express
 * a lightweight web framework based on Node.js
 * install cookie-parser, 基于cookie用户验证
+* use cookie to store user id 
 ## MongoDB
 * use mongoose library to connect mongoDB with Express
 * mongoose find and findOne are different, the former return an array, the second return a object(dict)
 * use utility library md5 method and salt string to encode password
 * use express and mongoDB findOne method to verify the user and password
+* use prop-types library to verify property types, func, string or isRequired
 
 ## note
 * 代码重利用
