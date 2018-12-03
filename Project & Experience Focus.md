@@ -98,7 +98,8 @@
 * redux里使用异步数据渲染页面
 * socket.io是基于事件的实时双向通信库
     * 基于websocket协议
-    * 前后端通过时间进行双向通信
+    * 前后端通过时间进行双向通信 
+* Ajax基于http协议，单向，实时获取数据只能轮询
 ## Express
 * a lightweight web framework based on Node.js
 * install cookie-parser, 基于cookie用户验证
