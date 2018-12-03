@@ -96,6 +96,9 @@
 * 前后端联调，使用axios发送异步请求，端口不一致如何发送，使用proxy配置转发，部署出问题可能是因为这个
 * axois拦截器，对所有数据进行拦截，做loading处理时需要用到
 * redux里使用异步数据渲染页面
+* socket.io是基于事件的实时双向通信库
+    * 基于websocket协议
+    * 前后端通过时间进行双向通信
 ## Express
 * a lightweight web framework based on Node.js
 * install cookie-parser, 基于cookie用户验证
@@ -105,7 +108,7 @@
 * mongoose find and findOne are different, the former return an array, the second return a object(dict)
 * use utility library md5 method and salt string to encode password
 * use express and mongoDB findOne method to verify the user and password
-* use prop-types library to verify property types, func, string or isRequired
+* use prop-types library to verify property types, func, string or isRequired 
 
 ## note
 * 代码重利用
