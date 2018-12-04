@@ -117,6 +117,17 @@
 * 代码重利用
 * 写代码就像搭积木，很多components, 但是比较麻烦的事参数的传递，redux
 
+## React 核心原理
+* virtual DOM, tree structure 
+* JSX -- createELement
+* Diff between same level tree node, and update the DOM
+* lifecycle of a Component 
+* shouldComponentUpdate could use to enhance the performance of the App, reduce render times
+* setState method
+    * update the data through a queue
+    * update is asynchronous
+    * never use setState in the render function, as setState will call render, if render call setState, will cause infinite loop
+
 # QuickSearch - Scrapy and Django search application
 ## Impacts
 ## Scrapy
