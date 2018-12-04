@@ -128,6 +128,36 @@
     * update is asynchronous
     * never use setState in the render function, as setState will call render, if render call setState, will cause infinite loop
 
+## Redux 核心原理
+* createStore(reducer)
+    * getState()
+    * subscribe(listener)
+    * dispatch(action)
+
+    ```
+    export function createStore(reducer) {
+        let currentState = {}
+        let currentListeners = []
+        
+        function getState() {
+            return currentState
+        }
+        
+        function subscribe(listener) {
+            currentListeners.push(listener)
+        }
+        
+        function dispatch(action) {
+            currentState = reducer(currentState, action)
+            currentListeners.forEach(v=>v())
+            return action
+        }
+        dispatch({type: '@@redux/INIT'})
+        return { getState, subscribe, dispatch }
+    }
+    ```
+        
+
 # QuickSearch - Scrapy and Django search application
 ## Impacts
 ## Scrapy
