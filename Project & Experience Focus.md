@@ -264,6 +264,18 @@ export function applyMiddleWare(middleware) {
 }
 
 ```
+
+## react-thunk 中间件原理
+* use async function on action
+
+```
+export function thunk = ({dispatch, getState})=>next=>action=>{
+    if(typeof action == 'function') {
+        return action(dispatch, getState)
+    }
+    return next(action)
+}
+```
         
 
 # QuickSearch - Scrapy and Django search application
