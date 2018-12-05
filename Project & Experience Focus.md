@@ -155,7 +155,87 @@
         dispatch({type: '@@redux/INIT'})
         return { getState, subscribe, dispatch }
     }
+    function bindActionCreator(creator, dispatch) {
+        return (...args) => dispatch(creator(...args)
+    }
+    export function bindActionCreators(creators, dispatch) {
+        let bound  = {}
+        Object.keys(creators).forEach(v=>{
+            let creator = creators[v]
+            bound[v] = bindActionCreator(creator, dispatch)
+        })
+        return bound
+    }
     ```
+## react-redux 原理
+* connect is used to connect components and redux, put data in redux into the props in the component
+    * input a Component, put state data into the component(map state to props) and return a new Component
+    * inform the component when the data in state changes
+
+    ```
+    export function connect(mapStateToProps, mapDispatchToProps) {
+        return function(WrapComponent) {
+            return class ConnectComponent extends React.Component {
+                static contextTypes = {
+                    store : PropTypes.object
+                }
+                constructor(props, context) {
+                    super(props, context)
+                    props: {}
+                }
+                componentDidMount(){
+                    const {store} = this.context
+                    store.subscribe(()=>this.update())
+                    this.update()
+                }
+                update(){
+                    const {store} = this.context
+                    const stateProps = mapStateToProps(store.getState())
+                    const dispatchProps = bindActionsCreators(mapDispatchToProps, store.dispatch)
+                    this.setState({
+                        props: {
+                            ...this.state.props,
+                            ...stateProps,
+                            ...dispatchProps,
+                        }  
+                    })
+                }
+                render() {
+                    return <WrapComponent {...this.state.props}></WrapComponent>
+                }
+            }
+        }
+    }
+    OR
+    export const connect = (mapStateToProps=state=>state, mapDispatchToProps={})=>(WrapComponent)=>{
+        return class ConnectComponent extends React.Component {
+                
+        }
+    }
+    
+    
+    ```
+* context
+    * global variable, could be directly used in child components 
+* Provider is used to put store into the context and provide this context for its child components
+
+    ```
+    export  class Provider extends React.Component {
+        static childContextTypes = {
+            store : PropTypes.object
+        }
+        getChildContext() {
+            return {store:this.store}
+        }
+        constructor(props, context) {
+            super(props, context)
+            this.store = props.store
+        }
+        render() {
+            return this.props.children
+        }
+    }
+    ```   
         
 
 # QuickSearch - Scrapy and Django search application
