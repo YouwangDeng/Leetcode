@@ -276,6 +276,9 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
     return next(action)
 }
 ```
+
+## React.PureComponent
+* have shouldComponentUpdate() function, skip the render process of those components that did not change, improve the performance
         
 
 # QuickSearch - Scrapy and Django search application
