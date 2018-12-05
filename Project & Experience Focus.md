@@ -236,6 +236,34 @@
         }
     }
     ```   
+## Middleware 原理
+* 中间件把createStore包一层
+
+```
+export function createStore(reducer, enhancer) {
+    if(enhancer) {
+        return enhancer(createStore)(reducer)
+    }
+    ...
+}
+export function applyMiddleWare(middleware) {
+    return createStore=>(...args)=>{
+        const store = createStore(...args)
+        let dispatch = store.dispatch
+        const midApi = {
+            getState: store.getState,
+            dispatch: (...args)=>dispatch(...args)
+        }
+        dispatch = middleware(midApi)(store.dispatch)
+        return {
+            ...store,
+            dispatch,
+        }
+        
+    }
+}
+
+```
         
 
 # QuickSearch - Scrapy and Django search application
