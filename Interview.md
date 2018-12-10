@@ -1,5 +1,76 @@
 # Interview
 ## SnowFlake Snowflake Computing SDE Intern
+第一轮 skype 视频 + coding
+1. reverse words in a string
+略
+2. Sum up a lot of numbers, in vector and linked list, which is faster, why?
+vector, reasons:
+1) cache locality 2) dereferencing costs CPU cycles 3) compiler optimization: automatic vectorization
+3. kth smallest in an array
+1) priority queue  2)quick select
+4. RGB sort, in one pass
+略
+5. Design distributed storage server, supports fast query to find element at specific percentile e.g. find the element thats top 70% biggest
+histogram updated on the fly
+
+第二轮: skype 音频 + 聊天
+1. Given dictionary, implement autocomplete
+- Trie + backtracking
+2. Given random number generator, calculate pi, how to test?
+略
+
+一个princeton的phd，另一个也是phd，结果没想到对bug free要求很高，感觉他们engineering强出一般的phd不少.....
+第一轮聊的挺开心的，第二轮第一题写的bug百出花了太久。。。move on了。。。
+
+#雪花公司#是做Cloud Data Warehouse的startup，提供的服务属于SaaS。base在SV，linkedIn显示公司规模在50-200人，我估了下developer大概在50%以上，team主力来自oracle和MS。目前基于AWS提供data warehous服务。今年春季拿到D轮100Million。所以应该是在扩招。HR说hiring all year round。BTW：他们在SIGMOD'16 有篇paper介绍设计和架构。似乎只接受官网直投不接受recruiter。
+-baidu 1point3acres
+1轮店面的是个10多年经验的三哥，是从orcal跟过来的，在雪花干了4年多。店面40分钟水果没聊coding。回顾一下，一开始装懂行提问题耗了不少时间，可能也让三哥说的比较畅快愉悦。并没有遇到technical问题，可能是准备留到第二轮专门问，也可能准备扩充队伍所以水了。店面后1小时就收到了HR发的technical screen通知。湾区startup效率还是很高的。
+
+第二轮是skype。啥也没准备就硬着头皮上了。面试官是西雅图分部美国大哥。前20分种聊prev project，问遇到了哪些challenging，怎么解决的。我一开始给自己挖了个坑扯到了不熟悉的项目，之后赶快绕出来了。还问了毕业后安排，学术界还是工业界，and why？后40分钟是coding部分，问题：两组integer找common。很久没练coding只能尬聊，说了个naive solution，勉强写出来。面试官说再写写optimal solution，卡了很久想不出，持续尬聊。最后在他提示下才意识到要hashmap。。。这会儿时间也来不及了。草草收尾。题目主要还是考察SQL相关知识，之后似乎还要往深问memory usage和scale的问题。
+
+总体来说，面试官都很nice，HR回复非常快很有效率。但自己毫无准备水平也不行，只能是简单了解下面试的流程和感受，同时激励着我赶快刷题。很简单的问题就是想不出来，裸奔还是不现实。
+
+
+snowflake是一家做Cloud Data Warehouse的startup
+
+Snowflake
+Pros: 
+1. 做的东西很感兴趣，distributed cloud storage，挺有意思的。而且整个公司算是engineer driven，产品就是技术本身，未来发展基本靠engineer
+2. 里面的人水平很高，即使是和Google相比也完全不落下风。工程师基本是senior以上的级别，大多是从ms，oracle跳来的，招的新人也以phd偏多。
+3. 前景不错。商业模式清晰，近期融了不少的钱，也在扩张中，而且已经有企业用户
+4. 面试体验很好，也很有诚意。面试体验应该是非常好，hr各种秒回邮件，和engineer面试沟通也很愉快，是面的所有公司里体验最好的。
+
+Cons: 
+1. It's a startup 有风险，而且近期没有ipo的计划
+2. cloud warehouse这部分东西aws, azure自己也在做，不知道之后怎么样
+3. 身为new grad比较在乎学习的机会，从cloud/distributed这方面看能学到不少东西，但是如果是更general来看可能Google能学到的东西还是会多一点。这个应该不算事cons，侧重点不同
+
+Round A
+1. reverse word in string (coding)
+ex: I have a pen, I have an apple.
+output: l evah a nep, I evah na elppa.
+reverse words only, keep space and punctuations
+2. sum up 10M numbers of element
+array linkedlist which faster and why
+3.find median in an array
+sort -> find the median
+how to sort?
+merge heap time/space complexity
+quick sort?. check 1point3acres for more.
+how to improve quick sort to O(n)
+Round B
+1. B+ tree and BST compare
+2. implement HashMap from scratch
+what kind of hash function you want to use?
+liner probin, cuckoo hashing
+if the key,value pair exist , don't overwrite value, append it
+ex (a,1) (b,2) (a,3)
+lookup(a) -> 1,3
+lookup(b) -> 2
+
+snowflake 电话. From 1point 3acres bbs
+1. iterator 接口实现 merge k iterator
+2. 有些记不清了，是hashmap相关的
 
 ## Akuna Capital Development Internship - Web
 题是给篇文章，找重复单词。我开始用的set，然后在他的启发下改成了前缀树，虽然我并不知道他满不满意这个数据结构。. check 1point3acres for more.
