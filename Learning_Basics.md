@@ -421,7 +421,15 @@ default value in arguments
 * But they can also be accessed directly. String literals are arrays of the proper array type to contain all its characters plus the terminating null-character, with each of the elements being of type const char (as literals, they can never be modified)
     
 * Stack<Character> stack = new Stack<Character>();
-    * must have both types decleared
+    * must have both types declared
+
+* Comparable
+    * natural ordering of objects
+    * can use Java sort with our application-specific objects
+* Comparator
+    * want to sort our objects in different ordering
+    * can not access the private data
+* Java function is passed by value, not pass by reference, like pass a copy pointer in C++
 
 
 
