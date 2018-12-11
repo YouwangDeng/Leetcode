@@ -91,4 +91,4 @@
     ```
     
 * In Java, treeMap is based on black-red tree, HashMap is base on hashCode and equals, PriorityQueue is base on Min-Heap
-
+* printTicks prototype should not be in the header file.  It's a helper function for printHist, and is not used in the main program.  
