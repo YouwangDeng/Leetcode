@@ -1265,6 +1265,18 @@ public class logProcess {
 * convert a char array to a string, use new String(cArr);
 * if List is a value in the HashMap, directly use map.get(key).add(item), but remember to initialize put a new ArrayList in it.
 
+# Arrays and Strings
+* Hash Tables
+    * A hash table is a data structure that maps keys to values for highly efficient lookup.
+    * If the number of collisions is very high, the worst case runtime is O(N), where N is the number of keys. However, we generally assume a good implementation that keeps collisions to a minimum, in which case the lookup time is 0( 1).
+    * Alternatively, we can implement the hash table with a balanced binary search tree. This gives us an O( log N) lookup time. The advantage of this is potentially using less space, since we no longer allocate a large array. We can also iterate through the keys in order, which can be useful sometimes.
+* Arraylist & Resizable Arrays
+    * An Arraylist is an array that resizes itself as needed while still providing 0(1) access.
+* StringBuilder
+    * normally, string concatenating: on each concatenation,a new copy of the string is created, and the two strings are copied over,character by character.
+    * StringBuilder simply creates a resizable array of all the strings, copying them back to a string only when necessary.
+    * How to implement a StringBuilder
+
 
 
 

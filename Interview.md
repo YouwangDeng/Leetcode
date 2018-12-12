@@ -68,7 +68,7 @@ ex (a,1) (b,2) (a,3)
 lookup(a) -> 1,3
 lookup(b) -> 2
 
-snowflake 电话. From 1point 3acres bbs
+snowflake 电话. 
 1. iterator 接口实现 merge k iterator
 2. 有些记不清了，是hashmap相关的
 
