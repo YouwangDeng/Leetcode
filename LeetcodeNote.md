@@ -1294,7 +1294,11 @@ public class logProcess {
 * One case where stacks are often useful is in certain recursive algorithms. Sometimes you need to push temporary data onto a stack as you recurse, but then remove them as you backtrack (for example, because the recursive check failed). A stack offers an intuitive way to do this.
 * A queue implements FIFO (first-in first-out) ordering. As in a line or queue at a ticket stand, items are removed from the data structure in the same order that they are added.
 * A queue can also be implemented with a linked list. In fact, they are essentially the same thing, as long as items are added and removed from opposite sides.
-* One place where queues are often used is in breadth-first search or in implementing a cache.  
+* One place where queues are often used is in breadth-first search or in implementing a cache.
+
+# Trees and Graphs
+* a tree is actually a type of graph.
+*   
 
 
 
