@@ -1328,6 +1328,22 @@ public class logProcess {
     * Tries (Prefix Trees)
         * A trie is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may represent a word.
         * Very commonly, a trie is used to store the entire (English) language for quick prefix lookups. While a hash table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
+        
+# Graphs
+* A graph is simply a collection of nodes with edges between (some of) them.
+* In terms of programming, there are two common ways to represent a graph.
+    * Adjacency List
+    * Every vertex (or node) stores a list of adjacent vertices. In an undirected graph, an edge like (a, b) would be stored twice: once in a's adjacent vertices and once in b's adjacent vertices.
+    * An array (or a hash table) of lists (arrays, arraylists, linked lists, etc.) can store the adjacency list.
+    * Adjacency Matrices
+    * An adjacency matrix is an NxN boolean matrix (where N is the number of nodes), where a true value at matrix[ i] [j] indicates an edge from node i to node j.
+* Graph Search
+    * depth-first search (DFS) recursive
+        * we start at the root (or another arbitrarily selected node) and explore each branch completely before moving on to the next branch. That is, we go deep first (hence the name depth first search) before we go wide.
+    * breadth-first search (BFS) queue
+        * we start at the root (or another arbitrarily selected node) and explore each neighbor before going on to any of their children. That is, we go wide (hence breadth-first search) before we go deep.
+    * DFS is often preferred if we want to visit every node in the graph. Both will work just fine, but depth-first search is a bit simpler.
+    * However, if we want to find the shortest path (or just any path) between two nodes, BFS is generally better.
 
 
 
