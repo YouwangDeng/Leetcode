@@ -1286,7 +1286,15 @@ public class logProcess {
 * The "Runner"Technique
     * The runner technique means that you iterate through the linked list with two pointers simultaneously, with one ahead of the other. The "fast" node might be ahead by a fixed amount, or it might be hopping multiple nodes for each one node that the "slow" node iterates through.
 * Recursive Problems
-    * recursive algorithms take at least O ( n) space, where n is the depth of the recursive call.    
+    * recursive algorithms take at least O ( n) space, where n is the depth of the recursive call.  
+
+# Stacks and Queues
+* A stack uses LIFO (last-in first-out) ordering. That is, as in a stack of dinner plates, the most recent item added to the stack is the first item to be removed.
+* Note that a stack can also be implemented using a linked list, if items were added and removed from the same side.
+* One case where stacks are often useful is in certain recursive algorithms. Sometimes you need to push temporary data onto a stack as you recurse, but then remove them as you backtrack (for example, because the recursive check failed). A stack offers an intuitive way to do this.
+* A queue implements FIFO (first-in first-out) ordering. As in a line or queue at a ticket stand, items are removed from the data structure in the same order that they are added.
+* A queue can also be implemented with a linked list. In fact, they are essentially the same thing, as long as items are added and removed from opposite sides.
+* One place where queues are often used is in breadth-first search or in implementing a cache.  
 
 
 
