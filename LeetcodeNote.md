@@ -1298,7 +1298,36 @@ public class logProcess {
 
 # Trees and Graphs
 * a tree is actually a type of graph.
-*   
+* Types of Trees
+    * A nice way to understand a tree is with a recursive explanation.
+    * Trees vs. Binary Trees
+        * A binary tree is a tree in which each node has up to two children. Not all trees are binary trees.
+    * Binary Tree vs. Binary Search Tree
+        * A binary search tree is a binary tree in which every node fits a specific ordering property: all descendents <= n < all right descendents. This must be true for each node n.
+    * Balanced vs. Unbalanced
+        * While many trees are balanced, not all are. Ask your interviewer for clarification here. Note that balancing a tree does not mean the left and right subtrees are exactly the same size
+        * Two common types of balanced trees are red-black trees and AVL trees.
+    * A complete binary tree is a binary tree in which every level of the tree is fully filled, except for perhaps the last level. To the extent that the last level is filled, it is filled left to right.
+    * A full binary tree is a binary tree in which every node has either zero or two children. That is, no nodes have only one child.
+    * A perfect binary tree is one that is both full and complete. All leaf nodes will be at the same level, and this level has the maximum number of nodes.
+    * a perfect tree must have exactly 2^k - 1 nodes (where k is the number of levels).
+    * Binary Tree Traversal
+        * In-order traversal means to "visit" (often, print) the left branch, then the current node, and finally, the right branch.
+        * Pre-order traversal visits the current node before its child nodes (hence the name "pre-order").
+        * Post-order traversal visits the current node after its child nodes (hence the name "post-order").
+    * Binary Heaps (Min-Heaps and Max-Heaps)
+        * A min-heap is a complete binary tree
+        * where each node is smaller than its children. The root, therefore, is the minimum element in the tree.
+        * insert
+            * When we insert into a min-heap, we always start by inserting the element at the bottom. We insert at the rightmost spot so as to maintain the complete tree property.
+            * Then, we "fix"the tree by swapping the new element with its parent, until we find an appropriate spot for the element. We essentially bubble up the minimum element.
+            * This takes O( log n) time, where n is the number of nodes in the heap.
+        * Extract Minimum Element
+            * First, we remove the minimum element and swap it with the last element in the heap (the bottommost, rightmost element). Then, we bubble down this element, swapping it with one of its children until the minheap property is restored.
+            * Do we swap it with the left child or the right child? That depends on their values. There's no inherent ordering between the left and right element, but you'll need to take the smaller one in order to maintain the min-heap ordering.
+    * Tries (Prefix Trees)
+        * A trie is a variant of an n-ary tree in which characters are stored at each node. Each path down the tree may represent a word.
+        * Very commonly, a trie is used to store the entire (English) language for quick prefix lookups. While a hash table can quickly look up whether a string is a valid word, it cannot tell us if a string is a prefix of any valid words. A trie can do this very quickly.
 
 
 
