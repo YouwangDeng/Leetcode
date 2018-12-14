@@ -1345,6 +1345,29 @@ public class logProcess {
     * DFS is often preferred if we want to visit every node in the graph. Both will work just fine, but depth-first search is a bit simpler.
     * However, if we want to find the shortest path (or just any path) between two nodes, BFS is generally better.
 
+# Bit Manipulation
+* & | ^ ~
+* bit tricks
+
+    ![Screen Shot 2018-12-13 at 22.25.16](https://lh3.googleusercontent.com/-AlVHJZf09ac/XBNNAOOQ3JI/AAAAAAAAAT4/38Oi9gGfyDc7tWAlzHQLzGFv30ArFbUSgCHMYCw/I/Screen%2BShot%2B2018-12-13%2Bat%2B22.25.16.png)
+    
+* Two's Complement and Negative Numbers
+* Arithmetic vs. Logical Right Shift
+    * >> add sign to the head arithmetic
+    * >>> add 0 to the head logical
+* Common Bit Tasks: Getting and Setting
+    * Get Bit
+        * num & (1 « i)
+    * Set Bit 0->1
+        * num | ( 1 « i)
+    * Clear Bit 1->0
+        * num & (~(1 << i))
+        * To clear all bits from the most significant bit through i (inclusive), we create a mask with a 1 at the ith bit (1 < < i).
+        * num & ((1 << i) - 1)
+        * To clear all bits from i through 0 (inclusive), we take a sequence of all ls (which is -1) and shift it left by i + 1 bits. This gives us a sequence of 1 s (in the most significant bits) followed by i 0 bits.
+        * num & (-1 << (i + 1))
+
+
 
 
 
