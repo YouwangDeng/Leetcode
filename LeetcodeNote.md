@@ -1367,6 +1367,14 @@ public class logProcess {
         * To clear all bits from i through 0 (inclusive), we take a sequence of all ls (which is -1) and shift it left by i + 1 bits. This gives us a sequence of 1 s (in the most significant bits) followed by i 0 bits.
         * num & (-1 << (i + 1))
 
+# Recursion and Dynamic Programming
+* Recursive solutions, by definition, are built off of solutions to subproblems. Many times, this will mean simply to compute f ( n) by adding something, removing something, or otherwise changing the solution for f ( n-1). In other cases, you might solve the problem for the first half of the data set, then the second half, and then merge those results.
+* Bottom-Up Approach
+* Top-Down Approach
+* Half-and-Half Approach
+* Dynamic Programming & Memoization
+* Dynamic programming is mostly just a matter of taking a recursive algorithm and finding the overlapping subproblems (that is, the repeated calls). You then cache those results for future recursive calls.
+
 
 
 
