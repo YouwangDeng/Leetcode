@@ -78,7 +78,7 @@ Collaboration
 Passion
 
 Signals Interviewer want to get from candidate:
-
+* Resume Growing History
 
 ## Akuna Capital Development Internship - Web
 题是给篇文章，找重复单词。我开始用的set，然后在他的启发下改成了前缀树，虽然我并不知道他满不满意这个数据结构。. check 1point3acres for more.
