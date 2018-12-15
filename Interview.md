@@ -72,6 +72,14 @@ snowflake 电话.
 1. iterator 接口实现 merge k iterator
 2. 有些记不清了，是hashmap相关的
 
+Behavioral Questions
+Genuine
+Collaboration
+Passion
+
+Signals Interviewer want to get from candidate:
+
+
 ## Akuna Capital Development Internship - Web
 题是给篇文章，找重复单词。我开始用的set，然后在他的启发下改成了前缀树，虽然我并不知道他满不满意这个数据结构。. check 1point3acres for more.
 
