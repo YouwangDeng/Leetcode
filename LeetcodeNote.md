@@ -1375,6 +1375,11 @@ public class logProcess {
 * Dynamic Programming & Memoization
 * Dynamic programming is mostly just a matter of taking a recursive algorithm and finding the overlapping subproblems (that is, the repeated calls). You then cache those results for future recursive calls.
 
+# Note
+* String
+    * end to start, in place save Space Complexity
+    * 
+
 
 
 
