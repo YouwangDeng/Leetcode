@@ -1378,7 +1378,8 @@ public class logProcess {
 # Note
 * String
     * end to start, in place save Space Complexity
-    * 
+    * use bit manipulation to decrease space complexity
+    * check rotate string, could double rotated string first and then do is substring
 
 
 
