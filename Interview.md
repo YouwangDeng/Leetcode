@@ -23,7 +23,7 @@ histogram updated on the fly
 第一轮聊的挺开心的，第二轮第一题写的bug百出花了太久。。。move on了。。。
 
 #雪花公司#是做Cloud Data Warehouse的startup，提供的服务属于SaaS。base在SV，linkedIn显示公司规模在50-200人，我估了下developer大概在50%以上，team主力来自oracle和MS。目前基于AWS提供data warehous服务。今年春季拿到D轮100Million。所以应该是在扩招。HR说hiring all year round。BTW：他们在SIGMOD'16 有篇paper介绍设计和架构。似乎只接受官网直投不接受recruiter。
--baidu 1point3acres
+
 1轮店面的是个10多年经验的三哥，是从orcal跟过来的，在雪花干了4年多。店面40分钟水果没聊coding。回顾一下，一开始装懂行提问题耗了不少时间，可能也让三哥说的比较畅快愉悦。并没有遇到technical问题，可能是准备留到第二轮专门问，也可能准备扩充队伍所以水了。店面后1小时就收到了HR发的technical screen通知。湾区startup效率还是很高的。
 
 第二轮是skype。啥也没准备就硬着头皮上了。面试官是西雅图分部美国大哥。前20分种聊prev project，问遇到了哪些challenging，怎么解决的。我一开始给自己挖了个坑扯到了不熟悉的项目，之后赶快绕出来了。还问了毕业后安排，学术界还是工业界，and why？后40分钟是coding部分，问题：两组integer找common。很久没练coding只能尬聊，说了个naive solution，勉强写出来。面试官说再写写optimal solution，卡了很久想不出，持续尬聊。最后在他提示下才意识到要hashmap。。。这会儿时间也来不及了。草草收尾。题目主要还是考察SQL相关知识，之后似乎还要往深问memory usage和scale的问题。
@@ -79,6 +79,11 @@ Passion
 
 Signals Interviewer want to get from candidate:
 * Resume Growing History
+
+1.  事先去找找面试官的LinkedIn Profile, 看看面试官的背景，问问他为什么当初选了这家公司，刚进公司的时候有没有什么不适应或者需要注意的地方
+2.  问问面试官现在在做的project, 表示无比崇拜之意
+3.  问问未来公司的roadmap，表示自己对该公司的未来充满希望
+4.  问问组里需要什么样背景的人，然后推销自己
 
 ## Akuna Capital Development Internship - Web
 题是给篇文章，找重复单词。我开始用的set，然后在他的启发下改成了前缀树，虽然我并不知道他满不满意这个数据结构。. check 1point3acres for more.
