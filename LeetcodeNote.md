@@ -1381,6 +1381,12 @@ public class logProcess {
     * use bit manipulation to decrease space complexity
     * check rotate string, could double rotated string first and then do is substring
 
+* LinkedList
+    * Pointers
+    * head and tail
+    * slow and fast
+    * palindrome and stack
+
 
 
 
