@@ -1389,6 +1389,13 @@ public class logProcess {
 
 # New Start
 
+## Game of Life
+* flag states in place and restore use math solution
+* original 1->live 0->dead
+* changed 1->live not change 2->live to dead 3->dead to live
+* restore by % 2
+* make the code clean and easy to read and understand
+
 
 
 
