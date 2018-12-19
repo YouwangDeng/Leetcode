@@ -1387,6 +1387,8 @@ public class logProcess {
     * slow and fast
     * palindrome and stack
 
+# New Start
+
 
 
 
