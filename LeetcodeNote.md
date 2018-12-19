@@ -1396,6 +1396,11 @@ public class logProcess {
 * restore by % 2
 * make the code clean and easy to read and understand
 
+## Subarray Sum Equals K 
+* use a sum HashMap and curSum - k to query the map to get the count
+* first update the curSum, then query, finally add curSum to Map
+
+
 
 
 
