@@ -1400,6 +1400,15 @@ public class logProcess {
 * use a sum HashMap and curSum - k to query the map to get the count
 * first update the curSum, then query, finally add curSum to Map
 
+## 3Sum Closest
+* 3 Sum, first sort then two pointers, keep updating the minDiff
+* O(n^2)
+
+## Insert Delete GetRandom O(1)
+* use an ArrayList and a HashMap, list store the values, and map store the index of each value in the list
+* remove a value form the list, if that value is not the last one then swap it with the last one, update the list and the map, and then delete the last one from the list and delete the val from the map
+* java.util.Random rand = new java.util.Random();
+* rand.nextInt(nums.size());
 
 
 
