@@ -1414,6 +1414,12 @@ public class logProcess {
 * math problem
 * Math.max(tasks.length, (maxFreq - 1) * (n + 1) + numOfMax);
 
+## First Missing Positive
+* goal: O(n) and constant space complexity
+* first use swap to separate the array into two part, the first part is positive and the second part is negative, return the partition point
+* treat positive num as index, flag the index's value to be negative
+* find the first positive index, that's the missing value
+
 
 
 
