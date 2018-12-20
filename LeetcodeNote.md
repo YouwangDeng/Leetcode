@@ -1410,6 +1410,10 @@ public class logProcess {
 * java.util.Random rand = new java.util.Random();
 * rand.nextInt(nums.size());
 
+## Task Scheduler
+* math problem
+* Math.max(tasks.length, (maxFreq - 1) * (n + 1) + numOfMax);
+
 
 
 
