@@ -1420,6 +1420,9 @@ public class logProcess {
 * treat positive num as index, flag the index's value to be negative
 * find the first positive index, that's the missing value
 
+## Word Search
+* dfs solution, use visited backtracking
+
 
 
 
