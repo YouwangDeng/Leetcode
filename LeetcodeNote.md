@@ -1432,6 +1432,11 @@ public class logProcess {
 * List<Integer> [] is valid
 * map and bucket idea
 
+## Palindrome Pairs
+* Arrays.asList(1,2,3);
+* store words in a HashMap
+* cut words and find palindrome in the HashMap
+
 
 
 
