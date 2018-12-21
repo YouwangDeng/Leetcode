@@ -1427,6 +1427,11 @@ public class logProcess {
 * use a HashMap to store the distinct values
 * could also use two pointers: left1 and left2 to accomplish this goal
 
+## Top K Frequent Elements
+* Map.Entry<E,E> can not create array
+* List<Integer> [] is valid
+* map and bucket idea
+
 
 
 
