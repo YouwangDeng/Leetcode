@@ -1423,6 +1423,10 @@ public class logProcess {
 ## Word Search
 * dfs solution, use visited backtracking
 
+## Longest Substring with At Most Two Distinct Characters
+* use a HashMap to store the distinct values
+* could also use two pointers: left1 and left2 to accomplish this goal
+
 
 
 
