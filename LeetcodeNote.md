@@ -1448,6 +1448,10 @@ public class logProcess {
 * base case n = 0, n = - n, x = 1. / x
 * Double.isInfinite(x)
 
+## Basic Calculator
+* use a sign stack
+* use peek and push and pop
+
 
 
 
