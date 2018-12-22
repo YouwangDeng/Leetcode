@@ -1452,6 +1452,10 @@ public class logProcess {
 * use a sign stack
 * use peek and push and pop
 
+## Add Binary
+* clean code and use a while loop when there are two ropes that might with different length
+* use StringBuilder
+
 
 
 
