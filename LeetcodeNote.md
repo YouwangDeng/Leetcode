@@ -1443,6 +1443,11 @@ public class logProcess {
 * new pointer redirect logic
 * reverse linkedlist need three pointer
 
+## Pow(x, n)
+* recursive solution
+* base case n = 0, n = - n, x = 1. / x
+* Double.isInfinite(x)
+
 
 
 
