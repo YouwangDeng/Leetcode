@@ -1437,6 +1437,12 @@ public class logProcess {
 * store words in a HashMap
 * cut words and find palindrome in the HashMap
 
+## Reverse Nodes in k-Group
+* reverse k group
+* use four pointers: prev, head, tail, temp, only keep moving temp, other pointers do not move in a loop
+* new pointer redirect logic
+* reverse linkedlist need three pointer
+
 
 
 
