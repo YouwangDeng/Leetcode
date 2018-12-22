@@ -1456,6 +1456,10 @@ public class logProcess {
 * clean code and use a while loop when there are two ropes that might with different length
 * use StringBuilder
 
+## Consecutive Numbers Sum
+* math problem
+* (n * (n - 1)) % 2 will always be 0
+
 
 
 
