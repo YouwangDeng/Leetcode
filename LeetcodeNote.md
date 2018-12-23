@@ -1483,6 +1483,11 @@ public class logProcess {
 * dfs solution
 * most important ip property: if(i == 1 || (i == 2 && val >= 10) || (i == 3 && val >= 100 && val <= 255)) {doDFS}
 
+## Edit Distance
+* classic DP solution
+* string DP is a classic category
+* base case should be clear
+
 
 
 
