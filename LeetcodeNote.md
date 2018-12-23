@@ -1488,6 +1488,10 @@ public class logProcess {
 * string DP is a classic category
 * base case should be clear
 
+## Read N Characters Given Read4 II - Call multiple times
+* cache and use of pointers
+* when cache has been completely read, reset the cache 
+
 
 
 
