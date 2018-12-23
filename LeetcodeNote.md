@@ -1455,6 +1455,7 @@ public class logProcess {
 ## Add Binary
 * clean code and use a while loop when there are two ropes that might with different length
 * use StringBuilder
+* StringBuilder could also use charAt and length()
 
 ## Consecutive Numbers Sum
 * math problem
