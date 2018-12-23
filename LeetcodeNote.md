@@ -1475,6 +1475,10 @@ public class logProcess {
 * base case, dp[0] and dp[1]
 * instead of using two nested if statement, use two separate if statement
 
+## Reverse Words in a String
+* use a stack
+* s.substring(s.length(), s.length()) is a empty string not null
+
 
 
 
