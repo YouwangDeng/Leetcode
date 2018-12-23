@@ -1479,6 +1479,10 @@ public class logProcess {
 * use a stack
 * s.substring(s.length(), s.length()) is a empty string not null
 
+## Restore IP Addresses
+* dfs solution
+* most important ip property: if(i == 1 || (i == 2 && val >= 10) || (i == 3 && val >= 100 && val <= 255)) {doDFS}
+
 
 
 
