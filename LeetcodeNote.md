@@ -1470,6 +1470,11 @@ public class logProcess {
 * use a HashSet
 * str.split("@") is valid, str.split('@') is invalid
 
+## Decode Ways
+* dp solution
+* base case, dp[0] and dp[1]
+* instead of using two nested if statement, use two separate if statement
+
 
 
 
