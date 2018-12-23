@@ -1460,6 +1460,10 @@ public class logProcess {
 * math problem
 * (n * (n - 1)) % 2 will always be 0
 
+## Multiply Strings
+* two ideas to multiply strings
+* one is to use add string code and add these strings up
+* another is just to use an int array int[m+n]
 
 
 
