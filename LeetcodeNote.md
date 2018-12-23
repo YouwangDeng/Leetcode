@@ -1466,6 +1466,10 @@ public class logProcess {
 * one is to use add string code and add these strings up
 * another is just to use an int array int[m+n]
 
+## Unique Email Addresses
+* use a HashSet
+* str.split("@") is valid, str.split('@') is invalid
+
 
 
 
