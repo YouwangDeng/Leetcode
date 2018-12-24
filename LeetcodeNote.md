@@ -1490,7 +1490,16 @@ public class logProcess {
 
 ## Read N Characters Given Read4 II - Call multiple times
 * cache and use of pointers
-* when cache has been completely read, reset the cache 
+* when cache has been completely read, reset the cache
+
+## Kth Largest Element in an Array
+* use a priorityqueue
+* O(nlogk)
+* could use partition and pivot idea along with 
+
+## Binary Search Tree Iterator
+* use a stack to store the pre nodes
+
 
 
 
