@@ -1500,6 +1500,10 @@ public class logProcess {
 ## Binary Search Tree Iterator
 * use a stack to store the pre nodes
 
+## Min Stack
+* solution 1: use two stack, another stack update the min
+* solution 2: use a customized node class, use LinkedList to implement stack, operate on the head of the LinkedList
+
 
 
 
