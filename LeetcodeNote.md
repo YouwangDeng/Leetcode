@@ -1504,6 +1504,10 @@ public class logProcess {
 * solution 1: use two stack, another stack update the min
 * solution 2: use a customized node class, use LinkedList to implement stack, operate on the head of the LinkedList
 
+## Find Median from Data Stream
+* maintain two PriorityQueue, a min heap and a max heap
+* update the min and max heap according to the size of each one and the peek element of each one
+
 
 
 
