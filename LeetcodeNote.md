@@ -1508,6 +1508,12 @@ public class logProcess {
 * maintain two PriorityQueue, a min heap and a max heap
 * update the min and max heap according to the size of each one and the peek element of each one
 
+## Sliding Window Maximum
+* using a Deque to achieve O(n)
+* Deque<E> dq = new ArrayDeque<>();
+
+ 
+
 
 
 
