@@ -1512,7 +1512,11 @@ public class logProcess {
 * using a Deque to achieve O(n)
 * Deque<E> dq = new ArrayDeque<>();
 
- 
+## Minimum Cost to Hire K Workers
+* understand the rules first, implement a class
+* sort the data
+* find  k elements min sum in an array, could use a pq (nlogk), use -element to achieve the reverse effect
+* over all nlogn 
 
 
 
