@@ -1530,6 +1530,10 @@ public class logProcess {
 * post order traversal
 * recursive return value is a single ancestor node
 
+## Binary Tree Maximum Path Sum
+* max and min problem, null node return 0
+* to avoid 0 covers negative value, make every update(max or min or return value) involves with node.val 
+
 
 
 
