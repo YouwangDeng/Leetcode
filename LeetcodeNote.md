@@ -1522,6 +1522,10 @@ public class logProcess {
 * 读题的能力最重要
 * if(data & 224 == 224) is invalid, should be if((data & 224) == 224)
 
+## Validate Binary Search Tree
+* use min and max idea to identify the tree
+* do not use Integer min value and max value, since that will conflict with the corner case, instead use a Integer type and set the default to be null, that's a great way to solve the max and min default value problem
+
 
 
 
