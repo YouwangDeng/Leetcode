@@ -1518,6 +1518,10 @@ public class logProcess {
 * find  k elements min sum in an array, could use a pq (nlogk), use -element to achieve the reverse effect
 * over all nlogn 
 
+## UTF-8 Validation
+* 读题的能力最重要
+* if(data & 224 == 224) is invalid, should be if((data & 224) == 224)
+
 
 
 
