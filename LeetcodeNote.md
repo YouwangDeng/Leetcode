@@ -1534,6 +1534,11 @@ public class logProcess {
 * max and min problem, null node return 0
 * to avoid 0 covers negative value, make every update(max or min or return value) involves with node.val 
 
+## Binary Tree Zigzag Level Order Traversal
+* BFS traversal, use a queue and during the while loop, level size is indicate by the size of the current queue
+* or could use an indicator to mark the end of each level
+* could use Collections.reverse(list) or could use list.add(0, item);
+
 
 
 
