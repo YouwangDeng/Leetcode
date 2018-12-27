@@ -1539,6 +1539,11 @@ public class logProcess {
 * or could use an indicator to mark the end of each level
 * could use Collections.reverse(list) or could use list.add(0, item);
 
+## Decode String
+* use a stack and two StringBuilder
+* pop and append
+* StringBuilder sb.insert(0,str);
+
 
 
 
