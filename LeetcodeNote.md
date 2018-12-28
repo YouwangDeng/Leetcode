@@ -1544,6 +1544,11 @@ public class logProcess {
 * pop and append
 * StringBuilder sb.insert(0,str);
 
+## Word Ladder
+* use BFS instead of DFS, cause this is a shortest path problem
+* use a queue and use queue size indicate the level
+* to reduce time complexity, use 26 characters, and length of word, instead loop the O(n) array
+
 
 
 
