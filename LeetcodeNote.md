@@ -1549,6 +1549,12 @@ public class logProcess {
 * use a queue and use queue size indicate the level
 * to reduce time complexity, use 26 characters, and length of word, instead loop the O(n) array
 
+## Evaluate Division
+* use a nested HashMap to store data
+* could use DFS and a visited HashSet to find the result
+* could also use BFS to update the map, and find the value
+* BFS is like Union Find
+
 
 
 
