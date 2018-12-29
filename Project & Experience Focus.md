@@ -284,6 +284,47 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 # QuickSearch - Scrapy and Django search application
 ## Impacts
 ## Scrapy
+* Scrapy 基于 twisted，是异步IO的，性能比较高，技术选型， 不选beautiful soup（是库，不是框架）
+* scrapy易于拓展，提供了很多内置的功能
+* scrapy的css和xpath选择器比较好用， beautiful soup比较慢
+* 网页的分类：
+    * 静态网页
+        * 页面不发生变化
+        * 不需要与数据进行交互
+    * 动态网页
+        * web service（RESTful API）
+        * 根据后台的数据页面发生变化
+* 正则表达式
+    * ^ begin with
+    * . any char
+    * * any times of char start with 0
+    * + at least one time
+    * $ end with
+    * ? 非贪婪匹配，从左边开始的匹配，遇到第一个就开始判断模式，有时候需要多次添加非贪婪匹配符号, 正则表达式默认是贪婪的，即从右边开始匹配，匹配尽量多的字符
+    * （）提取括号里面的东西
+    * {} 字符出现的次数， 用法：a{2}, a{2,}, a{2,5}, 即a出现2次， 2次及以上，2次到5次（both included）
+    * | or
+    * [0-9a-zA-Z] any letter that match one of the letters in the bracket
+        * [^1] means letters that are not 1, ^ is special here
+        * [.*] means "." or "*", they do not have special meanings here
+    * \s "a" space
+    * \S not "a" space
+    * \w means[a-zA-Z0-9_]
+    * \W means not \w
+    * [\u4E00-\u9FA5] 是一个汉字
+    * \d a digit
+* python里面正则的库是re， import re
+    * result = re.match(reg, str)
+    * ret = result.group(i),取第i层括号里面的字符串
+* utf8 是可变长变码，比如英文字母，只用一个字节表示， 这样可以减少存储和传输压力
+* utf8和unicode进行转换
+* 爬虫步骤：
+    * 查看网站url结构，明确数据来源，是否需要登陆，找到最简单有效的爬取逻辑
+    * 设计数据存储字段
+    * 通过scrapy进行爬取
+* xpath和css解析页面数据后放进item，然后进入pipeline 进行数据筛选和存储
+
+    
 ## ElasticSearch
 ## Django
 
