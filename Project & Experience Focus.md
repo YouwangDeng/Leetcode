@@ -353,7 +353,12 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * HTTP 1.0 请求方法 GET POST HEAD PUT DELETE 
 * 搜索方法：
     * 倒排索引：由属性值来确定记录的位置
-    * key是分词后的关键词，value是出现该关键词的记录   
+    * key是分词后的关键词，value是出现该关键词的记录
+* 打分算法TF-IDF算法，即词频算法
+    * lucene（lnsin）的评分是叫做TF/IDF算法，基本意思就是词频算法。
+    * 根据分词词库，所有的文档在建立索引的时候进行分词划分。进行搜索的时候，也对搜索的短语进行分词划分。
+    * TF代表分词项在文档中出现的次数（term frequency），IDF代表分词项在多少个文档中出现（inverse document frequency）。
+    * lucene的算法简单来说就是将搜索的短语进行分词得出分词项，每个分词项和每个索引中的文档根据TF/IDF进行词频出现的评分计算。然后每个分词项的得分相加，就是这个搜索对应的文档得分 
 
 ## Django
 
