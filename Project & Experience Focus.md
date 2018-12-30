@@ -328,6 +328,33 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 
     
 ## ElasticSearch
+* 搜索引擎，基于restful api web接口，java开发的分布式全文搜索引擎
+* nosql文档数据库
+* mongoDB，redis， elasticsearch都是nosql数据库
+* mysql是关系型数据库，主要应用于数据之间关系比较密切的场景，比如社交网络等
+* update操作的效率：mysql > mongoDB > elasticsearch
+* mongoDB 插入和查询 速度快于 mysql
+* 概念
+    * 集群
+        * 多个服务器
+    * 节点
+        * 一个服务器
+    * 分片
+        * 将索引划分为多份， 提高性能和吞吐量
+    * 副本
+        * 将一份数据存储多份，增加分布式系统的可靠性
+
+        | ElasticSearch | MySQL |
+        | --- | --- |
+        | index 索引 | 数据库 |
+        | type 类型 | 表 |
+        | document 文档 | 行 |
+        | fields 区域 | 列 |
+* HTTP 1.0 请求方法 GET POST HEAD PUT DELETE 
+* 搜索方法：
+    * 倒排索引：由属性值来确定记录的位置
+    * key是分词后的关键词，value是出现该关键词的记录   
+
 ## Django
 
 # BlogPlaza - Spring Boot Blog Site
@@ -336,10 +363,6 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 ## thymeleaf
 ## MySQL
 ## Gradle
-
-
-
-
 
 
 
