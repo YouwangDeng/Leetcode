@@ -323,6 +323,7 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
     * 设计数据存储字段
     * 通过scrapy进行爬取
 * xpath和css解析页面数据后放进item，然后进入pipeline 进行数据筛选和存储
+* Scrapy的暂停与重启，设置JOBDIR，每次启动和关闭爬虫时都带上这个工作目录，暂停时按一次ctrl-c，然后等待爬虫自动关闭即可，下次接着上次爬取的位置继续爬取（需要带上JOBDIR目录）
 
     
 ## ElasticSearch
