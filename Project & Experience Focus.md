@@ -361,6 +361,7 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
     * TF代表分词项在文档中出现的次数（term frequency），IDF代表分词项在多少个文档中出现（inverse document frequency）。
     * lucene的算法简单来说就是将搜索的短语进行分词得出分词项，每个分词项和每个索引中的文档根据TF/IDF进行词频出现的评分计算。然后每个分词项的得分相加，就是这个搜索对应的文档得分 
 * CRUD：create read update delete
+* ElasticSearch拥有一个自动补全的借口：completion suggester
 
 ## Django
 
