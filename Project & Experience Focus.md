@@ -368,9 +368,13 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 # BlogPlaza - Spring Boot Blog Site
 ## Impacts
 ## Spring Boot
+* Spring框架功能很强大，但是就算是一个很简单的项目，我们也要配置很多东西。因此就有了Spring Boot框架，它的作用很简单，就是帮我们自动配置。Spring Boot框架的核心就是自动配置，只要存在相应的jar包，Spring就帮我们自动配置。如果默认配置不能满足需求，我们还可以替换掉自动配置类，使用我们自己的配置。另外，Spring Boot还集成了嵌入式的Web服务器，系统监控等很多有用的功，让我们快速构建企业及应用程序
 ## thymeleaf
 ## MySQL
 ## Gradle
+* 一种打包工具，它可以帮你管理项目中的差异,依赖,编译,打包,部署......,你可以定义满足自己需要的构建逻辑,写入到build.gradle中供日后复用.
+* Gradle不是一种编程语言,它不能帮你实现软件中的任何实际功能
+* 
 
 
 
