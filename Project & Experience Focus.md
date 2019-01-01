@@ -374,7 +374,11 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 ## Gradle
 * 一种打包工具，它可以帮你管理项目中的差异,依赖,编译,打包,部署......,你可以定义满足自己需要的构建逻辑,写入到build.gradle中供日后复用.
 * Gradle不是一种编程语言,它不能帮你实现软件中的任何实际功能
-* 
+
+## BootStrap
+* 前端框架
+* 响应式布局
+* 移动设备优先适配
 
 
 
