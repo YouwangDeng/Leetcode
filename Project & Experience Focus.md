@@ -445,6 +445,17 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 
     ![Screen Shot 2019-01-01 at 15.38.37](https://lh3.googleusercontent.com/-YZoiAvf56pI/XCv6DHMt0NI/AAAAAAAAAVk/4u6u18-C4Y0WUL_XVKnPX3ZPSGyo5yAfACHMYCw/I/Screen%2BShot%2B2019-01-01%2Bat%2B15.38.37.png)
 
+## 访问网页全过程
+* URL访问网站时的网络传输全过程，可以归纳为：
+* 首先通过域名找到IP，如果缓存里没有就要请求DNS服务器；
+* 得到IP后开始与目的主机进行三次握手来建立TCP连接；
+* 连接建立后进行HTTP访问，传输并获取网页内容，并渲染网页内容；
+* 传输完后与目的主机四次挥手来断开TCP连接。
+
+## ICMP协议（TCP/IP子协议）
+* 网络控制消息协议
+* 用于IP主机、路由器之间传输控制消息，用来测试网络是否通畅，主机或路由器是否可以到达，并不传输用户实际数据
+* ping命令就是使用的ICMP协议
 
 
 
