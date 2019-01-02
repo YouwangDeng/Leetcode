@@ -457,5 +457,12 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * 用于IP主机、路由器之间传输控制消息，用来测试网络是否通畅，主机或路由器是否可以到达，并不传输用户实际数据
 * ping命令就是使用的ICMP协议
 
+## URI与URL
+* URI = Universal Resource Identifier（统一资源标识符）
+* URL = Universal Resource Locator （统一资源定位符）
+* URI是个纯粹的句法结构，用于指定标识Web资源的字符串的各个不同部分。URL是URI的一个特例，它包含了定位Web资源的足够信息。
+* URI 是统一资源标识符，而 URL 是统一资源定位符。因此，笼统地说，每个 URL 都是 URI，但不一定每个 URI 都是 URL。这是因为 URI 还包括一个子类，即统一资源名称 (URN)，它命名资源但不指定如何定位资源。
+* URI强调的是给资源标记命名，URL强调的是给资源定位，但是你会发现，URL显然比URI包含信息更多。URL充当了WWW万维网里面URI的角色，但是他比URI多了一层意义，我不光知道你叫什么，我还知道你在哪里。我们在浏览器输入的都是URL，因为我们输入的目的是为了找到某一个资源，当然你输入的是URI也是没错的，因为URL也是URI。
+
 
 
