@@ -1557,6 +1557,10 @@ public class logProcess {
 * could also use BFS to update the map, and find the value
 * BFS is like Union Find
 
+## K Empty Slots
+* could use a bloom boolean array to represent the garden, and loop through k days to check if there is a meet result, takes O(nK) time
+* could use days array, and check if any intermediate elements are less than the two sides, takes O(n), but this method will loop through all elements and return the min value
+
 
 
 
