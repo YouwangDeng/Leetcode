@@ -1561,6 +1561,9 @@ public class logProcess {
 * could use a bloom boolean array to represent the garden, and loop through k days to check if there is a meet result, takes O(nK) time
 * could use days array, and check if any intermediate elements are less than the two sides, takes O(n), but this method will loop through all elements and return the min value
 
+## Longest Consecutive Sequence
+* use set and dfs to solve the problem, consume O(n) time, since each element only been visited once
+
 
 
 
