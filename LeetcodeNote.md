@@ -1570,7 +1570,11 @@ public class logProcess {
 
 ## Pour Water
 * water moving logic should be clear, if and continue and break should be clear
-* i and minIndex are two different things and the return value should be confirmed 
+* i and minIndex are two different things and the return value should be confirmed
+
+## Word Ladder II
+* use DFS and min will result in TLE
+* solution is using two end BFS, using hashMap to store every level data, and traverse from the begin and the end word 
 
 
 
