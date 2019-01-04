@@ -1578,7 +1578,11 @@ public class logProcess {
 
 ## Rotate Image
 * could use four layer swap method, left -> top, bottom -> left, right -> bottom, top -> right; level by level, only make change to matrix.length / 2 levels
-* another method is first up side down, then swap i, j diagonally. (clockwise) or first left right side down then swap i, j diagonally(anti-clockwise)  
+* another method is first up side down, then swap i, j diagonally. (clockwise) or first left right side down then swap i, j diagonally(anti-clockwise) 
+
+## Remove Comments
+* check char c == '\' is a bug, should replace "\n" with "#n"
+* be clear about the "/*/" mode 
 
 
 
