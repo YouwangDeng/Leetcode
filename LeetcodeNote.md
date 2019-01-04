@@ -1566,7 +1566,11 @@ public class logProcess {
 
 ## Jump Game II
 * could use a DP solution, find the first element meet the need and update dp, consume O(n^2) time
-* O(n) solution is using one maxLen variable, and advanced the maxLen step by step, each step greedily find the maxLen. 
+* O(n) solution is using one maxLen variable, and advanced the maxLen step by step, each step greedily find the maxLen.
+
+## Pour Water
+* water moving logic should be clear, if and continue and break should be clear
+* i and minIndex are two different things and the return value should be confirmed 
 
 
 
