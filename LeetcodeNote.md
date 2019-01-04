@@ -1564,6 +1564,10 @@ public class logProcess {
 ## Longest Consecutive Sequence
 * use set and dfs to solve the problem, consume O(n) time, since each element only been visited once
 
+## Jump Game II
+* could use a DP solution, find the first element meet the need and update dp, consume O(n^2) time
+* O(n) solution is using one maxLen variable, and advanced the maxLen step by step, each step greedily find the maxLen. 
+
 
 
 
