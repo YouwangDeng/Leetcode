@@ -1574,7 +1574,11 @@ public class logProcess {
 
 ## Word Ladder II
 * use DFS and min will result in TLE
-* solution is using two end BFS, using hashMap to store every level data, and traverse from the begin and the end word 
+* solution is using two end BFS, using hashMap to store every level data, and traverse from the begin and the end word
+
+## Rotate Image
+* could use four layer swap method, left -> top, bottom -> left, right -> bottom, top -> right; level by level, only make change to matrix.length / 2 levels
+* another method is first up side down, then swap i, j diagonally. (clockwise) or first left right side down then swap i, j diagonally(anti-clockwise)  
 
 
 
