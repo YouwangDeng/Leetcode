@@ -1583,7 +1583,11 @@ public class logProcess {
 ## Remove Comments
 * check char c == '\' is a bug, should replace "\n" with "#n"
 * be clear about the "/*/" mode
-* StringBuilder sb.substring(a,b) will return a string 
+* StringBuilder sb.substring(a,b) will return a string
+
+## Find Duplicate File in System
+* add files to a hashmap
+* only add duplicate files to the result list, that means list size > 1, this is the key point, understand the problem first
 
 
 
