@@ -1589,6 +1589,16 @@ public class logProcess {
 * add files to a hashmap
 * only add duplicate files to the result list, that means list size > 1, this is the key point, understand the problem first
 
+##  Find the Closest Palindrome
+* find a higher one palindrome and a lower palindrome
+* trick 1, use num + 1 and num - 1 to find
+* trick 2, compare palindrome char array and original array, use copyOf method
+* trick 3, deal with 9 and 0, increase and decrease, check if the first one is 0
+* trick 4, make the array palindrome again
+* when use half length of array, consider(n - 1) / 2, instead of n / 2 - 1, the former is better for odd and even problems
+
+
+
 
 
 
