@@ -1604,6 +1604,9 @@ public class logProcess {
 * s.trim() will remove the leading and trailing zeroes
 * use switch case and three boolean values seenNum, seenE, seenD to mark the valid state of the string
 
+## Text Justification
+* mind the divide by zero exception, and the lastLine should has no trailing spaces
+
 
 
 
