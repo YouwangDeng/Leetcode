@@ -1597,7 +1597,8 @@ public class logProcess {
 * trick 4, make the array palindrome again
 * when use half length of array, consider(n - 1) / 2, instead of n / 2 - 1, the former is better for odd and even problems
 
-
+## Longest Common Prefix
+* build the prefix according to the first one string
 
 
 
