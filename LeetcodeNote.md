@@ -1600,6 +1600,10 @@ public class logProcess {
 ## Longest Common Prefix
 * build the prefix according to the first one string
 
+## Valid Number
+* s.trim() will remove the leading and trailing zeroes
+* use switch case and three boolean values seenNum, seenE, seenD to mark the valid state of the string
+
 
 
 
