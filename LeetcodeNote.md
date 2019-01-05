@@ -1607,6 +1607,10 @@ public class logProcess {
 ## Text Justification
 * mind the divide by zero exception, and the lastLine should has no trailing spaces
 
+## Longest Valid Parentheses
+* a good example will avoid a lot of bugs
+* using two stack can solve this problem, but we could still use one stack, although time complexity is still O(n)
+
 
 
 
