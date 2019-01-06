@@ -1627,6 +1627,10 @@ public class logProcess {
 * using recursive solution to trace back of a LinkedList
 * stack and LinkedList are excellent partners to solve backtrack problems
 
+## Reverse Linked List II
+* a single step of reverse LinkedList in k group
+* keep a start pointer and a end pointer and a temp pointer
+
 
 
 
