@@ -1615,6 +1615,12 @@ public class logProcess {
 * what we need is a global node pre and a dummy node to mark the head
 * in order traversal
 
+## Reorder List
+* get bak half LinkedList, cut at the half(key point)
+* reverse the back half list, merge them together
+
+
+
 
 
 
