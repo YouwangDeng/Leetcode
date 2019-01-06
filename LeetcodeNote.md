@@ -1619,7 +1619,8 @@ public class logProcess {
 * get bak half LinkedList, cut at the half(key point)
 * reverse the back half list, merge them together
 
-
+## Remove Linked List Elements
+* use a dummy node and three pointers, pre, cur, and next.
 
 
 
