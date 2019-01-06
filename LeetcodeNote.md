@@ -1611,6 +1611,10 @@ public class logProcess {
 * a good example will avoid a lot of bugs
 * using two stack can solve this problem, but we could still use one stack, although time complexity is still O(n)
 
+## Convert Binary Search Tree to Sorted Doubly Linked List
+* what we need is a global node pre and a dummy node to mark the head
+* in order traversal
+
 
 
 
