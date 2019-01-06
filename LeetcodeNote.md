@@ -1622,6 +1622,11 @@ public class logProcess {
 ## Remove Linked List Elements
 * use a dummy node and three pointers, pre, cur, and next.
 
+## Add Two Numbers II
+* using a result class to return multiply values from a function
+* using recursive solution to trace back of a LinkedList
+* stack and LinkedList are excellent partners to solve backtrack problems
+
 
 
 
