@@ -1641,7 +1641,7 @@ public class logProcess {
 
 ## Backspace String Compare
 * could use two stack
-* could use index of two string, start compare from the end of the string, increase or decrease the backspace in two for loops
+* could use index of two string, start compare from the end of the string, increase or decrease(key point) the backspace num in two for loops
 
     ```
     public boolean backspaceCompare(String S, String T) {
