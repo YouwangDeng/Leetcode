@@ -1653,6 +1653,12 @@ public class logProcess {
         }
     ```
     
+## Remove K Digits
+* use a stack and peek and pop, update k
+* reverse the StringBuilder
+* remove leading zeros using sb.deleteCharAt(0);
+    
+    
 
 
 
