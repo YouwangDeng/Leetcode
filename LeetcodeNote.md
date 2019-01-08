@@ -1635,6 +1635,10 @@ public class logProcess {
 * could use a queue to recursively add all elements into that queue in the constructor, that's simple, but that's not a good iterator implementation
 * a classic implementation is to use a stack and add all list element from the end to the beginning, and use hasNext to add list to the stack
 
+## Exclusive Time of Functions
+* use a stack and a pre variable to store the beginning of the interval, update the res array when (not empty) push and pop a element form a stack
+* if only update the res array when pop a element from the stack, could use a class to store the func data
+
 
 
 
