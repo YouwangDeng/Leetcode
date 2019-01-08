@@ -1631,6 +1631,10 @@ public class logProcess {
 * a single step of reverse LinkedList in k group
 * keep a start pointer and a end pointer and a temp pointer
 
+## Flatten Nested List Iterator
+* could use a queue to recursively add all elements into that queue in the constructor, that's simple, but that's not a good iterator implementation
+* a classic implementation is to use a stack and add all list element from the end to the beginning, and use hasNext to add list to the stack
+
 
 
 
