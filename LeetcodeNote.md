@@ -1639,6 +1639,21 @@ public class logProcess {
 * use a stack and a pre variable to store the beginning of the interval, update the res array when (not empty) push and pop a element form a stack
 * if only update the res array when pop a element from the stack, could use a class to store the func data
 
+## Backspace String Compare
+* could use two stack
+* could use index of two string, start compare from the end of the string, increase or decrease the backspace in two for loops
+
+    ```
+    public boolean backspaceCompare(String S, String T) {
+            for (int i = S.length() - 1, j = T.length() - 1;; i--, j--) {
+                for (int b = 0; i >= 0 && (b > 0 || S.charAt(i) == '#'); i--) b += S.charAt(i) == '#' ? 1 : -1;
+                for (int b = 0; j >= 0 && (b > 0 || T.charAt(j) == '#'); j--) b += T.charAt(j) == '#' ? 1 : -1;
+                if (i < 0 || j < 0 || S.charAt(i) != T.charAt(j)) return i == -1 && j == -1;
+            }
+        }
+    ```
+    
+
 
 
 
