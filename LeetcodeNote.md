@@ -1657,6 +1657,10 @@ public class logProcess {
 * use a stack and peek and pop, update k
 * reverse the StringBuilder
 * remove leading zeros using sb.deleteCharAt(0);
+
+## Asteroid Collision
+* use a stack, many cases, be clear about the explode condition
+* add stack elements to a array, could add into array from the end to the beginning, this could be done by one pass
     
     
 
