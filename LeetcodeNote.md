@@ -1680,7 +1680,12 @@ public class logProcess {
 ## Design Snake Game
 * use a Deque and a set to store the body of snake
 * check if the food is running out in case of ArrayNullPointer Exception
-* check boundary first then check the food 
+* check boundary first then check the food
+
+## Design Circular Queue
+* use an array to store data
+* i++ and ++i
+* mind ArrayNullPointer Exception 
     
     
 
