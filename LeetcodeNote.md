@@ -1661,6 +1661,13 @@ public class logProcess {
 ## Asteroid Collision
 * use a stack, many cases, be clear about the explode condition
 * add stack elements to a array, could add into array from the end to the beginning, this could be done by one pass
+
+## Shortest Subarray with Sum at Least K
+* subarray and sliding window problem consider using deque
+* peekFirst() and peekLast(), pollFirst() and pollLast(), offerFirst() and offerLast()
+* deque could achieve O(n)
+* store the sum in an array(n + 1 size)
+* store index in the queue
     
     
 
