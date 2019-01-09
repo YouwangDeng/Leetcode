@@ -465,4 +465,8 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * URI强调的是给资源标记命名，URL强调的是给资源定位，但是你会发现，URL显然比URI包含信息更多。URL充当了WWW万维网里面URI的角色，但是他比URI多了一层意义，我不光知道你叫什么，我还知道你在哪里。我们在浏览器输入的都是URL，因为我们输入的目的是为了找到某一个资源，当然你输入的是URI也是没错的，因为URL也是URI。
 
 
+## Angular 7
+* single page application
+
+
 
