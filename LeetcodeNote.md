@@ -1672,6 +1672,10 @@ public class logProcess {
 ## Moving Average from Data Stream
 * using a queue to store the size, use a sum to store the sum, use sum / size to get the average
 * updating the queue when the size is meetting bound
+
+## Kill Process
+* use a HashMap to store tree data
+* recursively kill process 
     
     
 
