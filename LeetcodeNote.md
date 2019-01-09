@@ -1668,6 +1668,10 @@ public class logProcess {
 * deque could achieve O(n)
 * store the sum in an array(n + 1 size)
 * store index in the queue
+
+## Moving Average from Data Stream
+* using a queue to store the size, use a sum to store the sum, use sum / size to get the average
+* updating the queue when the size is meetting bound
     
     
 
