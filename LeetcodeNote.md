@@ -1675,7 +1675,12 @@ public class logProcess {
 
 ## Kill Process
 * use a HashMap to store tree data
-* recursively kill process 
+* recursively kill process
+
+## Design Snake Game
+* use a Deque and a set to store the body of snake
+* check if the food is running out in case of ArrayNullPointer Exception
+* check boundary first then check the food 
     
     
 
