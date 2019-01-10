@@ -1689,7 +1689,11 @@ public class logProcess {
 
 ## Diameter of Binary Tree
 * use recursion to get the current length
-* update max in an array 
+* update max in an array
+
+## Binary Tree Right Side View
+* could do it with BFS, level by level, add the last node of each level into the result list
+* could also solve by DFS, add pass depth into the DFS, add depth node into the result list, first traverse right, then left(key point). 
     
     
 
