@@ -1685,7 +1685,11 @@ public class logProcess {
 ## Design Circular Queue
 * use an array to store data
 * i++ and ++i
-* mind ArrayNullPointer Exception 
+* mind ArrayNullPointer Exception
+
+## Diameter of Binary Tree
+* use recursion to get the current length
+* update max in an array 
     
     
 
