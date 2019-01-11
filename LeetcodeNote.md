@@ -1715,6 +1715,9 @@ public class logProcess {
 ## Clone Graph
 * use a HashMap to store the copy Node data
 * use BFS to traverse the neighbors of the node, and add neighbor copy to the poll node
+* label are unique
+* could also use DFS
+* the key point here is to use a HashMap
     
 
 
