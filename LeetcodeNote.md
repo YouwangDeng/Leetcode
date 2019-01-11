@@ -1697,6 +1697,12 @@ public class logProcess {
 
 ## Binary Tree Level Order Traversal
 * use BFS traversal level by level
+
+## Flatten Binary Tree to Linked List
+* could use preorder traversal, there are many cases
+* could also use reverse postorder traversal and a global variable pre to link those nodes
+* remember preorder, inorder, postorder and their reverse order 
+
     
     
 
