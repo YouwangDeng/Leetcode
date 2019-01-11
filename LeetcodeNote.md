@@ -1707,6 +1707,10 @@ public class logProcess {
 * use # stand for null node, use StringBuilder to serialize the nodes and use "," to separate each node
 * use a index array and a nodes array to deserialize the nodes
     
+## Construct Binary Tree from Preorder and Inorder Traversal
+* use preorder array to build the tree
+* use inorder array to separate the left and right subtree
+* use a HashMap to store the index of each element in the inorder array to achieve quick lookup
     
 
 
