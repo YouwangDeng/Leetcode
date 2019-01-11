@@ -1703,6 +1703,9 @@ public class logProcess {
 * could also use reverse postorder traversal and a global variable pre to link those nodes
 * remember preorder, inorder, postorder and their reverse order 
 
+## Serialize and Deserialize BST
+* use # stand for null node, use StringBuilder to serialize the nodes and use "," to separate each node
+* use a index array and a nodes array to deserialize the nodes
     
     
 
