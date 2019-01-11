@@ -1711,6 +1711,10 @@ public class logProcess {
 * use preorder array to build the tree
 * use inorder array to separate the left and right subtree
 * use a HashMap to store the index of each element in the inorder array to achieve quick lookup
+
+## Clone Graph
+* use a HashMap to store the copy Node data
+* use BFS to traverse the neighbors of the node, and add neighbor copy to the poll node
     
 
 
