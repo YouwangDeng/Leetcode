@@ -1718,6 +1718,11 @@ public class logProcess {
 * label are unique
 * could also use DFS
 * the key point here is to use a HashMap
+
+## Reconstruct Itinerary
+* use a PriorityQueue and a HashMap to store the data
+* use DFS to add the elements to the list, this solution use LinkedList addFirst method
+* brilliant solution, a special logic to add the element during DFS process
     
 
 
