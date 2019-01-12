@@ -1729,6 +1729,10 @@ public class logProcess {
 ## Burst Balloons
 * first come up with the DP rules, the balloons is burst with left * k * right + dp[left][k] + dp[k][right] 
 * OPT[i][j] DP problem, implementation is three for loop, first is length loop, then left loop, then the k(between left and left + length) loop
+
+## Longest Increasing Subsequence
+* use one dimension DP, use a for loop during the DP, update max during the process, O(n^2)
+* Arrays.binarySearch(dp, 0, len, x) would look up dp and find if x is exist in [0, len), if exist return the index, else return the (-(insert position) -1), use binary search and dp[] to update len when insert position hit the len, O(nlogn)
     
 
 
