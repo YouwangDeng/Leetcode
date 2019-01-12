@@ -1610,6 +1610,8 @@ public class logProcess {
 ## Longest Valid Parentheses
 * a good example will avoid a lot of bugs
 * using two stack can solve this problem, but we could still use one stack, although time complexity is still O(n)
+* could also use DP to solve the problem, O(n)
+* DP rules is to add twice, first the dp[i-1] + 2, then add the i - dp[i] element
 
 ## Convert Binary Search Tree to Sorted Doubly Linked List
 * what we need is a global node pre and a dummy node to mark the head
