@@ -1723,6 +1723,10 @@ public class logProcess {
 * use a PriorityQueue and a HashMap to store the data
 * use DFS to add the elements to the list, this solution use LinkedList addFirst method
 * brilliant solution, a special logic to add the element during DFS process
+
+## Burst Balloons
+* first come up with the DP rules, the balloons is burst with left * k * right + dp[left][k] + dp[k][right] 
+* OPT[i][j] DP problem, implementation is three for loop, first is length loop, then left loop, then the k(between left and left + length) loop
     
 
 
