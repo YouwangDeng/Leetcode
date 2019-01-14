@@ -1741,6 +1741,10 @@ public class logProcess {
 
 ## Climbing Stairs
 * dp[i] = dp[i-1] + dp[i-2]
+
+## House Robber
+* rob current house or not
+* dp[i] = Math.max(dp[i - 1], nums[i - 1] + dp[i - 2])
     
 
 
