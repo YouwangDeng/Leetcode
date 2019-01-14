@@ -1738,6 +1738,9 @@ public class logProcess {
 * dp formula, subproblems, dp[step][eggs], two cases, one case is egg broken, one is not, dp[step][eggs] = dp[step - 1][eggs - 1] + dp[step - 1][eggs] + 1;
 * 2D dp, could reduce to 1D dp
 * O(klogn)
+
+## Climbing Stairs
+* dp[i] = dp[i-1] + dp[i-2]
     
 
 
