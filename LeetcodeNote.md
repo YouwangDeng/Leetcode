@@ -1733,6 +1733,11 @@ public class logProcess {
 ## Longest Increasing Subsequence
 * use one dimension DP, use a for loop during the DP, update max during the process, O(n^2)
 * Arrays.binarySearch(dp, 0, len, x) would look up dp and find if x is exist in [0, len), if exist return the index, else return the (-(insert position) -1), use binary search and dp[] to update len when insert position hit the len, O(nlogn)
+
+## Super Egg Drop
+* dp formula, subproblems, dp[step][eggs], two cases, one case is egg broken, one is not, dp[step][eggs] = dp[step - 1][eggs - 1] + dp[step - 1][eggs] + 1;
+* 2D dp, could reduce to 1D dp
+* O(klogn)
     
 
 
