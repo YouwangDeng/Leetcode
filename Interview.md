@@ -182,4 +182,76 @@ what do u need to do for enter? (return obj)
 5. define inheritance
 6. diff between deep copy shallow copy?
 6-2) diff between copy and renaming (reference)?
-7. how does python handle garbage collection? when might there be a problem?
+1. how does python handle garbage collection? when might there be a problem?
+
+# 字节跳动前端面试
+了解TCP和UDP吗
+说三次握手
+为什么不是两次握手
+了解编码吗，哈夫曼编码了解编码吗，哈夫曼编码
+说说进程和线程的区别
+作者：是猪头啊
+链接：https://www.nowcoder.com/discuss/80133?type=2&order=0&pos=21&page=1
+来源：牛客网
+
+网络七层模型
+DNS流程
+死锁
+银行家算法
+系统调用的过程
+内核级和用户级线程的区别
+java和js的区别
+解释jvm
+快排（手写，时间复杂度，什么情况下最差，什么情况下最好）
+数据库索引（什么情况下不能用索引）
+Js的继承方法（手写）
+cors
+Node的内存模型，垃圾回收
+Node的IO异步线程
+
+
+第1个问题是viewport各个属性值的意义，以及如何实现不用viewport控制用户不能缩放，回答用js监听屏幕宽度。
+
+第2个问题是设计弹出层的具体过程。
+
+第3个问题是基础css水平垂直居中。
+
+第4个问题是透明度问题。
+
+第5个问题是点透问题。为什么会有点透现象。
+
+第6个问题是http缓存机制。
+
+第7个问题是五星好评点几颗星亮几颗，用css。
+
+第8个问题是实现查询字符串中出现最多次数的字符，用js写代码。
+
+第9个问题是三次握手四次挥手。
+
+第10个问题是tcp如何保证有效传输及拥塞控制原理。
+
+第11个问题是https具体流程。
+
+第12个问题是进程线程，并发并行。
+
+第13个问题是跨域，实现jsonp。
+
+第14个问题是网络攻防xss。
+
+第15个问题是cookie与session的区别。
+
+第16个问题是vue框架有没实现敏感字符过滤，如果不想过滤该用什么。
+
+第17个问题是微信小程序生命周期，我未答上，因为我未真正接触过小程序。
+
+第18个问题是一段js代码判断哪个先输出。
+
+第19个问题是关于js请求需要时间的问题。
+
+第20个问题是闭包问题，改进代码。
+
+第21个问题是深克隆问题。
+
+第22个问题是vue双向数据绑定的过程。
+
+我记得大概就是这些，不分前后。还有许多小问题是面试官顺着我思路一路问下去的。自此一面结束，用了一个半小时!!!!!!
