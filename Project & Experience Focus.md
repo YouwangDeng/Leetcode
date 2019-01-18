@@ -471,6 +471,7 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * 置换元素：img, input, textarea, select
 * text-transform: uppercase;
 * 传输层提供端到端的可靠报文传递和错误恢复
+* select * from toutiao_tb where title like '%cv%' and type=1
 ## CSS3
 
 ## Angular 7
