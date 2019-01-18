@@ -470,6 +470,7 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * HTML5 新增的表单元素:datalist, output
 * 置换元素：img, input, textarea, select
 * text-transform: uppercase;
+* 传输层提供端到端的可靠报文传递和错误恢复
 ## CSS3
 
 ## Angular 7
