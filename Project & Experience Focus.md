@@ -473,7 +473,7 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * 传输层提供端到端的可靠报文传递和错误恢复
 * select * from toutiao_tb where title like '%cv%' and type=1
 * FIFO页面调度算法,当进程分配到的页面数增加时,缺页中断的次数可能增加也可能减少
-* 
+* 选择排序、快速排序、希尔排序、堆排序不是稳定的排序算法，而冒泡排序、插入排序、归并排序和基数排序是稳定的排序算法
 ## CSS3
 
 ## Angular 7
