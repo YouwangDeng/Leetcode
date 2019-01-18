@@ -472,6 +472,8 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * text-transform: uppercase;
 * 传输层提供端到端的可靠报文传递和错误恢复
 * select * from toutiao_tb where title like '%cv%' and type=1
+* FIFO页面调度算法,当进程分配到的页面数增加时,缺页中断的次数可能增加也可能减少
+* 
 ## CSS3
 
 ## Angular 7
