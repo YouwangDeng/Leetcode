@@ -266,3 +266,6 @@ user-scalable  设备是否允许用户进行缩放  'yes/no'
     ```
 *  JavaScript:void(0)
     *  一般在写A标签的时候，格式是<a href="#">链接文字</a>,但是点击a链接的时候会自动跳转到页面的顶部，如果写成<a href="javascript:void(0)">链接文字</a>，就不会跳转，不会发生任何问题，等后面写完后添加连接的时候改成跳转后的地址就行了   
+
+* 元素水平与垂直居中问题
+    * https://www.cnblogs.com/coco1s/p/4444383.html    
