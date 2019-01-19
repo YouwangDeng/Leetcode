@@ -210,9 +210,6 @@ Node的内存模型，垃圾回收
 Node的IO异步线程
 
 
-第1个问题是viewport各个属性值的意义，以及如何实现不用viewport控制用户不能缩放，回答用js监听屏幕宽度。
-
-第2个问题是设计弹出层的具体过程。
 
 第3个问题是基础css水平垂直居中。
 
@@ -254,4 +251,18 @@ Node的IO异步线程
 
 * https工作流程
     * 5 分钟理解 https 工作流程 https://www.jianshu.com/p/a68ca86183d7
-* 
+* viewpoint
+    * 常用的针对移动端网页的meta viewpoint大致是:
+    
+    ```
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+这段代码的意思是，让viewport的宽度等于物理设备上的真实分辨率，不允许用户缩放。
+width 控制 viewport 的大小
+device-width 获取当前设备的宽度
+initial-scale   设备初始缩放比例,就是当页面第一次 load 的时候缩放比例
+maxium-scale    允许用户缩放的最大比例
+manium-scale 允许用户缩放的最小的比例
+user-scalable  设备是否允许用户进行缩放  'yes/no'
+    ```
+*  JavaScript:void(0)
+    *  一般在写A标签的时候，格式是<a href="#">链接文字</a>,但是点击a链接的时候会自动跳转到页面的顶部，如果写成<a href="javascript:void(0)">链接文字</a>，就不会跳转，不会发生任何问题，等后面写完后添加连接的时候改成跳转后的地址就行了   
