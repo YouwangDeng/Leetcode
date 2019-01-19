@@ -476,6 +476,8 @@ export function thunk = ({dispatch, getState})=>next=>action=>{
 * 选择排序、快速排序、希尔排序、堆排序不是稳定的排序算法，而冒泡排序、插入排序、归并排序和基数排序是稳定的排序算法
 * js里面没有函数重载的概念，在其他语言中（如java）java中，可以存在同名函数，只要传入的参数数量或者类型不同即可。在js中，定义了两个同名函数后，后面的函数会覆盖前面定义的函数。结合这道题来说，由于函数声明提升，所以函数声明会提前，由于存在同名函数，后面的add函数将覆盖第一个add函数，所以两次调用add()返回的值是相同的。也就是y,z都为4.
 * disabled和readOnly都是表单的公有属性， readOnly是只读， disabled是禁用。这里问的是禁用，所以是disabled。还有就是题目中的 readOnly写成了 readonly。小知识点：setArrtibute在ie7以前是不能通过style和class设置属性的
+
+
 ## CSS3
 
 ## Angular 7
