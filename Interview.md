@@ -244,6 +244,9 @@ user-scalable  设备是否允许用户进行缩放  'yes/no'
     * tree diff
     * component diff
     * element diff
-    * https://zhuanlan.zhihu.com/p/20346379    
+    * https://zhuanlan.zhihu.com/p/20346379
+
+* JavaScript的深拷贝和浅拷贝
+    * https://segmentfault.com/a/1190000008637489    
 
        
