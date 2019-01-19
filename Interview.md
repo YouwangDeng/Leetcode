@@ -187,14 +187,6 @@ what do u need to do for enter? (return obj)
 # 字节跳动前端面试
 
 
-
-
-
-
-第7个问题是五星好评点几颗星亮几颗，用css。
-
-第8个问题是实现查询字符串中出现最多次数的字符，用js写代码。
-
 第13个问题是跨域，实现jsonp。
 
 第14个问题是网络攻防xss。
@@ -247,5 +239,11 @@ user-scalable  设备是否允许用户进行缩放  'yes/no'
     * F5（对比刷新，如无变化就用缓存）
     * CTRL+F5（删除缓存，强制刷新） 
     * https://juejin.im/entry/599afbe5f265da247c4ee6e3
+
+* React diff算法
+    * tree diff
+    * component diff
+    * element diff
+    * https://zhuanlan.zhihu.com/p/20346379    
 
        
