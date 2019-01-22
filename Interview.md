@@ -250,6 +250,8 @@ user-scalable  设备是否允许用户进行缩放  'yes/no'
     * https://segmentfault.com/a/1190000008637489 
 
 * 对JavaScript闭包的理解
-面试对细节考察很多，特别是JavaScript基础   
+面试对细节考察很多，特别是JavaScript基础
+
+* 需要事先想好怎么介绍自己   
 
        
