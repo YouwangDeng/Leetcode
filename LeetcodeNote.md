@@ -1657,7 +1657,7 @@ public class logProcess {
     
 ## Remove K Digits
 * use a stack and peek and pop, update k
-* reverse the StringBuilder
+* reverse the StringBuilder 
 * remove leading zeros using sb.deleteCharAt(0);
 
 ## Asteroid Collision
@@ -1746,6 +1746,9 @@ public class logProcess {
 * rob current house or not
 * dp[i] = Math.max(dp[i - 1], nums[i - 1] + dp[i - 2])
 * make sure dp formula is Math.max or Math.min relation or add solution
+
+
+
 
 
 
