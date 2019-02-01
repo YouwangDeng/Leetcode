@@ -272,6 +272,29 @@ reasoning 部分
 
 5. 买东西要不要付运费，jacob， emma （面经原题）
 
+
+1. Count Element 要return number of elements in the input array which are greater than twice the input number n y要改一下for loop里面的statement和array【i+1】 变成array【i】
+2. count number of occurrence of 'A' or 'a' 把&& 改成||
+
+3. 这个没有见过 是 median value return the median of the even sized array after merging two arrays and sort the element 改成 arr2【i-size】
+4. get digitsumparity 是要找到sum of digits of the smallest element in the input array 是把num = num/10 挪到后面
+
+debug我记下的几道题是(想发大照片，但是资格不够，发不了)：. 1point3acres
+1. returns the number of elements in the input array arr which are greater than twich the input number n. 很简单，忘了咋改
+
+2.returns the number of occurrences of uppercase 'A' or lowercase'a' in the input string str. 应该是加个i++
+
+3. returns an integer which is the reverse of the digits. 376->673.  reversedNum = reversedNum*10 + remainder
+
+4. return an integer representing the sum of the distinct elements in the given array. 改sort和sum initial的顺序
+
+5. returns the count of the unique elements in an array. 改flag
+
+
+阅读都是变种，比如四个人在房间四个角，就出了好几道，主题干都是一样，只要画图就可以秒。
+
+找规律把字母翻译成数字就好，都是普通题目，比如相隔几位。没有质数之类的偏题。
+
 ## Amazon OA2
 1. Find Num of Substring with K distinct chars
 2. 最大平均值子节点
