@@ -254,4 +254,19 @@ user-scalable  设备是否允许用户进行缩放  'yes/no'
 
 * 需要事先想好怎么介绍自己   
 
+
+# Amazon OA
+## Amazon OA1
+## Amazon OA2
+1. Find Num of Substring with K distinct chars
+2. 最大平均值子节点
+![oa2_1](https://i.imgur.com/TPhBdMf.jpg)
+![oa2_2](https://i.imgur.com/80m0bRh.jpg)
+![oa2_3](https://i.imgur.com/NC9gBeJ.jpg)
+![oa2_4](https://i.imgur.com/ju3PyCg.jpg)
+
+
+
+
+
        
