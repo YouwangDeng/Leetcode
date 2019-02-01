@@ -257,6 +257,21 @@ user-scalable  设备是否允许用户进行缩放  'yes/no'
 
 # Amazon OA
 ## Amazon OA1
+debugging 部分
+1. appearsK element 
+2. count element, return element greater than twice of input n. 
+3. 去掉vowl
+4. median val  （名字记不清了）
+5. palindrome （他的做法是直接reverse input num， 然后判断是不是和原数字相等，需修改return 里面的num 为temp， num 已经被updated了）
+
+reasoning 部分
+1. 2, 5, 26, ___  (前一个数平方加1， 5=2^2+1, 26=5^2+1, ...)
+2. tennis -> ...  (面经原题）
+3. solar company （面经原题，连着2个问题）
+4. ABCD 四个人做8个东西，每人做俩，怎么分配（面经原题，连着3个问题）
+
+5. 买东西要不要付运费，jacob， emma （面经原题）
+
 ## Amazon OA2
 1. Find Num of Substring with K distinct chars
 2. 最大平均值子节点
