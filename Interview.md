@@ -295,6 +295,9 @@ debug我记下的几道题是(想发大照片，但是资格不够，发不了)�
 
 找规律把字母翻译成数字就好，都是普通题目，比如相隔几位。没有质数之类的偏题。
 
+ debugging有两道新题，第一第二道，建议一时找不出来的先做后面几道（没错说的我自己），后面几道都很简单。 reasoning部分都是以往面经题，字母找规律最好提前写好字母表和数字的对应关系节省时间
+ 
+
 ## Amazon OA2
 1. Find Num of Substring with K distinct chars
 2. 最大平均值子节点
@@ -305,6 +308,12 @@ debug我记下的几道题是(想发大照片，但是资格不够，发不了)�
 
 1. high five 地里描述一大把，就不叙述了，题内容也都一样
 2. 平均数最大的子树，注意！！！不是第二层的最大平均值而是整颗树的最大平均值。（领扣有原题，地里之前提到过，具体哪题忘了，可以去看看之前的帖子）
+
+两道面经题，k-1 distinct substring，highest five，具体见图。work simulation是survey形式根据自己情况选就行
+
+![oa2_5](https://i.imgur.com/yWZp1Rl.jpg)
+![oa2_6](https://i.imgur.com/ZxDR7HT.jpg)
+
 
 
 
