@@ -284,11 +284,11 @@ debug我记下的几道题是(想发大照片，但是资格不够，发不了)�
 
 2.returns the number of occurrences of uppercase 'A' or lowercase'a' in the input string str. 应该是加个i++
 
-3. returns an integer which is the reverse of the digits. 376->673.  reversedNum = reversedNum*10 + remainder
+1. returns an integer which is the reverse of the digits. 376->673.  reversedNum = reversedNum*10 + remainder
 
-4. return an integer representing the sum of the distinct elements in the given array. 改sort和sum initial的顺序
+2. return an integer representing the sum of the distinct elements in the given array. 改sort和sum initial的顺序
 
-5. returns the count of the unique elements in an array. 改flag
+3. returns the count of the unique elements in an array. 改flag, 那个题是输入一个int array,和int array 的size（非要给你，没啥办法），然后算distinct elements的个数，他新建了一个int array。flag是一个int（但是和boolean差不多），大概就是遇到和之前的一样，改一下flag，就不在新array里面动了，不一样的在新array加一下，然后count++。你就注意flag是1还是0，然后原array和新array元素赋值就差不多了
 
 
 阅读都是变种，比如四个人在房间四个角，就出了好几道，主题干都是一样，只要画图就可以秒。
@@ -302,6 +302,9 @@ debug我记下的几道题是(想发大照片，但是资格不够，发不了)�
 ![oa2_2](https://i.imgur.com/80m0bRh.jpg)
 ![oa2_3](https://i.imgur.com/NC9gBeJ.jpg)
 ![oa2_4](https://i.imgur.com/ju3PyCg.jpg)
+
+1. high five 地里描述一大把，就不叙述了，题内容也都一样
+2. 平均数最大的子树，注意！！！不是第二层的最大平均值而是整颗树的最大平均值。（领扣有原题，地里之前提到过，具体哪题忘了，可以去看看之前的帖子）
 
 
 
