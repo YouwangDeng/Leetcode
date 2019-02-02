@@ -297,6 +297,40 @@ debug我记下的几道题是(想发大照片，但是资格不够，发不了)�
 
  debugging有两道新题，第一第二道，建议一时找不出来的先做后面几道（没错说的我自己），后面几道都很简单。 reasoning部分都是以往面经题，字母找规律最好提前写好字母表和数字的对应关系节省时间
  
+ OA1 面经整理
+ http://52.14.116.56/2017/09/03/Interview/Interview-Amazon-OA1-Logic/
+ 
+debug的部分都是新题，我碰到的有两道题的代码还很长。。。如果碰到有arraysort的那道，就是顺序反了；还有一道是n和length的问题。。。其他的记不清了。。。sigh
+logic部分看小土刀就行了，几乎都是原题，有个按照条件选择的是新题，不过套路都是一样的，仔细判断下就行了。不过一定要熟悉面经，不然根本来不及做完
+
+OA1，deugging基本都是面经题，但是！如果想现场把每题code都看懂然后靠自己找出bug，时间是非常紧张的！所以还是建议提前看面经，做题的时候分配好时间，时间不够就别看code了直接按面经改吧。
+logic题目不难面经题目也多，时间也够用，所以觉得看面经用处不是特别大。提前在纸上写上26个字母对应的数字就行。
+
+1.24收到的oa, 2.7截止。今早做的oa1，debug全在射程范围内啊～～ logic有经典的判断方向，环保公司，身高问题。似乎我的逻辑题没有质数和圆桌那些的，都很简单，仔细点看题就可以了。
+
+debug和logic我都有十几分钟剩余时间，可以慢慢做。
+
+Debug全部截图都有，logic只有后半部分的（前面怕来不及就没截）。都是地里原题，debug有一道新题，当场做出来的 也不难。
+
+逻辑题（背熟应用题题干，很重要！！）：
+应用题1：A manufacture company has 8 products and 4 divisions. Four divisions are lead by Alan, Betty, Cathy, Diana. The 8 products are: mixer, iron, water pump, geyser, juicer, blender, grinder, and heater. Each division produces 2 products, no 2 divisions produces the same product. Diana’s division produced Geyser, Cathy’s division produces water pump. Mixer and iron areproduced by division lead by Alan and Betty respectively. The division that produces mixer doesn’t produce blender.
+
+应用题二：
+Conditions for appointing a distributor, for petroleum gas throughout Georgia, are as follows. The applicant should:
+Be an American by nationality
+Be in the age group of 21-50 years as on 5th September, 2008
+Be at least a high school graduate or any other recognized equivalent
+Be a resident of Georgia. He/she should have stayed in Georgia for not less than 5 years, immediately preceding the date of application.
+Have a family income of not more than $30,000 annually.
+Not have dealership of any oil company
+Not have any close relative as a dealer/distributor of any oil company
+However,
+Restrictions related to annual income would not be applicable to applicants working in corporations, owned or controlled by state departments. Such a case should be referred to the Managing Director
+For unemployed applicants who hold at least a bachelor’s degree, conditions (6) and (7) may be waived
+If an applicant is from a rural district but is not a resident of Georgia, the case may be referred to the Chairman.
+
+debugging
+https://drive.google.com/open?id=1PyQpmOx4aCcl6fNRY6bwCagOLn2Z95DF
 
 ## Amazon OA2
 1. Find Num of Substring with K distinct chars
@@ -313,6 +347,15 @@ debug我记下的几道题是(想发大照片，但是资格不够，发不了)�
 
 ![oa2_5](https://i.imgur.com/yWZp1Rl.jpg)
 ![oa2_6](https://i.imgur.com/ZxDR7HT.jpg)
+
+![oa2_7](https://i.imgur.com/JQIUViZ.png)
+![oa_8](https://i.imgur.com/M622RxR.png)
+
+OA2，不知道写brute force和优化的算法最后会不会区别对待，但是优化一下感觉也不是很难…
+k substring (length k with k - 1 distinct characters)，用了双指针
+average of top 5 scores: 用了map + priority queue
+
+
 
 
 
