@@ -355,9 +355,20 @@ OA2，不知道写brute force和优化的算法最后会不会区别对待，但
 k substring (length k with k - 1 distinct characters)，用了双指针
 average of top 5 scores: 用了map + priority queue
 
+OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的OA就那么4-5道的题库
 
-面试攻略：https://wdxtub.com/interview
-        http://52.14.116.56/categories/
+1. Count substrings with K distinct characters：
+计算含k个不同字符的substring的数量
+
+2. find subtree with maximum average node：
+给一个树。求每一个子subtree的平均值（只计算子树的平均值，不用计算叶子），找出最大值。
+
+
+
+
+#面试攻略
+* https://wdxtub.com/interview
+* http://52.14.116.56/categories/
 
 
 
