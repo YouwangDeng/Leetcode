@@ -356,6 +356,10 @@ k substring (length k with k - 1 distinct characters)，用了双指针
 average of top 5 scores: 用了map + priority queue
 
 
+面试攻略：https://wdxtub.com/interview
+        http://52.14.116.56/categories/
+
+
 
 
 
