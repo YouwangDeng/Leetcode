@@ -363,6 +363,64 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 2. find subtree with maximum average node：
 给一个树。求每一个子subtree的平均值（只计算子树的平均值，不用计算叶子），找出最大值。
 
+1. Count substrings with K distinct characters
+2. Most popular Category node.
+
+第一题 distinct k character
+第二题 high five
+
+第一题是给定一个数组和一个上限，要求你从数组中找两个数，使得两数之和最接近某个上限。
+第二题是给你学生的id和成绩，一个id可以有多次成绩，要求你为每个id找出其最好的5次成绩的平均值。
+
+1. k-distinct character substring, 楼主一开始只过了一半的case, 后面发现是返回的substring array要求不能重复, 所以改为用hashset, 返回前cast一下就好了
+2. maximum average of child nodes
+
+第一道是 two closest sum， 背景知识是亚麻卡车装货物， 找到两个containers 加起来可以装的weight最多且小于maxCapacity， 属于single array 找two closest sum
+第二道是 highest five, 背景知识是有一堆productID 和product的reviews， 给每一个productID找出最高的五个review的平均值，用priorityqueue做就可以，注意data type是double
+
+1. longest palindromic substring
+2. 卡车送货，选取最接近capacity的两个
+3. 找出句子里面最多but not in the word to exclude list
+4. count number of substrings with exactly k distinct characters
+5. maximum minimum path
+6. reOrder log files
+7. find subtree with maximum average node
+8. Highest 5
+9. Top k closet numbers/找最近的k个restaurants
+10. remove obstacle
+11. find subarrays of size of with no duplicates
+12. merge two sorted linkedlist
+13. find substrings of size k with k-1 distinct characters
+14. 有一排数据中心，求最小的cost把所有的数据中心连起来 (MST)
+
+1. closet sum
+2.high 5
+
+1，给一个容器，一个list表示物品重量，找到两个和最大且不超过最大限额的物品重量
+2，返回平均值最大的子树的树节点
+
+1. substring with k distinct Character，字符串长度不必须是k。我提前准备了这道题，悲剧的是我准备的也不完全对，有6个隐藏的test过不了，调试了快50分钟也没做出来，太菜了。。。
+2. High Five。这个和地里面经一样。我用的是HashMap<Integer, PriorityQueue>.
+
+题库基本也没变，但是又小的变形。比如distinct k substrings， 有的要求substring长度也为k，有的没要求，有的要求长度是k-1。提前准备一下也没问题。
+
+![oa2_9](https://i.imgur.com/bYRsqSN.jpg)
+![oa2_10](https://i.imgur.com/coRUTLR.jpg)
+![oa2_11](https://i.imgur.com/9UXlwSQ.jpg)
+
+领扣吴酒柒
+
+
+貢獻 data point (1/31 OA2 deadline )
+
+1. High Five
+    http://www.th7.cn/Program/java/201610/977868.shtml
+    我是用java 寫的  
+    地里原題，不過值得注意的是 input 是 ArrayList<productscore> , 而這個productscore class 是題目定義的，但沒有把class 定義寫出來! 我是看到input 才知道productscore 有 productId 和 reviewScore 這兩個member variable.
+   (ps, 需要自己import 自己要用到的package, ex: import java.util.HashMap;)
+
+
+2. Count number of substrings with exactly k distinct character
 
 
 
