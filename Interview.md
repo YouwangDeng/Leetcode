@@ -413,7 +413,7 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 
 貢獻 data point (1/31 OA2 deadline )
 
-1. High Five
+1. High Five[]()
     http://www.th7.cn/Program/java/201610/977868.shtml
     我是用java 寫的  
     地里原題，不過值得注意的是 input 是 ArrayList<productscore> , 而這個productscore class 是題目定義的，但沒有把class 定義寫出來! 我是看到input 才知道productscore 有 productId 和 reviewScore 這兩個member variable.
