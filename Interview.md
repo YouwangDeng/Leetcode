@@ -428,6 +428,18 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 * https://wdxtub.com/interview
 * http://52.14.116.56/categories/
 
+# Notes About Interview
+* first understand the problem
+* Write some constrains on the comment
+* Problem to solve on the comment
+* Ask for clarification
+* Create a general example
+* Don’t rush to code
+* Explain your ideas
+* Ask for hint
+* Coding
+* Write short comment on code block
+
 
 
 
