@@ -441,7 +441,157 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 * Write short comment on code block
 
 ## Amazon VO Prep
-* 
+* pow(), 写了O(logN)的解法
+* 考的题很简单 领口零八 我也没想到会是这东西= =
+* 主要还是考behavior吧 网上有很多这方面的问题 选几个问题 一定要准备一些例子project什么的 而且要特别具体
+* 多笑笑 让他觉得你是一个挺好交流的人
+* String to Integer
+* 面试感受挺push虽然问的都很简单面试官是个老印manager
+* 一开始问了20min简历。。问的超级详细从产品是什么到技术细节，到每一个环节
+* 后来开始算法，题目很简单就是象棋中骑士从a点到b点到最短距离。。详细的问了dfs和bfs
+* 面试官的头从头摇到尾。。。
+* 相似题太多了吧😂就是一个2d array上点到点的最短距离
+* 烙印的摇头就是点头认同...
+* VO:
+* 讲一件没有达成自己目标的事情
+* 利口六尔易 请问楼主vo面试的时候题目是用最优方法写的还是用的priority queue写的 用priorityqueue写的
+* 刚刚结束， 面试官是个三哥，哭了， 口音听得难受，给了2到题，
+* find longest reapted substring 还有给与一个数组， 输出出现次数为基数的数字 第一题
+* 8会，只会做without repeat。 第二题用hashtable 解， 最后问能不能优化，优化了一下。
+* 一开始先让我问问题， 然后问我数据结构， 然后扣丁， 然后bq, 然后再问问题
+* 就是banana 返回ana tomato 返回to说input can be anything
+* 题目是给一个先递增后递减的数组[1,2,3,4,5,4,3]。查找一个数，返回true和false，问了边界怎么处理，有负数怎么办，有重复的数字怎么办。
+* bq比较常规
+* 1. 先解释项目，
+* 1.1 项目怎么展开的
+* 1.2. 项目中遇到了哪些困难
+* 1.3. 项目中技术trade off
+* 2. 以往有限时间内必须拿出结果的经历
+* 2.1. 为什么选了某个特定的技术
+* 2.2. 有没有什么规划好却没有实现的功能
+* 3. 最自豪的经历
+* easy的括号匹配，follow up我自己提出来了，然后解释一下为什么要用数据结构
+* 然后我问了他十分钟问题，包括他的工作(中间层)，career path / opportunity 巴拉巴拉。
+* easy题的follow up还是easy哈哈哈，就是括号包扩自定义括号，用一个map就可以啦
+* 早了十五分鐘等， 一開始看到是印度人的名字，心裏涼涼的。。 後來上了個白人哥哥， 蠻casual的。一開始問了我的背景和project，BQ 要我說一個要compromise小細節來趕上的deadline的經驗。之後來了一道超簡單的題。 一個機器人在infinite的grid上，可以往上下左右走， 從（0，0）開始，給你一list的command，記錄在每個點經過多少次。 跟他講了思路，解釋了complexity。他說ok，然後就寫出來。最後10分鐘瞎聊。簡直不敢相信，感覺他是臨時叫來interview我，我講project的時候他好像還在搜題目問我。/
+* 不需要. 他們自己的code editor run不了code
+* coding : 
+* boolean hasDuplicate(String input)
+* void printDuplicateByFrequency(String Input)
+* BQ: Tell me about a time when you had difficulty working with someone on a side or class project?
+* What did you do to overcome this?
+* 面试是用Amazon Chime软体
+* 给我面试的是个印度小哥 英文非常标准 在亚麻工作6年了
+* 他旁边还有另一位印度哥哥shadowing
+* 首先让我自我介绍 
+* 接着就问coding 用一个link进去后会是个共同编辑的网页 . 1point3acres
+
+* 问一个string input里 有没有duplicate words
+* 我一开始以为是duplicate characters 埋头写了下去
+* 面试官提醒我说我是要找word
+* 赶紧把code改了下
+* 写到一半他看我用list 问我知不知道time complexity
+* 我想了下说这样会是n平方
+
+* 他问能不能改进
+* 我说用map
+* 他说还有个结构原理一样 但问我key, value打算用什么 就让我继续写完
+* 写完后问map的 time complexity
+* 我想了下差点讲成n 突然想到是O(1)
+* 他说没有错 问知不知道原理
+* 我就讲了string.equals()的计算方式 也就是hashing 
+* 到这他知道我了解原理 就跟我说不知道我学校有没有学到HashSet这结构 原理相仿但可以省下space
+
+* 接着第二题是第一题变形 要将string input里找frequency由高至低 print 出每个word
+* 他说不一定要用前面写的code
+* 我就改用hashtable 将value当作出现次数
+* 最后要print的部分我说若是找最阳春的方式得花n平方时间
+* 他问我哪有没有什么方法改进
+* 我说如果能把hashtable里的资料sort过最好
+* 但要挑比n平方快的
+* 我说用mergeSort好了
+* 他就说那假设已有mergeSort function存在让我用
+* 我接下来怎么做
+* 我说最好能够有个结构存放每个word 且有个field存放出现次数 若有comparator 的话那更方便
+* 他就说comparator也可以假设已存在
+* 让我继续写code 写完也问个 time complexity 
+* 我说前面存放花n 后面print也花n 那么就是sort的时间了
+* 他问那mergeSort的time complexity是什么 我想了下回答nlogn 他满意了就换问BQ
+
+* 问题是
+* Tell me about a time when you had difficulty working with someone on a side or class project?
+* What did you do to overcome this?
+
+* 回答时气氛不错 说到我project有趣的部分他还大笑了一两声
+
+* 最后给我问问题
+* 我问
+* 1.我对cybersecurity 有兴趣但没有prior experience 能不能选组后进去学习
+* 2 有没有机会接触echo dot, kindle等产品
+* 3 给即将毕业的我一些建议 
+* 他们都回答得非常认真 且说第三题问得很好 
+* // * Given a string return true/false if it contains any duplicate words
+* //* 「I like ice cream」 -> False
+* //* 「I really really like ice cream」 -> True
+* 面試官說可以assume 全是lowercase . check 1point3acres for more. 第二個input 是true因為really重複了
+* 要求提前15min 进Amazon chime， 然后坐等， 等时间差不多了打开摄像头。 之前可以先看到面试官名字， 刚开始看见名字 好奇怪以为是个三姐 心里默念大悲咒。结果开摄像头发现是个大胡子白人大哥 心里顿时定下来了
+* 好了唠叨那么多 上vo面经
+* [hide=88]
+* 上来 简单的自我介绍一下 
+* bq： 有没有遇到过需要赶deadline 的project 怎么处理的 ：答： 有，期末project， reprioritize tasks 然后produce working product
+* bq： 现在的学习目标或者工作目标： 答： 多学点技术，准备工作 掌握基础知识， 之后打算自己想搞开发，研究新商业模式
+* bq： 说一个你具体的project： 之前有工作半年， 所以扔了一个网址给面试官看， 然后带他走了遍当时用的technology，面试官说thanks for sharing， 然后就没深究 
+
+* 上coding pad ： 上面有题目 
+* 扣丁： 找岛屿数量 - 有点人品爆发了 我知道 ，然而 我写的还是磕磕绊绊， 刷题总是记不住，水的不行。 写完后走了个例子，然后发现有bug， 又自己修改了下。 然后给他看了，大哥觉得挺合理， 也没问时间复杂度和空间复杂度。 直接愉快的说我们现在有15min 问问题了 没上第二题
+* 可能是大哥本来就准备的少吧
+* 之后15min 愉快的我问他答， 气氛倒时挺轻松的。 如果没有磕磕绊绊，我感觉肯定过了， 但现在真的不好说
+* 利口而牛爸。
+* 我只看了最直接的sum做法，他问有没有更好的，我说有啊二分法，结果写的时候就卡在怎么比较那里了。
+* 所以教训就是，不管什么题一定要多看几种算法。祝大家好运。
+* 说challenge project
+* 一点点经验总结： vo 气氛还是很重要的，决定你过不过。 12月面谷歌两轮，面试官全程严肃究代码错误，跪。 dropbox 没写完 面试官严肃教我写代码 跪。 谷歌拒信隔了一礼拜发的，dropbox 第二天就发了。
+* vo亚麻面得很是轻松，面我的是security 组的manager，白人大哥。 先问的bq 问了10分钟（认真准备下 我觉得我就是靠bq答得好过的，最好能展示下lauch 到 aws 成品的项目，不然面试官看不到会各种细究技术问题直到他觉得这个项目你真的参与了）做题20分钟，磕磕绊绊代码并没有百分百对，做之前有大概讲思路直到面试官说ok 我才开始写。 面试官没深究，连时空复杂度都没问，之后十五分钟纯聊天，聊亚麻的 working culture。  过的提示是，他直接告诉我了是2-5天就能有回复，结果offer两天来。 期间几次查玄学withdrawlink 并没有消失过。。。
+* 面试是叫amazon chime，一个像skype 可以视频的东西，coding 是一个coding pad 链接，叫livecode 不用 sharescreen 但是全程开摄像头
+* num of island
+* 忘提了 找岛屿数量稍微变了下型 要两个连续的1， 单蹦的一个1不算
+* vo的话就是一个 文档，只是不是google doc 是amazon 自己内部的系统 面试官先把题写在上面，再开给你的
+* 第一题，zigzag 型打印出一个binary tree。楼主给了一个BFS的做法，面试官说不错，能不能再想另一种数据结构，我就说还能用stack做。
+* 第二题，给一个由0和1组成的matrix，打印出duplicate的row的序列。
+* 比如说：
+* 01010
+* 00011
+* 00110
+* 01010
+* 00110
+
+* 就打印3，4。
+
+* 楼主刚开始的做法是把每个row看成binary representation然后转成numeric number，存在hashset里。
+* 小哥哥问number太大怎么办，我说还可以转换成string存在hashset里
+* 小哥哥又问能不能不转换任何东西做，给了提示说用别的数据结构
+* 我说能用trie，然后写了一半说了一下想法，因为时间不够就没有在继续下去。
+* 本来是面45分钟的，到了45分钟的时候小哥哥又开始问behavior question，最后到1小时才结束。
+* 类似Describe a situation in which you took extra responsibility for a task that does not belong to you..
+* 然后各种细究做了哪些task，是哪个project，有哪些responsibility之类的。。
+* 刚刚面完了virtual interview对方是一个说不清哪里人的大叔，全程效率都很高，直奔主题。先介绍了一下他自己，是一个组的manager，手下有20几个人，然后让我介绍一下自己，平常喜欢做什么，做过什么project。稍微跟我讨论了一下简历上的一个project之后问了一个behavior，让我说一个需要很快时间学习一个新知识来完成的项目。讲完之后coding用recursive的方式求一个数的factorial，想了一下写出来了。但是想太快，漏掉了input是负数这种情。
+* 好好提高 BQ这方面吧。 我当时大二大三的时候 遇到BQ 问题总是各种挂，然后后来就找美国朋友陪我狂练 BQ，直到后来研一的时候面亚麻实习，小哥问我两个 BQ 问题，我在没有准备的情况下 马上给他编了两个故事 最后毫无破绽地过了。包括 Fb，airbnb 也会注重 culture fit 所以也会问不少 BQ的。
+* LRU，count islands
+* 首先，连自我介绍都没有让我做，直接开始问我问题：
+1. any project that i take extra responsibility，然后一个个问题深揪，包括问我react redux的内容，还好最近在写这方面的，都回答上了。
+2. any project that i use analysis什么之类的，我说了我之前的intern，然后又是将近的深揪，问到我吐血。
+* 以上问题问了我将近一个小时...我都要无语了，只想让他早点让我开始写码。
+* coding：
+* coin change变形变形+变形，包括有可能不能change，有可能coin数量不够，一道dp+各种edge case要考虑，20分钟完全写不完。我把我的思路说了一遍，写了一些cases，面试官说算法是对的，写的也是对的，就是来不及完成。
+* 最后我问：大哥你确定这是给我一个可怜无助的大三小**的题吗？大哥很淡定的说，这是他面试时遇到的题目，他也没做出来...........
+* 我是和亚麻多大愁多大怨啊，从oa到电面给我的都是什么题啊..
+* 总之还是许愿一波offer吧，看在我这么可怜的份上给点大米吧。
+* 尼扣牛久
+
+
+
+
+
 
 
 
