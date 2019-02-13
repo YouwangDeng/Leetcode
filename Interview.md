@@ -497,11 +497,14 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 * 相似题太多了吧😂就是一个2d array上点到点的最短距离
 * 烙印的摇头就是点头认同...
 * 利口六尔易 请问楼主vo面试的时候题目是用最优方法写的还是用的priority queue写的 用priorityqueue写的
-* find longest reapted substring 还有给与一个数组， 输出出现次数为基数的数字 第一题
+* find longest reapted substring 还有给与一个数组， 输出出现次数为基数的数字 第一题 
+* https://www.geeksforgeeks.org/longest-repeating-and-non-overlapping-substring/
+* https://www.geeksforgeeks.org/find-even-occurring-elements-array-limited-range/
 * 8会，只会做without repeat。 第二题用hashtable 解， 最后问能不能优化，优化了一下。
 * 一开始先让我问问题， 然后问我数据结构， 然后扣丁， 然后bq, 然后再问问题
 * 就是banana 返回ana tomato 返回to说input can be anything
 * 题目是给一个先递增后递减的数组[1,2,3,4,5,4,3]。查找一个数，返回true和false，问了边界怎么处理，有负数怎么办，有重复的数字怎么办。
+* https://www.geeksforgeeks.org/find-element-bitonic-array/
 * easy的括号匹配，follow up我自己提出来了，然后解释一下为什么要用数据结构
 * easy题的follow up还是easy哈哈哈，就是括号包扩自定义括号，用一个map就可以啦
 * 之後來了一道超簡單的題。 一個機器人在infinite的grid上，可以往上下左右走， 從（0，0）開始，給你一list的command，記錄在每個點經過多少次。 跟他講了思路，解釋了complexity。他說ok，然後就寫出來。
@@ -541,7 +544,7 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 * Given a string return true/false if it contains any duplicate words
 * I like ice cream -> False
 * I really really like ice cream -> True
-* 面試官說可以assume 全是lowercase . check 1point3acres for more. 第二個input 是true因為really重複了
+* 面試官說可以assume 全是lowercase 第二個input 是true因為really重複了
 * coding： 找岛屿数量, 然后给他看了，大哥觉得挺合理， 也没问时间复杂度和空间复杂度。 直接愉快的说我们现在有15min 问问题了 没上第二题, 可能是大哥本来就准备的少吧
 * 之后15min 愉快的我问他答， 气氛倒时挺轻松的。
 * leetcode 298
