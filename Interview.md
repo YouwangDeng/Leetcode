@@ -580,6 +580,8 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 union find
 
 //OA2 review
+* Generate permutations with only adjacent swaps allowed
+* 
 
 
 
