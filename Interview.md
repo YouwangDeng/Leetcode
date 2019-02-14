@@ -572,6 +572,14 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 * coding：
 * coin change变形变形+变形，包括有可能不能change，有可能coin数量不够，一道dp+各种edge case要考虑，20分钟完全写不完。我把我的思路说了一遍，写了一些cases，面试官说算法是对的，写的也是对的，就是来不及完成。
 * leetcode 69
+* String[] exp = {"a==b", "a!=b" .......}
+
+1. "a==b", "a!=b" false, no such integers
+
+2.a==b, c==c, z!=x true, there are integers to fulfill each statement
+union find
+
+//OA2 review
 
 
 
