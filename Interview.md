@@ -445,8 +445,9 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 * 主要还是考behavior吧 网上有很多这方面的问题 选几个问题 一定要准备一些例子project什么的 而且要特别具体
 * 多笑笑 让他觉得你是一个挺好交流的人
 * 面试感受挺push虽然问的都很简单面试官是个老印manager
-* 一开始问了20min简历。。问的超级详细从产品是什么到技术细节，到每一个环节
+* 一开始问了20min简历。问的超级详细从产品是什么到技术细节，到每一个环节
 * 讲一件没有达成自己目标的事情
+* take a risk
 * 1. 先解释项目
 * 1.1 项目怎么展开的
 * 1.2. 项目中遇到了哪些困难
@@ -462,25 +463,19 @@ OA2: 1） two sum closest, return一个Pair 2）max average node 感觉实习的
 * 首先让我自我介绍
 * Tell me about a time when you had difficulty working with someone on a side or class project?
 * What did you do to overcome this?
-* 我问
-* 1.我对cybersecurity 有兴趣但没有prior experience 能不能选组后进去学习
-* 2 有没有机会接触echo dot, kindle等产品
-* 3 给即将毕业的我一些建议 
-* 他们都回答得非常认真 且说第三题问得很好
-* 要求提前15min 进Amazon chime， 然后坐等， 等时间差不多了打开摄像头。 之前可以先看到面试官名字， 刚开始看见名字 好奇怪以为是个三姐 心里默念大悲咒。结果开摄像头发现是个大胡子白人大哥 心里顿时定下来了
+
+
 * 上来 简单的自我介绍一下 
 * BQ： 有没有遇到过需要赶deadline 的project 怎么处理的 ：答： 有，期末project， reprioritize tasks 然后produce working product
 * bq： 现在的学习目标或者工作目标： 答： 多学点技术，准备工作 掌握基础知识， 之后打算自己想搞开发，研究新商业模式
 * bq： 说一个你具体的project： 之前有工作半年， 所以扔了一个网址给面试官看， 然后带他走了遍当时用的technology，面试官说thanks for sharing， 然后就没深究
 * 说challenge project
-* 一点点经验总结： vo 气氛还是很重要的，决定你过不过。 12月面谷歌两轮，面试官全程严肃究代码错误，跪。 dropbox 没写完 面试官严肃教我写代码 跪。 谷歌拒信隔了一礼拜发的，dropbox 第二天就发了。
+* 一点点经验总结： vo 气氛还是很重要的，
 * vo亚麻面得很是轻松，面我的是security 组的manager，白人大哥。 先问的bq 问了10分钟（认真准备下 我觉得我就是靠bq答得好过的，最好能展示下lauch 到 aws 成品的项目，不然面试官看不到会各种细究技术问题直到他觉得这个项目你真的参与了）
 * 面试是叫amazon chime，一个像Skype 可以视频的东西，coding 是一个coding pad 链接，叫Livecode 不用 share screen 但是全程开摄像头
-* vo的话就是一个 文档，只是不是google doc 是amazon 自己内部的系统 面试官先把题写在上面，再开给你的
 * 类似Describe a situation in which you took extra responsibility for a task that does not belong to you..
-* 然后各种细究做了哪些task，是哪个project，有哪些responsibility之类的。。
+* 然后各种细究做了哪些task，是哪个project，有哪些responsibility之类的。
 * 刚刚面完了virtual interview对方是一个说不清哪里人的大叔，全程效率都很高，直奔主题。先介绍了一下他自己，是一个组的manager，手下有20几个人，然后让我介绍一下自己，平常喜欢做什么，做过什么project。稍微跟我讨论了一下简历上的一个project之后问了一个behavior，让我说一个需要很快时间学习一个新知识来完成的项目。
-* 好好提高 BQ这方面吧。 我当时大二大三的时候 遇到BQ 问题总是各种挂，然后后来就找美国朋友陪我狂练 BQ，直到后来研一的时候面亚麻实习，小哥问我两个 BQ 问题，我在没有准备的情况下 马上给他编了两个故事 最后毫无破绽地过了。包括 Fb，airbnb 也会注重 culture fit 所以也会问不少 BQ的。
 * 首先，连自我介绍都没有让我做，直接开始问我问题：
 * any project that i take extra responsibility，然后一个个问题深揪，包括问我react redux的内容，还好最近在写这方面的，都回答上了。
 * any project that i use analysis什么之类的，我说了我之前的intern，然后又是将近的深揪，问到我吐血。
